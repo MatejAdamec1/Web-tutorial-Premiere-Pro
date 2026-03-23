@@ -68,7 +68,7 @@ window.QUIZZES = {
       ],
       correctIndex: 2
     }
-    ],
+  ],
 
   workflow: [
     {
@@ -90,6 +90,34 @@ window.QUIZZES = {
       question: "Kdy obvykle dochází k exportu videa?",
       answers: ["Na začátku projektu", "Hned po Importu", "Na konci projektu"],
       correctIndex: 2
+    }
+  ],
+
+  rozhrani: [
+    {
+      question: "K čemu slouží Project Panel?",
+      answers: ["Ke střihu videa", "Ke správě materiálů", "K aplikaci efektů", "K exportu videa"],
+      correctIndex: 1
+    },
+    {
+      question: "Jaký je hlavní rozdíl mezi Source Monitor a Program Monitor?",
+      answers: ["Source Monitor zobrazuje sekvenci, Program Monitor klip", "Program Monitor zobrazuje sekvenci, Source Monitor klip", "Neexistuje žádný rozdíl", "Program Monitor slouží jen pro audio"],
+      correctIndex: 1
+    },
+    {
+      question: "Kde se provádí samotný střih videa?",
+      answers: ["Project Panel", "Source Monitor", "Timeline Panel", "Effects Panel"],
+      correctIndex: 2
+    },
+    {
+      question: "Kde lze upravovat parametry klipu/efektů?",
+      answers: ["Tools Panel", "Project Panel", "Effects Panel", "Effect Controls Panel"],
+      correctIndex: 3
+    },
+    {
+      question: "Co jsou to bins v Project Panelu?",
+      answers: ["Složky pro organizaci materiálů", "Typy sekvence", "Přechody", "Efekty"],
+      correctIndex: 0
     }
   ]
 };

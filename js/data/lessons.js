@@ -15,7 +15,7 @@ window.LESSONS = [
       </p>
 
       <figure class="doc_figure doc_figure--small">
-        <img src="img/premiere_logo.png" alt="Logo Adobe Premiere Pro">
+        <img src="img/kapitola_1/premiere_logo.png" alt="Logo Adobe Premiere Pro">
 
         <figcaption>
           <div class="figure_title">Logo Premiere Pro</div>
@@ -64,6 +64,15 @@ window.LESSONS = [
       <p>
         Na konci kapitol se nachází kvíz, který vám pomůže zkontrolovat, zda jste pochopili probírané téma.
         Počet pokusů je neomezený a při špatné odpovědi vám ukáže správně řešení.
+      </p>
+
+<br>
+
+      <h2 id="poznamka">Finální poznámka</h2>
+      <p>
+        Tutoriál je psaný na verzi Adobe Premiere Pro 26.0.1, která je v době psaní aktuální. 
+        Vzhledem k tomu, že se jedná o software, který je pravidelně aktualizován, může se stát, že některé funkce nebo rozhraní
+        se v budoucnu změní. 
       </p>
     `,
     quizKey: "uvod",
@@ -177,7 +186,7 @@ window.LESSONS = [
       </p>
 
       <figure class="doc_figure doc_figure--large">
-        <img src="img/framerate.jpg" alt="Různé snímkové frekvence">
+        <img src="img/kapitola_2/framerate.jpg" alt="Různé snímkové frekvence">
 
         <figcaption>
           <div class="figure_title">Různé snímkové frekvence</div>
@@ -369,17 +378,36 @@ window.LESSONS = [
     subtitle: "Seznámení s panely a workspaces.",
     html: `
       <h2 id="okno-edit-panely">Okno Edit a panelové prostředí</h2>
+
       <p>
         Částí programu, kde budete trávit většinu času, je okno Edit. Toto okno slouží jako hlavní pracovní plocha, která je dále rozdělena
         do jednotlivých panelů. To jsou samostatné části rozhraní, které mají specifickou funkci, například náhled videa nebo
         zobrazení seznamu importovaných materiálů.
       </p>
 
+      
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_4/okno_edit.png" alt="Ukázka edit okna">
+
+        <figcaption>
+          <div class="figure_title">Okno Edit</div>
+        </figcaption>
+      </figure>
+
       <p>
         Premiere Pro poskytuje různé přednastavené workspaces, česky pracovní plochy, což jsou již připravené rozvržení panelů. 
-        Jednotlivé předkonfigurované workspaces jsou přizpůsobeny pro různé účely, například pro práci se zvukem.
-        Jako uživatel mezi nimy můžete přepínat na horní liště v záložce Window > Workspaces.
+        Jednotlivé předkonfigurované workspaces jsou přizpůsobeny pro různé účely, například pro práci se zvukem nebo pro barevné úpravy.
+        Jako uživatel mezi nimy můžete přepínat v pravém horním rohu rozhraní pod tlačítkem Workspaces. Alternativně je můžete 
+        najít v záložce Window > Workspaces.
       </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_4/workspaces_nabidka.png" alt="Workspaces nabídka">
+
+        <figcaption>
+          <div class="figure_title">Workspaces nabídka</div>
+        </figcaption>
+      </figure>
 
 <br>
 
@@ -391,11 +419,19 @@ window.LESSONS = [
         tak se tento panel skryje. 
       </p>
 
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_4/window_zalozka.png" alt="Window záložka">
+
+        <figcaption>
+          <div class="figure_title">Záložka s panely</div>
+        </figcaption>
+      </figure>
+
       <p>
         Při kliknutí a podržení lišty panelu jej můžete přemístit. Když ho přetáhnete, zobrazí se vám zvýrazněné pole,
         do kterého se při pustění panel ukotví. Pokud ho pustíte do středu jiného panelu, tak se oba spojí a vytvoří
         skupinu panelů. Tato skupina pak v daný moment může zobrazit jen jeden z těchto panelů, přičemž mezi nimi můžete
-        přepínat kliknutím na název panelu v horní části skupiny. Když panel přřetáhnete mimo zvýrazněná pole, tak se z hlavního okna
+        přepínat kliknutím na název panelu v horní části skupiny. Když panel přetáhnete mimo zvýrazněná pole, tak se z hlavního okna
         programu oddělí a chová se jako samostatné okno, které můžete umístit kamkoliv na obrazovku.
       </p>
 
@@ -405,9 +441,9 @@ window.LESSONS = [
       </p>
 
       <p>
-        Přizpůsobené workspace si můžete uložit a následně kdykoliv znovu načíst. Uložení se provádí v záložce
-        Window > Workspaces > Save as New Workspace. Dále zvolíte název pro vaše rozložení a stisknete Ok. Uložené workspaces se
-        pak zobrazí v seznamu mezi přednastavenými rozloženími a můžete je kdykoliv načíst.
+        Přizpůsobené workspace si můžete uložit a následně kdykoliv znovu načíst. Uložení se provádí v pravém horním rohu okna, 
+        nebo v záložce Window > Workspaces. Po stisknutí Save as New Workspace se vám zobrazí dialog, 
+        kde zadáte název pro tento workspace a potvrdíte. Uložené workspace se pak objeví v seznamu a můžete mezi nimi přepínat.
       </p>
 
 <br>
@@ -415,6 +451,15 @@ window.LESSONS = [
       <h2 id="prehled-panelu">Přehled důležitých panelů</h2>
 
       <h3 id="project-panel">Project Panel</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_4/project_panel.png" alt="Project Panel">
+
+        <figcaption>
+          <div class="figure_title">Project Panel</div>
+        </figcaption>
+      </figure>
+
       <p>
         Tento panel je místem, kde se zobrazují všechny importované materiály, ale i objekty vytvořené přímo v programu, například
         sekvence, nebo určité grafické prvky. Odtud můžete materiály vyhledávat, vybírat a přetahovat do časové osy. Premiere Pro také dovoluje 
@@ -424,12 +469,34 @@ window.LESSONS = [
 <br>
 
       <h3 id="timeline-panel">Timeline Panel</h3> 
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_4/timeline_panel.png" alt="Timeline Panel">
+
+        <figcaption>
+          <div class="figure_title">Timeline Panel</div>
+        </figcaption>
+      </figure>
+
       <p> 
         Timeline Panel, neboli panel časové osy, je hlavním pracovním prostorem pro střih. Zde skládáte jednotlivé klipy za sebe, 
-        upravujete jejich délku, přidáváte přechody, efekty a pracujete se zvukem. Sekvence představuje konkrétní výsledné video 
-        s danými technickými parametry. Na časové ose jsou jednotlivé klipy rozděleny do video a audio stop, které umožňují pracovat s více vrstvami současně. </p> <p> Právě zde probíhá samotný proces střihu. Proto je důležité porozumět práci se stopami, nástrojům pro ořezávání a pohybu klipů v čase. </p>
+        upravujete jejich délku, přidáváte přechody, efekty a pracujete se zvukem. Na časové ose jsou jednotlivé klipy rozděleny
+        do video a audio stop, které umožňují pracovat s více vrstvami současně. Každá časová osa reprezentuje jednu sekvenci,
+        což je samostatný objekt v programu, který může obsahovat různé klipy, grafické prvky a další objekty.
+      </p>
+
+<br>
 
       <h3 id="source-monitor">Source Monitor</h3> 
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_4/source_monitor_panel.png" alt="Source Monitor Panel">
+
+        <figcaption>
+          <div class="figure_title">Source Monitor Panel</div>
+        </figcaption>
+      </figure>
+
       <p> 
         Source Monitor slouží k náhledu a předvýběru jednotlivých klipů před jejich vložením do časové osy. Jakmile v Project Panelu
         dvakrát kliknete na soubor, otevře se právě zde. V tomto panelu můžete nastavit vstupní (In) a výstupní (Out) bod. 
@@ -439,7 +506,74 @@ window.LESSONS = [
 <br>
 
       <h3 id="program-monitor">Program Monitor</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_4/program_monitor_panel.png" alt="Program Monitor Panel">
+
+        <figcaption>
+          <div class="figure_title">Program Monitor Panel</div>
+        </figcaption>
+      </figure>
+
       <p>
+        Program Monitor zobrazuje náhled aktuálního stavu vaší sekvence, tedy toho, co máte na časové ose. 
+        Čas náhledu odpovídá aktuální pozici přehrávací hlavy. Na rozdíl od Source Monitoru nepracuje s jednotlivými klipy, 
+        ale s celou kompozicí. Během přehrávání můžete sledovat změny střihu, efektů i barevných úprav.
+      </p>
+
+<br>
+
+      <h3 id="tools-panel">Tools Panel</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_4/tools_panel.png" alt="Tools Panel">
+
+        <figcaption>
+          <div class="figure_title">Tools Panel</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Tools Panel obsahuje základní nástroje pro práci s klipy na časové ose. Mezi nejdůležitější patří například Razor Tool
+        pro rozdělení klipu nebo Selection Tool pro výběr a přesouvání klipů.
+      </p>
+
+<br>
+
+      <h3 id="effects-panel">Effects Panel</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_4/effects_panel.png" alt="Effects Panel">
+
+        <figcaption>
+          <div class="figure_title">Effects Panel</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Effects Panel obsahuje seznam dostupných video a audio efektů a přechodů. Odtud můžete efekty přetahovat přímo na klipy 
+        na časové ose. Efekty jsou rozděleny do kategorií. Najdete zde například korekce barev, transformace obrazu, 
+        rozostření nebo různé zvukové úpravy. Samotné nastavení efektu se však vždy provádí v panelu Effect Controls.
+      </p>
+
+<br>
+
+      <h3 id="effect-controls-panel">Effect Controls Panel</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_4/effect_controls_panel.png" alt="Effect Controls Panel">
+
+        <figcaption>
+          <div class="figure_title">Effect Controls Panel</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Panel Effect Controls umožňuje upravovat vlastnosti vybraného klipu. Zobrazí se zde například parametry pozice, měřítka, 
+        rotace nebo průhlednosti. Pokud na klip aplikujete efekt, jeho nastavení se objeví právě v tomto panelu. 
+        Effect Controls je klíčový při práci s animacemi, protože umožňuje nastavovat keyframes a měnit tak hodnoty parametrů v čase.
+      </p>
+
     `,
     quizKey: "rozhrani",
   }

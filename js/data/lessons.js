@@ -48,9 +48,9 @@ window.LESSONS = [
       </p>
 
       <p>
-        Pro přepínání mezi kapitolami můžete použít levý panel nebo tlačítka ve spodu stránky.
+        Pro přepínání mezi kapitolami můžete použít levý panel nebo tlačítka vespodu stránky.
         V pravém panelu jsou vypsané jednotlivé podkapitoly aktuálního tématu. Po kliknutí na 
-        podtéma se posunete přímo k dané části textu. Ve spodu tohoto panelu si také můžete přepnout 
+        podtéma se posunete přímo k dané části textu. Dole na tomto panelu si také můžete přepnout 
         mezi světlým a tmavým motivem.
       </p>
 
@@ -63,7 +63,7 @@ window.LESSONS = [
 
       <p>
         Na konci kapitol se nachází kvíz, který vám pomůže zkontrolovat, zda jste pochopili probírané téma.
-        Počet pokusů je neomezený a při špatné odpovědi vám ukáže správně řešení.
+        Počet pokusů je neomezený a při špatné odpovědi se vám ukáže správně řešení.
       </p>
 
 <br>
@@ -101,7 +101,7 @@ window.LESSONS = [
       <p>
         Znalost těchto parametrů vám tedy pomůže lépe porozumět tomu, jak různé nastavení ovlivňuje výsledný soubor
         a jak optimalizovat své video pro různé účely. Zároveň se s nimi bude pracovat i v rámci tohoto tutoriálu, 
-        takže se s nimi seznámit předtím, než půjdete dál.
+        bylo by vhodné se s nimi seznámit předtím, než půjdete dál.
       </p>
 
 <br>
@@ -169,7 +169,7 @@ window.LESSONS = [
       </p>
 
       <p>
-        Nejčastěji se dnes setkáte právě s poměrem 16:9, který je dnes standardem pro většinu moderních videí, například pro
+        Nejčastěji se dnes setkáte právě s poměrem 16:9, který je standardem pro většinu moderních videí, například pro
         YouTube nebo filmy. Na sociálních sítích, jako je třeba Instagram, se pro fotky často používá poměr stran 1:1
         (čtverec) a pro novější reels videa zase 9:16 (na výšku).
         Starším poměrem je 4:3, který byl dříve standardem pro televizní vysílání.
@@ -325,7 +325,7 @@ window.LESSONS = [
       <p>
         Zvuk je často opomíjenou, ale velmi důležitou součástí videa. Správná práce se zvukem může výrazně zlepšit
         celkový dojem z videa a pomoci vytvořit požadovanou atmosféru.
-        Prácí se zvukem můžete rozmět například k vyrovnání hlasitosti jednotlivých stop, odstranění šumu,
+        Pod pojmem práce s ezvukem si můžete předsdtavit například vyrovnání hlasitosti jednotlivých stop, odstranění šumu,
         přidání hudby nebo zvukových efektů.
       </p>
 
@@ -340,7 +340,7 @@ window.LESSONS = [
         Práce s efekty a grafickými prvky bývá ze všech fází časově nejnáročnější, hlavně pokud používáte více efektů nebo 
         vytváříte složitější animace. Efekty lze použít k mnoha různým účelům, například k vytvoření přechodů mezi záběry,
         změně perspektivy, či jiným obrazovým úpravám. Grafické prvky, jako jsou titulky, loga nebo jiné vizuální doplňky, 
-        zase mohou pomoci lépe komunikovat informace, zvýraznit důležité části videa nebo jen zlepšit jeho estetiku.
+        zase mohou pomoci lépe předat informace, zvýraznit důležité části videa nebo jen zlepšit jeho estetiku.
       </p>
 
 <br>
@@ -377,25 +377,25 @@ window.LESSONS = [
     title: "Rozhraní a panely",
     subtitle: "Seznámení s panely a workspaces.",
     html: `
-      <h2 id="okno-edit-panely">Okno Edit a panelové prostředí</h2>
+      <h2 id="rezim-edit-panely">Režim Edit a panelové prostředí</h2>
 
       <p>
-        Částí programu, kde budete trávit většinu času, je okno Edit. Toto okno slouží jako hlavní pracovní plocha, která je dále rozdělena
+        Částí programu, kde budete trávit většinu času, je Edit mode. Tento režim slouží jako hlavní pracovní plocha, která je dále rozdělena
         do jednotlivých panelů. To jsou samostatné části rozhraní, které mají specifickou funkci, například náhled videa nebo
         zobrazení seznamu importovaných materiálů.
       </p>
 
       
       <figure class="doc_figure doc_figure--large">
-        <img src="img/kapitola_4/okno_edit.png" alt="Ukázka edit okna">
+        <img src="img/kapitola_4/rezim_edit.png" alt="Režim Edit rozhraní">
 
         <figcaption>
-          <div class="figure_title">Okno Edit</div>
+          <div class="figure_title">Režim Edit</div>
         </figcaption>
       </figure>
 
       <p>
-        Premiere Pro poskytuje různé přednastavené workspaces, česky pracovní plochy, což jsou již připravené rozvržení panelů. 
+        Premiere Pro poskytuje různé přednastavené workspaces, česky pracovní plochy, což jsou již připravená rozvržení panelů. 
         Jednotlivé předkonfigurované workspaces jsou přizpůsobeny pro různé účely, například pro práci se zvukem nebo pro barevné úpravy.
         Jako uživatel mezi nimy můžete přepínat v pravém horním rohu rozhraní pod tlačítkem Workspaces. Alternativně je můžete 
         najít v záložce Window > Workspaces.
@@ -576,5 +576,195 @@ window.LESSONS = [
 
     `,
     quizKey: "rozhrani",
+  },
+
+  {
+    id: "projekt",
+    menu: "Projekt",
+    title: "Projekt v Premiere Pro",
+    subtitle: "Vytvoření a nastavení projektu.",
+    html: `
+      <h2 id="co-je-projekt">Co je to projekt?</h2>
+      <p>
+        Projekt představuje základní pracovní soubor v programu Adobe Premiere Pro, ve kterém jsou uloženy informace o práci uživatele.
+        Neobsahuje však samotné video, audio ani obrazová data, ale pouze odkazy na tyto soubory a informace o tom, jak jsou
+        použity.
+      </p>
+
+      <p>
+        Jinými slovy, projekt funguje jako \"návod\", podle kterého program skládá výsledné video. Ukládá například informace o tom, jaké
+        klipy jsou použity, v jakém pořadí jsou umístěny na časové ose nebo jaké efekty jsou aplikovány. Důsledkem tohoto principu je, že
+        projekt je závislý na původních souborech. Pokud by došlo k jejich přesunutí, přejmenování nebo smazání, Premiere Pro 
+        je nedokáže automaticky najít a je potřeba je znovu propojit.
+      </p>
+
+<br>
+
+      <h2 id="vytvoreni-projektu">Vytvoření projektu</h2>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_5/uvodni_okno.png" alt="Uvodní okno">
+
+        <figcaption>
+          <div class="figure_title">Uvodní okno</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Projekt lze vytvořit po spuštění programu pomocí tlačítka New Project, nebo přes nabídku File > New > Project.
+        Po zvolení této možnosti se zobrazí dialog, ve kterém lze zadat název projektu a vybrat jeho umístění. Název projektu 
+        by měl co nejlépe vystihovat jeho obsah a zvolené umístění by mělo odpovídat způsobu organizace pracovních souborů. 
+        V praxi je vhodné vytvořit pro každý projekt samostatnou složku, do které budou ukládány také související materiály. 
+        Takové uspořádání usnadňuje orientaci a snižuje riziko ztráty vazeb mezi projektem a použitými soubory.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_5/dialog_projekt.png" alt="Dialog pro vytvoření projektu">
+
+        <figcaption>
+          <div class="figure_title">Dialog pro vytvoření projektu</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Součástí dialogu pro vytvoření projektu je také možnost zvolit Template, tedy přednastavenou šablonu projektu. 
+        Tyto šablony jsou přizpůsobeny různým typům výstupu a mohou obsahovat například předem připravené sekvence nebo uspořádání 
+        vhodné pro konkrétní způsob použití. Premiere Pro nabízí například šablonu Social Media Template Project, která je 
+        určena pro sociální sítě a je nastavena tak, aby lépe odpovídala formátům videí publikovaných na těchto platformách. 
+        Kromě přednastavených šablon je možné využít i vlastní šablony nebo šablony získané z jiných zdrojů.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_5/project_settings.png" alt="Pokročilé nastavení projektu">
+
+        <figcaption>
+          <div class="figure_title">Pokročilé nastavení projektu</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Pro pokročilá nastavení projektu lze využít ikonu ozubeného kolečka vedle tlačítka Create. 
+        Po jeho stisknutí se zobrazí okno, ve kterém lze nastavit například způsob zobrazení času v projektu, 
+        tedy zda bude délka a pozice klipů vyjadřována pomocí časového kódu (Timecode) nebo počtem snímků (Frames). 
+        Dále je možné určit i další parametry, například umístění dočasných souborů vznikajících během práce. 
+        Pokud je potřeba tato nastavení změnit později, lze je otevřít také přes nabídku File > Project Settings > General, 
+        případně v jiné odpovídající kategorii nastavení.
+      </p>
+
+<br>
+
+      <h2 id="import-materialu">Import materiálů</h2>
+      <p>
+        Po vytvoření projektu je potřeba do něj importovat materiály, se kterými budete pracovat. Pokud jste v dialogovém okně 
+        pro vytvoření projektu nezaškrtli možnost Skip Import mode, tak po zvolení Create se vám program automaticky přepne do režimu
+        Import.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_5/import_rezim.png" alt="Import režim">
+
+        <figcaption>
+          <div class="figure_title">Režim Import</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Zde můžete procházet složky vašeho počítače či připojených zařízení a vybírat soubory, které chcete do projektu přidat.
+        Při přejetí nad souborem se vám zobrazí náhled a zaškrtávací políčko, pro vybrání daného souboru pak stačí kliknout.
+        Materiály, zvolené pro import, budou mít políčko zaškrtnuuté, opětovným stisknutím políčka jej odeberete z výběru.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_5/organize_media.png" alt="Organize media">
+
+        <figcaption>
+          <div class="figure_title">Organize media</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        V pravé části rozhraní se nachází sekce Import settings. V záložce Organize Media je možnost vytvořit a pojmenovat bin, do kterého se
+        zvolené materiály při importu automaticky umístí.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_5/create_new_sequence.png" alt="Create new sequence">
+
+        <figcaption>
+          <div class="figure_title">Create new sequence</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Dále je v této sekci možné zaškrtnout možnost Create new sequence. Toto nastavení vytvoří př importu novou sekvenci na časové ose
+        a do ní umístí importované klipy.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_5/auto_transcribe.png" alt="Automatic transcription">
+
+        <figcaption>
+          <div class="figure_title">Automatic transcription</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        V případě, že budete pro váš projekt potřebovat vytvořit titulky, můžete zaškrtnout možnost Automatic transcription. Program
+        pak automaticky přepíše mluvenou řeč importovaných souborů do transkriptu. Lze zde nastavit jazyk, ve kterém se bude přepis
+        provádět, avšak v době psaní tohoto textu není zatím podporována čeština. Premiere Pro dokáže rozlišovat mezi různými
+        mluvčími, to lze zapnout v poli Speaker Labeling.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_5/media_analysis.png" alt="Media analysis">
+
+        <figcaption>
+          <div class="figure_title">Media analysis</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Poslední záložkou v sekci Import Settings je Media analysis. Pokud tuto možnost zvolíte, program provede analýzu
+        naimportovaných souborů. Díky tomu je pak možné vyhledávat mezi materiály podle obrazových či audio vlastností.
+      </p>
+
+      <p>
+        Poté, co zvolíte materiály a nastavíte import, stačí kliknout na tlačítko Import a zvolené soubory se přidají do projektu. 
+      </p>
+
+<br>
+
+      <h2 id="organizace-materialu">Organizace materiálů</h2>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_5/new_bin.png" alt="Vytvoření binu">
+
+        <figcaption>
+          <div class="figure_title">Vytvoření binu</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Po importu najdete všechny propojené materiály v Project panelu. Dobrou praxí je si tyto materiály logicky organizovat. K tomu 
+        slouží právě bins, tedy logické složky v rámci projektu, do kterých můžete mateiály třídit. Bin lze vytvořit kliknutím
+        pravým tlačítkem myši do prázdného prostoru v panelu Project a zvolením možnosti New Bin. Bin je možné pojmenovat
+        a materiály do něj vložíte přetažením.
+      </p>
+
+      <p>
+        Struktura bins by měla být přehledná a mělo by být jasné, co v jednotlivých složkách najdete. Rozdělení bins může být například:
+      </p>
+
+      <ul>
+        <li>Videa - pro video soubory</li>
+        <li>Obrázky - pro obrázkové soubory</li>
+        <li>Hudba - pro soubory s hudbou</li>
+        <li>Zvukové efekty - pro soubory se zvukovými efekty</li>
+        <li>Sekvence - pro jednotlivé sekvence</li>
+        <li>Grafika - pro grafické prvky vytvořené v programu</li>
+      </ul>
+
+    `,
+    quizKey: "projekt",
   }
 ];

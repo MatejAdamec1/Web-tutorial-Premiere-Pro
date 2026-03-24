@@ -38,7 +38,9 @@ window.LessonView = {
       }, [
         m.trust(lesson.html),
 
-        quiz ? [m(window.QuizModule, { key: lesson.id, questions: quiz , title: lesson.title})] : null,
+        quiz
+          ? [m(window.QuizModule, { key: lesson.id, questions: quiz, title: lesson.title })]
+          : null,
 
         m(".lesson_nav", [
           prev
@@ -47,7 +49,26 @@ window.LessonView = {
           next
             ? m("a.lesson_navBtn.next", { href: "#!/" + next.id, oncreate: m.route.link }, `${next.menu} →`)
             : null
-        ])
+        ]),
+
+        lesson.sources && lesson.sources.length
+          ? m(".lesson_sources", [
+              m("h3", {id: "zdroje"}, "Zdroje"),
+              m("ul",
+                lesson.sources.map((source) =>
+                  m("li",
+                    source.url
+                      ? m("a", {
+                          href: source.url,
+                          target: "_blank",
+                          rel: "noopener noreferrer"
+                        }, source.text)
+                      : m("span", source.text)
+                  )
+                )
+              )
+            ])
+          : null
       ])
     ]);
   }

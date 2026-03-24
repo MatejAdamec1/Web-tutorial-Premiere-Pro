@@ -251,6 +251,28 @@ window.LESSONS = [
       </p>
     `,
     quizKey: "param_vid",
+    sources: [
+      {
+        text: "ALZA, Rozlišení",
+        url: "https://www.alza.cz/slovnik/rozliseni-art17301.htm"
+      },
+      {
+        text: "ADOBE, Select a perfect aspect ratio for your film",
+        url: "https://www.adobe.com/creativecloud/video/discover/aspect-ratio.html"
+      },
+      {
+        text: "ADOBE, What is a frame rate?",
+        url: "https://www.adobe.com/ie/creativecloud/video/discover/frame-rate.html"
+      },
+      {
+        text: "MAGIX, WHAT IS A VIDEO BIT RATE AND HOW IT AFFECTS VIDEO",
+        url: "https://www.vegascreativesoftware.com/us/video-editing/what-is-video-bitrate-and-how-change-easily/"
+      },
+      {
+        text: "ADOBE, Video codec",
+        url: "https://www.adobe.com/creativecloud/file-types/video/codec.html"
+      }
+    ]
   },
 
   {
@@ -369,6 +391,15 @@ window.LESSONS = [
       </p>
     `,
     quizKey: "workflow",
+    sources: [
+      {
+        text: "ADOBE. Assemble and refine footage in post-production process",
+        url: "https://www.adobe.com/creativecloud/video/post-production.html "
+      },
+      {
+        text: "JAGO, Maxim. Adobe Premiere Pro 2025 Release: Classroom in a Book. San Jose, California: Adobe Press, 2025. ISBN 978-0-13-538283-7."
+      }
+    ]
   },
 
   {
@@ -671,7 +702,7 @@ window.LESSONS = [
       <p>
         Zde můžete procházet složky vašeho počítače či připojených zařízení a vybírat soubory, které chcete do projektu přidat.
         Při přejetí nad souborem se vám zobrazí náhled a zaškrtávací políčko, pro vybrání daného souboru pak stačí kliknout.
-        Materiály, zvolené pro import, budou mít políčko zaškrtnuuté, opětovným stisknutím políčka jej odeberete z výběru.
+        Materiály, zvolené pro import, budou mít políčko zaškrtnuté, opětovným stisknutím políčka jej odeberete z výběru.
       </p>
 
       <figure class="doc_figure doc_figure--large">
@@ -730,6 +761,13 @@ window.LESSONS = [
 
       <p>
         Poté, co zvolíte materiály a nastavíte import, stačí kliknout na tlačítko Import a zvolené soubory se přidají do projektu. 
+        Do Import režimu se můžete vždy znovu přepnout pomocí tlačítka Import v levém horním rohu rozhraní.
+      </p>
+
+      <p>
+        Import můžete provést i alternativním způsobem přes nabídku File > Import..., nebo stiskem pravého tlačítka v Project panelu
+        a zvolením možnosti Import... . Následně se otevře okno s průzkumníkem souborů, ve kterém můžete procházet vaše soubory
+        klasickým způsobem.
       </p>
 
 <br>
@@ -745,15 +783,24 @@ window.LESSONS = [
       </figure>
 
       <p>
-        Po importu najdete všechny propojené materiály v Project panelu. Dobrou praxí je si tyto materiály logicky organizovat. K tomu 
+        Po importu najdete všechny propojené materiály v Project panelu. Dobrou praxí je si tyto materiály systematicky organizovat. K tomu 
         slouží právě bins, tedy logické složky v rámci projektu, do kterých můžete mateiály třídit. Bin lze vytvořit kliknutím
-        pravým tlačítkem myši do prázdného prostoru v panelu Project a zvolením možnosti New Bin. Bin je možné pojmenovat
-        a materiály do něj vložíte přetažením.
+        pravým tlačítkem myši do prázdného prostoru v panelu Project a zvolením možnosti New Bin. Je možné ho pojmenovat
+        a materiály do něj vložit přetažením.
       </p>
 
       <p>
-        Struktura bins by měla být přehledná a mělo by být jasné, co v jednotlivých složkách najdete. Rozdělení bins může být například:
+        Struktura bins by měla být přehledná a mělo by být jasné, co v jednotlivých složkách najdete. Rozdělení bins může 
+        vypadat například takto:
       </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_5/bins_ukazka.png" alt="Příklad struktury bins">
+
+        <figcaption>
+          <div class="figure_title">Příklad struktury bins</div>
+        </figcaption>
+      </figure>
 
       <ul>
         <li>Videa - pro video soubory</li>
@@ -761,10 +808,114 @@ window.LESSONS = [
         <li>Hudba - pro soubory s hudbou</li>
         <li>Zvukové efekty - pro soubory se zvukovými efekty</li>
         <li>Sekvence - pro jednotlivé sekvence</li>
-        <li>Grafika - pro grafické prvky vytvořené v programu</li>
+        <li>Grafika - pro grafické objekty vytvořené v programu</li>
       </ul>
+
+      <p>
+        Takové uspořádání vám pomůže rychleji najít potřebné materiály a udržet přehled o tom, co máte k dispozici. 
+        Organizace materiálů je důležitá hlavně u rozsáhlejších projektů, kde pracujete s velkým množstvím souborů.
+      </p>
+
+<br>
+
+    <h2 id="poznamka-organizace">Poznámka k organizaci</h2>
+      <p>
+        Organizace materiálů v rámci projektu je důležitá také pro práci v teamu. Pokud na projektu pracuje více lidí,
+        je potřeba, aby všichni měli přehled o tom, kde se co nachází. Díky tomu se předejde zbytečnému hledání a zmatkům, 
+        které mohou vzniknout.
+      </p>
+
+      <p>
+        Také se doporučuje organizovat materiály již na úrovni souborů v počítači. Například vytvořením složek pro jednotlivé typy
+        materiálů v kořenové složce projektu. Tím zlepšíte přehled i mimo Premiere Pro.
+      </p>
+
+<br>
+<hr>
+<br>
+
+      <h2 id="prakticka-projekt">Praktická část</h2>
+      <p>
+        V této části se prakticky vyzkoušíte postup při zakládání projektu, import materiálů a procesy s tím spojené.
+      </p>
+
+      <h3 id="prakticka-priprava-projektu">Příprava</h3>
+      <p>
+        Před začátkem práce na projektu je potřeba pořídit materiály, které budete v programu upravovat. Pro ukázkový projekt budete
+        pracovat na videu XY.
+      </p>
+
+      <p>
+        Stáhněte si materiály z tohoto odkazu: XYXY
+      </p>
+
+      <p>
+        Po stažení materiálů si v systémové složce Videa vytvořte složku pro tento projekt
+        a pojmenujte jí XY. Do složky umístěte všechny stažené materiály.
+      </p>
+
+      <p>
+        V projektovém adresáři vytvořte složku Videa a umístěte do ní materiály XY. Dále si vytvořte složku Obrázky 
+        a vložte do ní XY.
+      </p>
+
+<br>
+
+      <h3 id="prakticka-zalozeni-projektu">Založení projektu</h3>
+      <p>
+        Otevřete Program Adobe Premiere Pro, zobrazí se vám úvodní okno s nedávno otevřenými projekty. Pokud je toto váš první projekt,
+        seznam bude prázdný. Pro založení nového projektu klikněte na modré tlačítko New Project.
+      </p>
+
+      <p>
+        Otevře se vám formulářové okno, kde nastavte název projektu na XY. V části Location stiskněte tlačítko Browse a 
+        vyberte složku XY, kterou jste pro tento projekt vytvořili. Do této složky se vám pak uloží projektový soubor.
+        U Template zvolte možnost None a ujistěte se, že zaškrtávácí pole Skip Import mode je nevyplněné. 
+        Pokud vše sedí jako na obrázku, stiskněte Create.
+      </p>
+
+      <p>
+        Umístění projektu samozřejmě bude odpovídat složce na vašem počítači, proto není problém pokud není stejné jako na obrázku výše.
+        Pouze se ujistěte, že je to opravdu složka, kterou jste si pro tento projekt vytvořili.
+      </p>
+
+<br>
+
+      <h3 id="prakticka-import">Import souborů</h3>
+      <p>
+        Po stisknutí Create se přepnete do režimu Import. Zde na levém panelu v sekci Local zvolte umístění Movies, které
+        na Windows odpovídá systémové složce Videa. Zde najděte vaši projektovou složku XY, tu otevřete.
+      </p>
+
+      <p>
+        Zobrazí se vám složky Videa a Obrázky, kde máte své materiály. Otevřete složku Videa a zaškrtněte všechny soubory.
+        Tím je vyberete pro import do projektu. V horní části klikněte na XY, tím se vrátíte zpět do adresáře vaší
+        projektové složky. Pokud vyberete pro import celou složku, naimportují se všechny soubory, které se v ní nachází.
+        Vyzkoušejte si to zaškrtnutím složky Obrázky.
+      </p>
+
+      <p>
+        Pokud se vám podařilo zvolit všechny materiály správně, měli byste vidět jejich náhled v dolní části rozhraní.
+        Stiskněte modré tlačítko Import a zvolené soubory se přidají do projektu.
+      </p>
+
+<br>
+
+      <h3 id="prakticka-organizace">Organizace materiálů v projektu</h3>
+      <p>
+        TODO
+      </p>
 
     `,
     quizKey: "projekt",
-  }
+    sources: [
+      {
+        text: "Adobe Help Center – Create a project in Premiere Pro"
+      },
+      {
+        text: "Adobe Help Center – Import media into Premiere Pro",
+        url: "https://helpx.adobe.com/premiere-pro/using/importing-digitizing.html"
+      }
+    ]
+  },
 ];

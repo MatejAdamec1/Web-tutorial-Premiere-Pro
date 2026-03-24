@@ -212,6 +212,17 @@ h1{
   margin-bottom: 0.625rem;
 }
 
+.toc_title-h2 {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.toc_title-h3 {
+  font-size: 0.85rem;
+  margin-left: 12px;
+  color: var(--muted);
+}
+
 .toc_nav{
   flex: 1;
   overflow-y: auto;
@@ -489,6 +500,35 @@ h1{
 
 .doc_table td:first-child{
   font-weight: 600;
+}
+
+.lesson_sources {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.lesson_sources h3 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.05rem;
+}
+
+.lesson_sources ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.lesson_sources li {
+  margin-bottom: 0.45rem;
+}
+
+.lesson_sources a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.lesson_sources a:hover {
+  text-decoration: underline;
 }
 
 

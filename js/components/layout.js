@@ -37,7 +37,8 @@ window.Layout = {
                 e.preventDefault();
                 const el = document.getElementById(item.id);
                 if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-              }
+              },
+              class: item.level === "H3" ? "toc_title-h3" : "toc_title-h2"
             }, item.text)
           )
         ),

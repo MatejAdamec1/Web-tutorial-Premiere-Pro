@@ -1253,12 +1253,226 @@ window.LESSONS = [
       </figure>
 
       <p>
-        
+        Přiblížený klip vypadá následovně. Ve video stopě vidíte jednoduchý přednáhled obrazu, ve stopě audia pak vlnovku,
+        která znázorňuje amplitudu zvuku.
+      </p>
 
+      <p>
+        V levé části Timeline panelu se nachází možnosti pro zobrazení jednotlivých vrstev. Nad nimy je časový kod, 
+        který znázorňuje pozici přehrávací hlavy na časové ose. Přehrávací hlava je svislá čára, která ukazuje aktuální pozici v sekvenci,
+        podle její pozice se mění hodnota v časovém kodu a náhled v Program monitoru. Je možné s ní pohybovat kliknutím do oblasi
+        v horní části Timeline panelu, nebo po jedotlivých snímcích pomocí šipek na klávesnici.
+      </p>
 
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_6/prakt_nahled.png" alt="Náhled v Program monitoru">
+
+        <figcaption>
+          <div class="figure_title">Náhled v Program monitoru</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Program monitor zobrazuje náhled aktuální pozice přehrávací hlavy na časové ose. V ovládací části naspodu tohot panelu je možné
+        kliknout na tlačítko Play. Tím se spustí přehrávání sekvence od původní pozice přehrávací hlavy. Toto přehrávání je možné zastavit
+        stiskem tlačítka Stop, které při přehrávání nahradí tlačítko Play. Pro přehrávání a zastavení lze také použít mezerník
+        na klávesnici.
+      </p>
+
+<br>
+
+      <h3 id="prakticka-vnorene-sekvence">Vnořené sekvence</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_6/prakt_nest1.png" alt="Vložení klipů pro vytvoření vnořené sekvence">
+
+        <figcaption>
+          <div class="figure_title">Vložení klipů pro vytvoření vnořené sekvence</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Pro ukázku vnořené sekvence použijte klipy logo_bílá.png a logo_černá.png, které máte v binu Obrázky. 
+        Přetáhněte je oba na časovou osu, za nádraží1.mov, a umístěte je vedle sebe.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_6/prakt_nest2.png" alt="Tvorba vnořené sekvence">
+
+        <figcaption>
+          <div class="figure_title">Tvorba vnořené sekvence</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Nyní označte oba klipy s logem a klikněte na ně pravým tlačítkem myši, v kontextovém menu zvolte možnost Nest... .
+        Otevře se formulář pro zadání názvu nové sekvence, pojmenujte ji Logo animace a stiskněte Ok.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_6/prakt_nest3.png" alt="Organizace vnořené sekvence na Project panelu">
+
+        <figcaption>
+          <div class="figure_title">Organizace vnořené sekvence na Project panelu</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        V Project panelu se vám vytvoří nová sekvence, pro udržení organiza ji přetáhněte do binu sekvence.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_6/prakt_nest4.png" alt="Vnořená sekvence na časové ose">
+
+        <figcaption>
+          <div class="figure_title">Vnořená sekvence na časové ose</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Na časové ose se původní klipy s logem nahradily novou vnořenou sekvencí. Ta funguje jako běžný klip, který můžete přesouvat,
+        stříhat nebo upravovat efekty. Pokud chcete upravit obsah vnořené sekvence, stačí na ni dvakrát rychle kliknout 
+        levým tlačítkem myši. Tím se vám otevře časová osa této vnořené sekvence, kde můžete pracovat s jednotlivými klipy uvnitř ní.
+      </p>
+
+      <p>
+        Mezi jednotlivými sekvencemi na Timeline panelu se můžete přepínat kliknutím na záložky s jejich názvy v horní
+        části tohoto panelu.
+      </p>
 
     `,
     quizKey: "sekvence",
+    sources: []
+  },
+
+  {
+    id: "strih",
+    menu: "Základy střihu",
+    title: "Základy střihu",
+    subtitle: "Seznámení se základními nástroji pro střih a úpravu klipů na časové ose.",
+    html: `
+      <h2 id="prace-v-source-panelu">Práce v Source panelu</h2>
+      <p>
+        Aby bylo možné začít stříhat, je potřeba vložit klipy do sekvence. Jak již bylo zmíněno v předchozí kapitole,
+        klipy lze přetáhnout z Project panelu přímo na časovou osu. Tento způsob vloží klip do sekvence celý.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_7/source_panel.png" alt="Source panel">
+
+        <figcaption>
+          <div class="figure_title">Source panel</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Další možností, jak vložit klip do sekvence, je s využitím Source panelu. Dvojklikem na klip v Projcet panelu se 
+        otevře Source panel. Zde můžete klip přehrát, podobně jako v Program monitoru, navíc je zde možnost nastavit tzv. In a Out
+        points, tedy vstupní a výstupní body. In point označuje začátek části klipu, Out point pak konec. Nastavením těchto bodů
+        lze oříznout klip ještě před vložením do sekvence.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_7/source_panel2.png" alt="Popis Source panelu">
+
+        <figcaption>
+          <div class="figure_title">Popis Source panelu</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        In a Out body lze nastavit pomocí tlačítek pod náhledem v Source panelu. Na ose v panelu se následně zvýtrazní plocha,
+        která je těmito body ohraničena. Pokud je potřeba In a Out body odstranit, stačí kliknout na osu pravým
+        tlačítkem myši a zvolit Clear In and Out.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_7/source_panel3.png" alt="Tlačítka Insert a Overwrite">
+
+        <figcaption>
+          <div class="figure_title">Tlačítka Insert a Overwrite</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Do sekvence je možné vložit celý, nebo oříznutý, klip pomocí tlačítka Insert nebo Overwrite, které se nachází ve spodní části
+        panelu. Insert vloží klip na pozici přehrávací hlavy a pokud se hlava nachází uprostřed jiného, již vloženého klipu,
+        vytvoří se střih a vkládaný klip se vloží mezi dvě části původního klipu. Při použití Overwrite se klip vloží na pozici
+        přehrávací hlavy, ale pokud se hlava nachází uprostřed jiného klipu, ten se nepřestřihne, ale přepíše se překrývající se část.
+      </p>
+
+<br>
+
+      <h2 id="zpusoby-strihu-timeline">Způsoby střihu na Timeline panelu</h2>
+
+      <h3 id="trimming">Trimming</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_7/trimming.png" alt="Trimming klipu">
+
+        <figcaption>
+          <div class="figure_title">Trimming klipu</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Trimování je způsob úpravy délky klipu přímo na Timeline panelu. Pomocí Selection naástroje, který lze zvolit v 
+        Tools panelu nebo pomocí klávesové zkratky V, je možé chytit okraj klipu. Tažením okraje se pak jeho délka zkracuje nebo
+        prodlužuje.
+      </p>
+
+      <h3 id="razor-tool">Razor Tool</h3>
+
+      <p>
+        Razor Tool, nebo také nástroj žiletka, je hlavním nástrojem pro střih. Lze ho zvolit buď v Tools panelu, nebo pomocí
+        klávesové zkratky C. Po zvolení tohoto nástroje se kurzor myši změní na ikonu žiletky. Kliknutím na klip na časové ose
+        se klip přestřihne na dvě části v místě kliknutí.
+      </p>
+
+      <p>
+        Pokud je potřeba klip znovu spojit, například v případě chybného střihu, je potřeba přepnout zpět na Selection Tool.
+        Následně je možné kliknout pravým tlačítkem na místo střihu a zvolit možnost Join Through Edits. Tím se dvě části klipu 
+        spojí zpět do jednoho klipu. Aby bylo možné klipy zpět spojit, je potřeba, aby mezi nimi nebyla mezera a nechyběla
+        žádná část původního klipu.
+      </p>
+
+      <h3 id="slip-tool">Slip Tool</h3>
+
+      <p>
+        Slip Tool je nástroj pro posouvání obsahu klipu, aniž by se měnila jeho délka nebo pozice na časové ose. Lze ho zvolit v Tools panelu
+        nebo pomocí klávesové zkratky Y. Po zvolení tohoto nástroje se kurzor myši změní na ikonu s dvěma šipkami směřujícími proti sobě.
+        Kliknutím a tažením klipu s tímto nástrojem se posouvá jeho obsah, zatímco začátek a konec klipu zůstávají na stejném místě.
+      </p>
+
+      <h3 id="ripple-edit-tool">Ripple Edit Tool</h3>
+
+      <p>
+        Ripple Edit Tool je nástroj pro úpravu délky klipu, který zároveň posouvá všechny následující klipy na časové ose, tak 
+        aby se přizpůsobily nové délce upravovaného klipu. Lze ho zvolit v Tools panelu nebo pomocí klávesové zkratky B. 
+        Kliknutím a tažením okraje klipu s tímto nástrojem se mění jeho délka, přičemž všechny následující klipy se posouvají, 
+        aby nedošlo k mezeře mezi nimi.
+      </p>
+
+      <h3 id="ripple-delete">Ripple Delete</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_7/ripple_delete.png" alt="Ripple Delete">
+
+        <figcaption>
+          <div class="figure_title">Ripple Delete</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Při odstranění části uprostřed klipu, nepříklad pomocí Razor Tool, vznikne mezi dvěma zbývajícími částmi mezera.
+        Mezeru je možné odstranit přetažením jedné části klipu k druhé, pokud jsou ale v sekvenci další objekty, vytvoří se další
+        mezera za posunutým klipem. Existuje proto způsob, jak tuto mezeru osdtranit bez toho, aby se vytvořila další.
+        Stačí na ni kliknout pravým tlačítkem myši a zvolit možnost Ripple Delete. Tím se mezera odstraní a všechny následující 
+        klipy se posunou.
+      </p>
+
+    `,
+    quizKey: "strih",
     sources: []
   },
 ];

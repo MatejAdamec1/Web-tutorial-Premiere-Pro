@@ -842,34 +842,68 @@ window.LESSONS = [
       <h3 id="prakticka-priprava-projektu">Příprava</h3>
       <p>
         Před začátkem práce na projektu je potřeba pořídit materiály, které budete v programu upravovat. Pro ukázkový projekt budete
-        pracovat na videu XY.
+        pracovat na videu o cestě vlakem a materiály budete mít připravené níže.
       </p>
 
       <p>
         Stáhněte si materiály z tohoto odkazu: XYXY
       </p>
 
-      <p>
-        Po stažení materiálů si v systémové složce Videa vytvořte složku pro tento projekt
-        a pojmenujte jí XY. Do složky umístěte všechny stažené materiály.
-      </p>
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_5/prakt_tvorba_slozky.png" alt="Tvorba složky pro projekt">
+
+        <figcaption>
+          <div class="figure_title">Tvorba složky pro projekt</div>
+        </figcaption>
+      </figure>
 
       <p>
-        V projektovém adresáři vytvořte složku Videa a umístěte do ní materiály XY. Dále si vytvořte složku Obrázky 
-        a vložte do ní XY.
+        Po stažení materiálů si v systémové složce Videa vytvořte složku pro tento projekt
+        a pojmenujte jí Cesta vlakem - projekt. Stažený soubor s materiály otevřete v rozbalovacím programu, například WinRar nebo 7-Zip.
+        Materiály ze zipu rozbalte do složky Cesta vlakem - projekt.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_5/prakt_tvorba_extrakt.png" alt="Tvorba složek Videa a Obrázky">
+
+        <figcaption>
+          <div class="figure_title">Tvorba složek Videa a Obrázky</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Následně si adresář otevřete a zde vytvořte složku Videa, umístěte do ní materiály nádraží1.mov, nádraží2.mov, cesta_vlakem1.mov,
+        cesta_vlakem2.mov a cesta_vlakem3.mov. Dále si zde vytvořte složku Obrázky a přesuňte do ní soubory logo_bílá.png a logo_černá.png.
       </p>
 
 <br>
 
       <h3 id="prakticka-zalozeni-projektu">Založení projektu</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_5/prakt_uvodni.png" alt="Úvodní okno">
+
+        <figcaption>
+          <div class="figure_title">Úvodní okno</div>
+        </figcaption>
+      </figure>
+
       <p>
         Otevřete Program Adobe Premiere Pro, zobrazí se vám úvodní okno s nedávno otevřenými projekty. Pokud je toto váš první projekt,
         seznam bude prázdný. Pro založení nového projektu klikněte na modré tlačítko New Project.
       </p>
 
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_5/prakt_dialog.png" alt="Formulář pro založení projektu">
+
+        <figcaption>
+          <div class="figure_title">Formulář pro založení projektu</div>
+        </figcaption>
+      </figure>
+
       <p>
-        Otevře se vám formulářové okno, kde nastavte název projektu na XY. V části Location stiskněte tlačítko Browse a 
-        vyberte složku XY, kterou jste pro tento projekt vytvořili. Do této složky se vám pak uloží projektový soubor.
+        Otevře se vám formulářové okno, kde nastavte název projektu na Cesta vlakem. V části Location stiskněte tlačítko Browse a 
+        vyberte složku Cesta vlakem - projekt, kterou jste pro tento projekt vytvořili. Do této složky se vám pak uloží projektový soubor.
         U Template zvolte možnost None a ujistěte se, že zaškrtávácí pole Skip Import mode je nevyplněné. 
         Pokud vše sedí jako na obrázku, stiskněte Create.
       </p>
@@ -882,40 +916,349 @@ window.LESSONS = [
 <br>
 
       <h3 id="prakticka-import">Import souborů</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_5/prakt_import1.png" alt="Umístění projektové složky v režimu Import">
+
+        <figcaption>
+          <div class="figure_title">Umístění projektové složky v režimu Import</div>
+        </figcaption>
+      </figure>
+
       <p>
         Po stisknutí Create se přepnete do režimu Import. Zde na levém panelu v sekci Local zvolte umístění Movies, které
-        na Windows odpovídá systémové složce Videa. Zde najděte vaši projektovou složku XY, tu otevřete.
+        na Windows odpovídá systémové složce Videa. Zde najděte vaši projektovou složku Cesta vlakem - projekt, tu otevřete.
       </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_5/prakt_import2.png" alt="Import materiálů">
+
+        <figcaption>
+          <div class="figure_title">Import materiálů</div>
+        </figcaption>
+      </figure>
 
       <p>
         Zobrazí se vám složky Videa a Obrázky, kde máte své materiály. Otevřete složku Videa a zaškrtněte všechny soubory.
-        Tím je vyberete pro import do projektu. V horní části klikněte na XY, tím se vrátíte zpět do adresáře vaší
+        Tím je vyberete pro import do projektu. V horní části klikněte na Cesta vlakem - projekt, tím se vrátíte zpět do adresáře vaší
         projektové složky. Pokud vyberete pro import celou složku, naimportují se všechny soubory, které se v ní nachází.
         Vyzkoušejte si to zaškrtnutím složky Obrázky.
       </p>
 
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_5/prakt_import3.png" alt="Náhled zvolených materiálů">
+
+        <figcaption>
+          <div class="figure_title">Náhled zvolených materiálů</div>
+        </figcaption>
+      </figure>
+
       <p>
         Pokud se vám podařilo zvolit všechny materiály správně, měli byste vidět jejich náhled v dolní části rozhraní.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_5/prakt_import4.png" alt="Import settings">
+
+        <figcaption>
+          <div class="figure_title">Import settings</div>
+        </figcaption>
+      </figure>      
+
+      <p>
+        V panelu Import settings, zvolte pouze možnost Media analysis.
         Stiskněte modré tlačítko Import a zvolené soubory se přidají do projektu.
       </p>
 
 <br>
 
       <h3 id="prakticka-organizace">Organizace materiálů v projektu</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_5/prakt_organ1.png" alt="Project panel po importu">
+
+        <figcaption>
+          <div class="figure_title">Project panel po importu</div>
+        </figcaption>
+      </figure>     
+
       <p>
-        TODO
+        Po importu bude váš Project panel vypadat podobně jako na obrázku. Zatím není složité se mezi malým počtem materiálů orientovat,
+        ale jakmile byste pracovali v rozsáhlejším projektu, mohli byste se ztratit v množství souborů. Proto je dobrou praxí si 
+        materiály organizovat, například podle tipu souboru.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_5/prakt_organ2.png" alt="Tvorba Binů">
+
+        <figcaption>
+          <div class="figure_title">Tvorba Binů</div>
+        </figcaption>
+      </figure>     
+
+      <p>
+        Vytvořte si pomocí tlačítka New Bin dva biny, ty pojmenujte Videa a Obrázky.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_5/prakt_organ3.png" alt="Tvorba Binů">
+
+        <figcaption>
+          <div class="figure_title">Tvorba Binů</div>
+        </figcaption>
+      </figure>  
+
+      <p>
+        Dále přetažením roztřiďte materiály do binů. Pokud nevíte, kam jednotlivé materiály patří, vzpomeňte si na souborovou strukturu 
+        vaší projektové složky, kde také máte složky Videa a Obrázky. Obsah binů v programu bude odpovídat obsahu těchto složek.
+      </p>
+
+      <p>
+        Nyní jste úspěšně založili projekt, naimportovali materiály a zorganizovali je v rámci projektu. Abyste uložili svou práci
+        můžete použít klávesovou zkratku Ctrl + S, nebo záložku File > Save. Projektový soubor se uloží do složky 
+        Cesta vlakem - projekt.
       </p>
 
     `,
     quizKey: "projekt",
-    sources: [
-      {
-        text: "Adobe Help Center – Create a project in Premiere Pro"
-      },
-      {
-        text: "Adobe Help Center – Import media into Premiere Pro",
-        url: "https://helpx.adobe.com/premiere-pro/using/importing-digitizing.html"
-      }
-    ]
+    sources: []
+  },
+
+  {
+    id: "sekvence",
+    menu: "Sekvence a časová osa",
+    title: "Sekvence a časová osa",
+    subtitle: "Seznámení se sekvencemi a prací na časové ose.",
+    html: `
+      <h2 id="co-je-sekvence">Co je to sekvence?</h2>
+      <p>
+        Pojem sekvence označuje samostatný objekt, který představuje pracovní prostor pro střih videa. 
+        V rámci projektu může existovat více sekvencí, přičemž každá z nich funguje nezávisle na ostatních.
+      </p>
+
+      <p>
+        Představte si, že máte prázdný list papíru. Na ten postupně přilepujete obrázky, kreslíte tvary nebo 
+        přidáváte další listy. Tento list je analogií k sekvenci v Premiere Pro. Jednotlivé prvky 
+        na něm představují klipy, grafiku, titulky nebo zvukové stopy. Výsledkem je postupně sestavený celek, 
+        tedy výsledné video.
+      </p>
+
+      <p>
+        Každá sekvence má svou vlastní pracovní plochu, kterou je časová osa (timeline). Ta určuje nejen pořadí 
+        jednotlivých klipů, ale také jejich délku, vzájemné překrývání a synchronizaci obrazu se zvukem. 
+        Právě práce na časové ose tvoří základ digitálního střihu.
+      </p>
+
+      <p>
+        V praxi se často používá více sekvencí v rámci jednoho projektu. Například si můžete vytvořit jednu sekvenci 
+        pro hrubý střih, jinou pro finální verzi nebo oddělené sekvence pro jednotlivé části videa. Tyto sekvence lze 
+        následně kombinovat, například vkládáním jedné sekvence do druhé. Vložené sekvence se v Premiere Pro nazývají
+        Nested sequences.
+      </p>
+
+      <h2 id="vytvoreni-sekvence">Vytvoření sekvence</h2>
+      <p>
+        Sekvenci lze vytvořit několika způsoby. Prvním z nich je, jak bylo zmíněno v minulé kapitole, zaškrtnutí možnosti
+        Create new sequence při importu materiálů. Tím se vytvoří nová sekvence, která má na časové ose vložené
+        importované materiály.
+      </p>
+
+      <p>
+        Další způsob umožňuje vytvořit sekvenci přímo z klipů. Pokud vyberete jeden či více klipů v Project panelu a kliknete na ně
+        pravým tlačítkem myši, zobrazí se nabídka, kde lze zvolit možnost New Sequence From Clip. Toto vytvoří novou sekvenci,
+        která bude mít na časové ose umístěny zvolené klipy. Parametry této sekvence se automaticky přizpůsobí vlastnostem klipů.
+      </p>
+
+      <p>
+        Třetím způsobem je manuální vytvoření skrze New Item tlačítko ve spodní části Project panelu. Po kliknutí na tento symbol
+        se zobrazí nabídka, kde se při zvolení možnosti Sequence otevře dialog pro nastavení parametrů nové sekvence. Po nastavení
+        a stisknutí Ok se prázdná sekvence vloží do projektu.
+      </p>
+
+      <p>
+        Možností, jak vytvořit sekvenci je více, ale pro potřeby tutoriálu jsou tyto tři dostačující.
+      </p>
+
+      <h2 id="nastaveni-sekvence">Nastavení sekvence</h2>
+      <p>
+        Každá sekvence má vlastní parametry, které ovlivňují výslednou podobu videa. Mezi ty základní 
+        patří rozlišení, snímková frekvence (FPS) a display format, tedy způsob zobrazení času na časové ose.
+        Tato nastavení určují, jakým způsobem budou klipy v sekvenci interpretovány. Například rozdílná snímková frekvence 
+        může ovlivnit plynulost pohybu, zatímco rozlišení určuje kvalitu obrazu.
+      </p>
+
+      <p>
+        V rámci jednoho projektu je možné pracovat s více sekvencemi s odlišnými parametry. Jedna sekvence může být 
+        například určena pro klasické video v poměru stran 16:9, zatímco jiná může být optimalizována pro sociální sítě 
+        ve vertikálním formátu 9:16.
+      </p>
+
+      <p>
+        Pokud vytvoříte sekvenci skrze New Item, otevře se vám dialog pro nastavení parametrů. Zde můžete vybrat jednu z šablon, nebo
+        nastavení přizpůsobit ručně. Další možností jak otevřík okno pro nastavení sekvence je přes pravé kliknutí myši
+        na danou sekvenci a zvolení Sequence Settings... .
+      </p>
+
+<br>
+
+      <h2 id="vnorene-sekvence">Vnořené sekvence</h2>
+      <p>
+        Anglicky Nested sequences, jsou sekvence vložené do jiné sekvence. Fungují jako samostatné klipy, které lze umístit 
+        na časovou osu stejně jako běžné klipy. Tímto způsobem je možné například vytvořit složitější kompozici, která se 
+        skládá z několika částí, a tu pak vložit do hlavní sekvence jako jednotný objekt.
+      </p>
+
+      <p>
+        Jsou užitečné pokud máte určitou část videa, kterou je potřeba použít opakovaně, například
+        animace loga s textem. Místo toho, abyste tuto animaci vytvářeli znovu pro každé použití, stačí z dané části udělat vnořenou
+        sekvenci.
+      </p>
+
+      <p>
+        Vnořenoou sekvenci vytvoříte na časové ose tak, že vyberete klipy, které chcete do sekvence vložit, kliknete na ně pravým
+        tlačítkem myši a zvolíte možnost Nest... . Otevře se formulář pro zadání jména sekvence, po jeho vyplnění a stisknutí Ok se
+        nová sekvence objeví v Project panelu a vloží se namísto původních označených klipů na časové ose.
+      </p>
+
+<br>
+<hr>
+<br>
+
+      <h2 id="sekvence-prakticka">Praktická část</h2>
+      <p>
+        V této části se prakticky vyzkoušíte postup při zakládání sekvence, vkládání klipů na časovou osu a práci s vnořenými sekvencemi.
+        Před začátkem si otevřete projekt, který jste vytvořili v minulé kapitole.
+      </p>
+
+      <h3 id="prakticka-tvorba-sekvence">Tvorba sekvence</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_6/prakt_tvorba1.png" alt="Tvorba sekvence">
+
+        <figcaption>
+          <div class="figure_title">Tvorba sekvence</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Vespodu Project panelu klikněte na tlačítko New Item a zvolte možnost Sequence... .
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_6/prakt_tvorba2.png" alt="Formulář pro tvorbu sekvence">
+
+        <figcaption>
+          <div class="figure_title">Formulář pro tvorbu sekvence</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Otevře se vám formulář pro vytvoření sekvence, kde lze nastavit i jednotlivé její parametry. Pro teď pouze použijte šablonu
+        HD 1080p 23.976 fps. Tato šablona má přednastavené parametry pro FullHD video, které má snímkovou frekvenci 23.976 FPS.
+        Ve spodní části nastavte název sekvence na Hlavní sekvence. Pokud vaše nastavení odpovídá obrázku výše, stiskněte Ok.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_6/prakt_tvorba3.png" alt="Organizace sekvence na Project panelu">
+
+        <figcaption>
+          <div class="figure_title">Organizace sekvence na Project panelu</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        V Project panelu se vám vytvoří nový objekt vaší sekvence. Pro udržení organizační struktury z minulé kapitoly
+        si vytvořte nový bin a pojmenujte ho sekvence. Sem budete dávat všechny další sekvence v tomto projektu.
+        Přetáhnutím přesuňte Hlavní sekvenci do tohoto binu.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_6/prakt_timeline1.png" alt="Nová sekvence na Timeline panelu">
+
+        <figcaption>
+          <div class="figure_title">Nová sekvence na Timeline panelu</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Timeline panel vám po vytvoření otevře novou sekvenci. Všimněte si, že sekvence obsahuje několik vrstev, konkrétně dvě
+        pro video a dvě pro audio. Počet vrstev je možné později podle potřeby změnit.
+      </p>
+
+<br>
+
+      <h3 id="prakticka-klipy">Práce s klipy</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_6/prakt_timeline2.png" alt="Vložení klipu do sekvence">
+
+        <figcaption>
+          <div class="figure_title">Vložení klipu do sekvence</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Nyní si otevřete bin Videa, kde máte naimportované klipy. Vyberte klip nádraží1.mov a přetáhněte ho do Timeline panelu.
+        Na časové ose se vám při přetahování objeví barevný náhled, který ukazuje, kam bude klip umístěn.
+        Tímto jste vložili klip do sekvence.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_6/prakt_timeline3.png" alt="Varování o odlišném nastavení">
+
+        <figcaption>
+          <div class="figure_title">Varování o odlišném nastavení</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Po vložení klipu do sekvence se vám zobrazí varování Clip Mismatch Warning. Toto varování říká, že parametry sekvence
+        a klipu se liší. V tomto případě se jedná o snímkovou frekvenci, protože vaše sekvence je nastavená na 23.976 FSP,
+        zatímco klip má snímkovou frekvenci 29.65 FPS. Rozdíl je způsoben tím, že šablona, kterou jste použili, má nastavené jiné parametry.
+        Aby se sekvence přizpůsobila klipu, stačí kliknout na tlačítko Change sequence settings. Tím se parametry sekvence změní tak,
+        aby odpovídaly parametrům vkládaného klipu.
+      </p>
+
+<br>
+
+      <h3 id="prakticka-casova-osa">Časová osa</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_6/prakt_timeline4.png" alt="Klip na časové ose">
+
+        <figcaption>
+          <div class="figure_title">Klip na časové ose</div>
+        </figcaption>
+      </figure>
+      
+      <p>
+        Klip s nádrazím je složen ze dvou vrstev, video vstvy, kde jsou obrazová data a audio vrstvy, kde jsou zvuková data. 
+        Na časové ose se klip zobrazuje jako blok, který zabírá určitý úsek. Všimněte si ale, že klip vypadá velmi krátký.
+        To je způsobeno tím, že měřítko časové osy je moc malé. Abyste měřítko změnili, podržte levý Alt a scrollujte
+        klečkem myši. Je možné, že se vám nyní klip ztratil, protože měřítko se změnilo a zobrazovaná plocha na časové ose
+        se posunula. Pro pohyb náhledu časové osy použijte kolečko myši, tentokrát bez držení levého Alt.
+      </p>
+
+      <p>
+        Pracovat s měřítkem a pohybem na časové ose je možné i pomocí posuvníku vespodu Timeline panelu. Při chycení kraje posuvníku
+        upravujete měřítko a posouvnáním pohybujete náhledem časové osy.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_6/prakt_timeline5.png" alt="Přiblížený klip na časové ose">
+
+        <figcaption>
+          <div class="figure_title">Přiblížený klip na časové ose</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        
+
+
+
+    `,
+    quizKey: "sekvence",
+    sources: []
   },
 ];

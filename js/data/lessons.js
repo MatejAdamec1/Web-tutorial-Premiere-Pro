@@ -1536,7 +1536,7 @@ window.LESSONS = [
       <h2 id="strih-prakticka">Praktická část</h2>
 
       <p>
-        V této části se prakticky vyzkoušíte základní nástroje pro střih a práci s vrstvami. 
+        V této části se prakticky vyzkoušíte základní nástroje a způsoby střihu. 
         Před začátkem si otevřete projekt Cesta vlakem.
       </p>
 
@@ -1696,8 +1696,31 @@ window.LESSONS = [
       jako Ripple Delete, ale odstraní všechny mezery v sekvenci najednou.
     </p>
 
-    `,
+    <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_7/prakt_final.png" alt="Finální stav časové osy">
+
+        <figcaption>
+            <div class="figure_title">Finální stav časové osy</div>
+        </figcaption>
+      </figure>
+
+    <p>
+      Po odstranění mezer by měla vaše časová osa vypadat podobně, jako na obrázku výše.
+    </p>
+     `,
     quizKey: "strih",
+    sources: []
+  },
+
+  {
+    id: "zvuk",
+    menu: "Práce se zvukem",
+    title: "Základy práce se zvukem",
+    subtitle: "Seznámení se základy práce se zvukem",
+    html: `
+      <h2 id=
+    `,
+    quizKey: "zvuk",
     sources: []
   },
 ];

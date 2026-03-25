@@ -1471,6 +1471,231 @@ window.LESSONS = [
         klipy se posunou.
       </p>
 
+<br>
+
+    <h2 id="vrstvy">Vrstvy</h2>
+
+    <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_7/vrstvy1.png" alt="Vrstvy">
+
+        <figcaption>
+          <div class="figure_title">Vrstvy</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Časová osa je v Premiere Pro vertikálně dělena do jednotlivých vrstev. Ty jsou dále děleny do dvo kategorií, a to video vrstvy
+        a aduio vrstvy. Video vrstvy jsou určeny pro obrazová data, zatímco audio vrstvy pro data zvuková. 
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_7/vrstvy2.png" alt="Překrývání vrstev">
+
+        <figcaption>
+          <div class="figure_title">Překrývání vrstev</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Do video vrstev je možné vkládat klipy s obrazovými daty, grafiku nebo třeba titulky. Obrazové vrstvy si můžete představit,
+        jako průhledné tabule položené nad sebou. Na tyto tabule lze umístit různé prvky. Objekty na vyšších vrstvách zakrývají 
+        ty na nižších vrstvách. Tato vlastnost je užitečná například při práci s malými obrázky, které při umístění na vyšší vrstvu
+        nezakryjí celý obsah na nižších vrstvách, například logo v rohu.
+      </p>
+
+      <p>
+        Audio vrsty nedisponují vlastností překrývání. Při přidání dvou audio stop se jednoduše přehrají najednou.
+        U audio stop na těchto vrstvách lze také sledovat náhled amplitudy zvuku, který zobrazuje intenzitu zvuku v daném úseku. 
+        Tento náhled je užitečný pro rychlou orientaci v tom, kde se nachází tiché a hlasité části zvukové stopy.
+      </p>
+
+      <p>
+        Pokud má naimportovaný materiál více stop, například jednu pro video a dvě pro audio, při vložení na časovou osu
+        se jednotlivé stopy vloží do odpovídajících vrstev.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_7/unlink.png" alt="Unlink možnost">
+
+        <figcaption>
+          <div class="figure_title">Unlink možnost</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Materiál s více stopami je má vzájemně spojené. To znamená, že při posunutí jedné stopy se posunou i ostatní.
+        Při provedení střihu nad takovým materiálem se přestřihnou všechny jeho stopy. Toto chování se dá změnit v kontextovém menu,
+        které se zobrazí po kliknutí pravým tlačítkem myši na klip na časové ose. Možnost Unlink stopy oddělí, pak je s nimi
+        možné pracovat samostatně. Při označení rozpojených vrstev se v kontextovém menu zobrazí možnost Link, což spojení obnoví.
+      </p>
+
+<br>
+<hr>
+<br>
+
+      <h2 id="strih-prakticka">Praktická část</h2>
+
+      <p>
+        V této části se prakticky vyzkoušíte základní nástroje pro střih a práci s vrstvami. 
+        Před začátkem si otevřete projekt Cesta vlakem.
+      </p>
+
+      <h3 id="prakticka-source-panel">Oříznutí klipu v Source panelu</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_7/prakt_clear.png" alt="Odstranění vnořené sekvence Logo animace z časové osy">
+
+        <figcaption>
+          <div class="figure_title">Odstranění vnořené sekvence Logo animace z časové osy</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Nejprve dočasně odstraňte vnořenou sekvenci Logo animace z časové osy, objekt se nesmaže z projektu, stále bude uložen
+        v binu Sekvence. Odstranění se provede pravým kliknutím myší na objekt a zvolením možnosti Clear, nebo klávesovou
+        zkratkou X.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_7/prakt_source.png" alt="cesta_vlakem1.mov v Source panelu">
+
+        <figcaption>
+          <div class="figure_title">cesta_vlakem1.mov v Source panelu</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        V Project panelu se přesuňte do binu Videa a dvojklikem na klip cesta_vlakem1.mov ho otevřete v Source panelu.
+        Tlačítkem Play a posouvání přeharávací hlavice si video projděte a najděte vhodnou část klipu, kde výhled neblokují
+        žádné objekty.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_7/prakt_InOut.png" alt="Vybraná část klipu cesta_vlakem1.mov">
+
+        <figcaption>
+            <div class="figure_title">cesta_vlakem1.mov v Source panelu</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Tuto oblast označte In a Out body. V Timeline panelu přesuňte přehrávací hlavu, do prázdného místa,za klip s nádražím,
+        aby ho nově vložený klip nijak neupřepsal/nerozdělil. Pomocí tlačítka Insert, v Source panelu, vložte oříznutou část 
+        klipu na časovou osu.
+      </p>
+
+      <p>
+        <i>Na obrázku jsou In a Out body nastaveny takto: In -> 00:00:07:19; Out -> 00:00:15:23.</i>
+      </p>
+
+<br>
+
+    <h3 id="prakt-strih">Razor Tool</h3>
+
+    <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_7/prakt_timeline1.png" alt="Přidání cesta_vlakem2.mov na časovou osu">
+
+        <figcaption>
+            <div class="figure_title">Přidání cesta_vlakem2.mov na časovou osu</div>
+        </figcaption>
+      </figure>
+
+    <p>
+      Dále přejděte zpět do binu Videa a přetáhněte cesta_vlakem2.mov do prázdného místa na časovou osu. Neotevírejte tentokrát
+      video v panelu Source, oříznutí si tentokrát vyzkoušíte přímo na časové ose. Vaše sekvence by měla vypadat podobně, jako na 
+      obrázku výše.
+    </p>
+
+    <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_7/prakt_timeline2.png" alt="Stav časové osy po rozdělení klipu">
+
+        <figcaption>
+            <div class="figure_title">Stav časové osy po rozdělení klipu</div>
+        </figcaption>
+      </figure>
+
+    <p>
+      Pomocí přehrávací hlavy a náhledu v Program monitoru najděte v cesta_vlakem2.mov místo, kde se objevuje železniční přejezd.
+      V Tools panelu zvolte nástroj Razor Tool a rozdělte klip na tři části tak, aby první část obsahovala jízdu před přejezdem,
+      druhá část přejezd a třetí část jízdu za přejezdem. V případě chyby použijte klávesovou zkratku Ctrl + Z, která odstraní
+      vrátí zpět poslední provedenou úpravu. Alternativně můžete použít Selection Tool, označit místo střihu a 
+      v kontextovém menu zvolit možnost Join Through Edits, která klip spojí zpět do jednoho.
+    </p>
+
+    <p>
+      Následně pomocí Selection Tool označte části bez přejezdu a odstraňte
+      je ze sekvence.
+    </p>
+
+    <p>
+      <i>Pokud vidíte klip moc malý, podržte levý Alt a posuňte kolečkem myši, změní se vám měřítko časové osy a klip se zvětší.</i>
+    </p>
+
+    <h3 id="prakt-Trimming">Trimming</h3>
+
+    <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_7/prakt_trimming.png" alt="Prodloužený klip s přejezdem">
+
+        <figcaption>
+            <div class="figure_title">Prodloužený klip s přejezdem</div>
+        </figcaption>
+      </figure>
+    
+    <p>
+      Klip s přejezdem je poměrně krátký, prodlužte ho z obou stran pomocí trimování. Zvolte Selection Tool a chyťte okraj klipu,
+      začátek roztáhněte směrem doleva tak, aby byla krátce vidět i jízda před přejezdem. Konec klipu roztáhněte obdobně, ale opačným směrem,
+      jinak byste klip zkracovali.
+    </p>
+
+    <p>
+      <i>Na obrázku je klip roztažen tak, že části před a za přejezdem jsou dlouhé přibližně jednu vteřinu.</i>
+    </p>
+
+<br>
+
+    <h3 id="prakt-ripple-delete">Ripple Delete</h3>
+
+    <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_7/prakt_ripples.png" alt="Ripples v sekvenci">
+
+        <figcaption>
+            <div class="figure_title">Ripples v sekvenci</div>
+        </figcaption>
+      </figure>
+
+    <p>
+      Pokud se podíváte na celou časovou osu, uvidíte, že mezi klipy jsou mezery. Tyto mezery se při přehrávání zobrazí pouze
+      jako černá barva. Proto je potřeba je odstranit.
+    </p>
+
+    <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_7/prakt_ripple_delete.png" alt="Ripple Delete v sekvenci">
+
+        <figcaption>
+            <div class="figure_title">Ripple Delete v sekvenci</div>
+        </figcaption>
+      </figure>
+
+    <p>
+      To lze provést několika způsoby. První způsob je pomocí nástroje Selection, kdy chytíte klip a přetáhnete ho k sousednímu 
+      klipu, čímž se mezera odstraní. Takto by ale u většího množství klipů, při každém přesunutí, vznikaly další mezery.
+      Proto radši použijte druhý způsob, který využívá funkci Ripple Delete. Klikněte na mezeru pravým tlačítkem myši
+      a zvolte možnost Ripple Delete. Tím se mezera odstraní a všechny klipy napravo od ní se posunou.
+    </p>
+
+    <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_7/prakt_close_gap.png" alt="Close Gap v sekvenci">
+
+        <figcaption>
+            <div class="figure_title">Close Gap v sekvenci</div>
+        </figcaption>
+      </figure>
+
+    <p>
+      Existuje ještě jeden způsob, který najdete na horní liště v záložce Sequence -> Close Gap. Tato možnost funguje stejně 
+      jako Ripple Delete, ale odstraní všechny mezery v sekvenci najednou.
+    </p>
+
     `,
     quizKey: "strih",
     sources: []

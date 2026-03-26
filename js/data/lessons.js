@@ -847,7 +847,7 @@ window.LESSONS = [
 
       <p>
         Stáhněte si materiály z tohoto odkazu: <a href="https://drive.google.com/uc?export=download&id=1690JdHvlCNsZieIM0j8p7AT_Fy0nP5Ff" 
-        download>Odkaz na materiály</a>
+        target="_blank">Odkaz na materiály</a>
       </p>
 
       <figure class="doc_figure doc_figure--large">

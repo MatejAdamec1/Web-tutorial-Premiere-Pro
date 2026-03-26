@@ -1739,19 +1739,29 @@ window.LESSONS = [
         chyby ve zvuku mohou být pro diváka méně nápadné, ale o to více rušivé.
       </p>
 
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_8/zvuk_kategorie.png" alt="Ukázka kategorizace zvukových stop">
+
+        <figcaption>
+          <div class="figure_title">Ukázka kategorizace zvukových stop</div>se pokusí automaticky
+        </figcaption>
+      </figure>
+
       <p>
         Premiere Pro rozděluje zvukové stopy do čtyř kategorií podle obsahu: Dialog (Dialogue), Hudba (Music), 
         Zvukový efekt (SFX) a Zvuky prostředí (Ambience). Na základě této klasifikace pak nabízí různé možnosti pro úpravu
         a zpracování dané stopy. Například pro dialogy jsou k dispozici nástroje pro odstranění šumu, nebo pro hudbu 
-        lze využít funkci Auto Ducking, která ji automaticky ztlumí pokud například detekuje, že v sekvenci hraje Dialog stopa.
+        lze využít funkci Auto Ducking, která ji automaticky ztlumí, pokud například detekuje, že v sekvenci hraje Dialog stopa.
       </p>
+
+<br>
 
       <h3 id="mono-stereo">Mono vs. Stereo</h3>
       <p>
         Zvuk může být zaznamenán jako mono nebo stereo. Mono (monofonní zvuk) obsahuje 
         pouze jeden zvukový kanál, to znamená, že zvuk vychází stejně z obou reproduktorů. 
         Tento typ se často používá například u mluveného slova, kde není důležitá prostorovost. 
-        Naproti tomu stereo (stereofonní zvuk) pracuje se dvěma kanály (levým a pravým)
+        Naproti tomu stereo (stereofonní zvuk) pracuje se dvěma kanály (levým a pravým),
         což umožňuje vytvářet prostorový dojem a lépe rozlišit směr, odkud zvuk přichází. 
         Stereo je proto běžné zejména u hudby nebo scén, kde je důležitá atmosféra a prostor.
       </p>
@@ -1760,6 +1770,14 @@ window.LESSONS = [
         Program umožňuje převádět audio stopy mezi mono a stereo. Toto nastavení lze nalézt při pravém kliknutí myši na
         daný materiál v Project panelu a zvolením možnosti Modify -> Audio Channels. 
       </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_8/zvuk_kanály.png" alt="Porovnání mono a stereo stopy">
+
+        <figcaption>
+          <div class="figure_title">Porovnání mono a stereo stopy</div>
+        </figcaption>
+      </figure>
 
       <p>
         Při převodu z mono na stereo se vytvoří dva identické kanály, při převodu ze stereo na mono se kanály sloučí do jednoho. 
@@ -1774,11 +1792,19 @@ window.LESSONS = [
         se v tomto panelu zobrazí různá nastavení, která odpovídají běžným potřebám pro úpravu daného typu audia.
       </p>
 
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_8/ess_sound1.png" alt="Výběr kategorie pro zvukovou stopu v panelu Essential Sound">
+
+        <figcaption>
+          <div class="figure_title">Výběr kategorie pro zvukovou stopu v panelu Essential Sound</div>
+        </figcaption>
+      </figure>
+
       <p>
-        Program se pokusí automaticky detekovat, do jaké kategorie daná stopa patří. Panel Essential Sound však umožňuje tuto
+        Program automaticky detekuje, do jaké kategorie daná stopa patří. Panel Essential Sound však umožňuje tuto
         klasifikaci změnit, například pokud byl typ špatně detekován. Pro každý typ je zde také možné vybírat z několika
         přednastavených šablon, které příslušná nastavení upraví tak, aby odpovídala dané situaci. Například pro 
-        dialogy je, mimo jiné, k dispozici šablona Podcast Voice, která se pokusí upravit zvuk, tak aby vynikal hlas mluvčího.
+        dialogy je, mimo jiné, k dispozici šablona Podcast Voice, která se pokusí upravit zvuk, tak, aby vynikal hlas mluvčího.
       </p>
 
       <p>
@@ -1789,11 +1815,27 @@ window.LESSONS = [
 
       <h3 id="ess-dialog">Základní nastavení pro Dialog</h3>
 
+      <figure class="doc_figure doc_figure--medium">
+        <img src="img/kapitola_8/ess_sound2.png" alt="Záložka Enhance Speech">
+
+        <figcaption>
+          <div class="figure_title">Záložka Enhance Speech</div>
+        </figcaption>
+      </figure>
+
       <p>
         U zvukových stop představujících řeč je klíčové, aby byl hlas mluvčího dobře srozumitelný. 
         Panel Essential Sound nabízí nástroj Enhance Speech, který pomocí umělé inteligence potlačuje 
         okolní šum a zvýrazňuje hlas. Posuvníkem Mix Amount lze regulovat intenzitu tohoto efektu.
       </p>
+
+      <figure class="doc_figure doc_figure--medium">
+        <img src="img/kapitola_8/ess_sound3.png" alt="Záložka Loudness">
+
+        <figcaption>
+          <div class="figure_title">Záložka Loudness</div>
+        </figcaption>
+      </figure>
 
       <p>
         Důležité je také udržovat konzistentní úroveň hlasitosti, aby nevznikaly příliš hlasité nebo tiché části. 
@@ -1801,17 +1843,41 @@ window.LESSONS = [
         upraví na podobnou úroveň.
       </p>
 
+      <figure class="doc_figure doc_figure--medium">
+        <img src="img/kapitola_8/ess_sound4.png" alt="Záložka Repair">
+
+        <figcaption>
+          <div class="figure_title">Záložka Repair</div>
+        </figcaption>
+      </figure>
+
       <p>
         Natočený materiál může často obsahovat nežádoucí zvuky, například šum nebo ozvěnu. 
         Záložka Repair nabízí nástroje pro jejich potlačení, jako je redukce šumu (Reduce Noise) 
         nebo omezení ozvěny (Reduce Reverb) a další.
       </p>
 
+      <figure class="doc_figure doc_figure--medium">
+        <img src="img/kapitola_8/ess_sound5.png" alt="Záložka Clarity">
+
+        <figcaption>
+          <div class="figure_title">Záložka Clarity</div>
+        </figcaption>
+      </figure>
+
       <p>
         Záložka Clarity slouží k detailnějším úpravám hlasu pomocí nástrojů, jako je Dynamics, EQ nebo Vocal Enhancer. 
         Vocal Enhancer umožňuje zvýraznit buď vysoké nebo nízké tóny ve stopě. EQ upravuje frekvenční charakter zvuku, 
-        například zvýrazněním řeči nebo vytvoření efektu telefoního hovoru.
+        například zvýrazněním řeči nebo vytvoření efektu telefonního hovoru.
       </p>
+
+      <figure class="doc_figure doc_figure--medium">
+        <img src="img/kapitola_8/ess_sound6.png" alt="Záložka Creative">
+
+        <figcaption>
+          <div class="figure_title">Záložka Creative</div>
+        </figcaption>
+      </figure>
 
       <p>
         Záložka Creative obsahuje efekty pro stylizaci zvuku. Lze zde například přidat ozvěnu (Reverb), 
@@ -1832,19 +1898,35 @@ window.LESSONS = [
         dvě další užitečné záložky.
       </p>
 
-      <p>
-        První z nich se nazývá Duration a umožňuje stopu prodloužit. Hodí se například v případě, kdy hudba skončí dříve,
-        než klip, který má podkreslovat. Existují dvě metody prodloužení: Stretch a Remix. Strech prodlužuje stopu tím,
-        že zpomalí její přehrávání, tak aby naplnila požadovanou délku. Není tedy ideální, protože zpomalí celou stopu
-        a tím může změnit způsob, jakým hudba působí. Na druhou stranu, Remix prodlužuje délku stopy pomocí umělé inteligence,
-        která nejdříve hudbu analyzuje a nalezne míste, kde lze hudbu prodloužit. Následně přeorganizuje, či duplikuje
-        části stopy a tím ji prodlouží. Části, kde byla stopa upravena jsou v klipu na časové ose zovýrazněny vertikální vlnovkou.
-      </p>
+      <figure class="doc_figure doc_figure--medium">
+        <img src="img/kapitola_8/ess_sound7.png" alt="Záložka Duration">
+
+        <figcaption>
+          <div class="figure_title">Záložka Duration</div>
+        </figcaption>
+      </figure>
 
       <p>
-        Druhou záložkou pro tuto kategorii je Ducking. Tato funkce automaticky ztlumí hudbu, pokud detekuje, 
-        že v sekvenci hraje audio stopa označená Dialog, či jako jiná zvolená kategorie. Tím se zajistí, že 
-        hudba nebude rušit srozumitelnost dialogů, nebo důležitých momentů ve videu.
+        První z nich se nazývá Duration a umožňuje stopu prodloužit. Hodí se například v případě, kdy hudba skončí dříve,
+        než klip, který má podkreslovat. Existují dvě metody prodloužení: Stretch a Remix. Stretch prodlužuje stopu tím,
+        že zpomalí její přehrávání tak, aby naplnila požadovanou délku. Není tedy ideální, protože zpomalí celou stopu
+        a tím může změnit způsob, jakým hudba působí. Na druhou stranu, Remix prodlužuje délku stopy pomocí umělé inteligence,
+        která nejdříve hudbu analyzuje a nalezne místa, kde lze hudbu prodloužit. Následně přeorganizuje, či duplikuje
+        části stopy a tím ji prodlouží. Části, kde byla stopa upravena jsou v klipu na časové ose zvýrazněny vertikální vlnovkou.
+      </p>
+
+      <figure class="doc_figure doc_figure--medium">
+        <img src="img/kapitola_8/ess_sound8.png" alt="Záložka Ducking">
+
+        <figcaption>
+          <div class="figure_title">Záložka Ducking</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Druhou záložkou pro tuto kategorii je Ducking. Tato funkce je založená na umělé inteligenci, která automaticky 
+        ztlumí hudbu, pokud detekuje, že v sekvenci hraje audio stopa označená Dialog, či jako jiná zvolená kategorie. 
+        Tím se zajistí, že hudba nebude rušit srozumitelnost dialogů, nebo důležitých momentů ve videu.
       </p>
 
 <br>
@@ -1857,10 +1939,18 @@ window.LESSONS = [
         Jako zvukový efekt lze označit například \"cinknutí\" při zobrazení textu.
       </p>
 
+      <figure class="doc_figure doc_figure--medium">
+        <img src="img/kapitola_8/ess_sound9.png" alt="Záložka Pan">
+
+        <figcaption>
+          <div class="figure_title">Záložka Pan</div>
+        </figcaption>
+      </figure>
+
       <p>
         Pro tento typ audia je v panelu Essential Sound jen jedna nová záložka, a tou je Pan. Zde je možné nastavit,
         z jaké strany bude zvuk přicházet. Pomocí posuvníku se nastaví pozice zdroje zvuku, hodnota 0 znamená prostředek,
-        -100 levý kaná a 100 pravý kanál. Je však možné nastavit hodnotu Pan na libovolné číslo v tomto rozsahu.
+        -100 levý kanál a 100 pravý kanál. Je však možné nastavit hodnotu Pan na libovolné číslo v tomto rozsahu.
         Alternativně lze tuto vlastnost nastavit také v panelu Effect Controls, pod záložkou Audio > Panner > Balance.
       </p>
 
@@ -1872,6 +1962,14 @@ window.LESSONS = [
         Tyto zvuky by měly být spíše v pozadí a neměly by odvádět pozornost od hlavního děje. 
       </p>
 
+      <figure class="doc_figure doc_figure--medium">
+        <img src="img/kapitola_8/ess_sound10.png" alt="Záložka Stereo Width">
+
+        <figcaption>
+          <div class="figure_title">Záložka Stereo Width</div>
+        </figcaption>
+      </figure>
+
       <p>
         Kromě záložek Loudness, Creative a Ducking je zde nová záložka Stereo Width. Tato funkce slouží k rozšíření 
         nebo zúžení prostorového vnímání daného zvuku, aby lépe zapadl do scény.
@@ -1881,14 +1979,30 @@ window.LESSONS = [
 
       <h2 id="jine-zpusoby">Jiné způsoby úpravy zvuku</h2>
 
+      <figure class="doc_figure doc_figure--medium">
+        <img src="img/kapitola_8/zvuk_eff_controls.png" alt="Možnosti úpravy zvuku v panelu Effect Controls">
+
+        <figcaption>
+          <div class="figure_title">Možnosti úpravy zvuku v panelu Effect Controls</div>
+        </figcaption>
+      </figure>
+
       <p>
         Mimo nástroje v Essential Sound panelu, lze se zvukem pracovat i jinými způsoby. Vlastnosti jako celková hlasitost, 
         hlasitost jednotlivých kanálů (pravý a levý) nebo Pan (poměr mezi těmito kanály) se dají manuálně nastavit
         v Effect Controls panelu.
       </p>
 
+      <figure class="doc_figure doc_figure--medium">
+        <img src="img/kapitola_8/zvuk_effects.png" alt="Efekty pro úpravu zvuku v panelu Effects">
+
+        <figcaption>
+          <div class="figure_title">Efekty pro úpravu zvuku v panelu Effects</div>
+        </figcaption>
+      </figure>
+
       <p>
-        V panelu Effects existuje také složka Audio Effects, která obsahuje různé efekty, jenž je možné na audiostopy aplikovat.
+        V panelu Effects existuje také složka Audio Effects, která obsahuje různé efekty, jež je možné na zvukové stopy aplikovat.
       </p>
 
       <p>
@@ -1920,15 +2034,194 @@ window.LESSONS = [
       <p>
         Při práci se zvukem je vhodné se vyvarovat náhlým začátkům a koncům zvukových klipů, které mohou působit rušivě. 
         Místo toho se používají plynulé přechody, například pomocí postupného zesilování a zeslabování (fade in a fade out), 
-        které lze vytvořit pomocí tzv. keyframes v Effect Controls panelu, či použitím a nastavením efektu z panelu Effects
+        které lze vytvořit pomocí tzv. klíčových snímků (keyframes) v Effect Controls panelu, či použitím a nastavením efektu z panelu Effects
         a složky Audio Transitions > Crossfade. (Více o efektech v další kapitole)
       </p>
 
       <p>
         Pro lepší přehlednost je také vhodné organizovat zvuk do více vrstev podle jejich typu, například oddělit dialog, hudbu 
-        a zvukové efekty. Premiere Pro navíc umožňuje jednotlivé vrstvy dočasně izolovat pomocí funkce Solo nebo naopak ztlumit 
-        pomocí Mute, což usnadňuje práci při úpravách.
+        a zvukové efekty. Premiere Pro navíc umožňuje jednotlivé vrstvy dočasně izolovat pomocí funkce Solo Track nebo naopak ztlumit 
+        pomocí Mute Track, což usnadňuje práci při úpravách.
       </p>
+
+<br>
+<hr>
+<br>
+
+      <h2 id ="zvuk-prakticka">Praktická část</h2>
+
+      <p>
+        V této části si prakticky vyzkoušíte základní práci se zvukem. 
+        
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_8/prakt_pixabay.png" alt="Stažení hudby z Pixabay">
+
+        <figcaption>
+          <div class="figure_title">Stažení hudby z Pixabay</div>
+        </figcaption>
+      </figure>
+      
+      <p>
+        Do projektové složky vytvořte novou složku s názvem Hudba a do ní stáhněte skladbu z tohoto odkazu: 
+        <a target="_blank" href="https://pixabay.com/music/corporate-digital-digital-music-492802/">
+        Odkaz na Pixabay</a>. Pixabay je webová platforma poskytující volně dostupné materiály, včetně hudby, 
+        které lze zdarma používat a upravovat jako součást vlastních projektů.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_8/prakt_timeline1.png" alt="Vložení hudby na časovou osu">
+
+        <figcaption>
+          <div class="figure_title">Vložení hudby na časovou osu</div>
+        </figcaption>
+      </figure>
+        
+      <p>
+        Otevřete si projekt Cesta vlakem a importujte do něj staženou hudbu.
+        V Project panelu si vytvořte nový bin s názvem Hudba a skladbu tam přetáhněte.
+        Následně skladbu přetáhněte na časovou osu, tak aby byla na své vlastní vrstvě a nepřekrývala tak 
+        žádné z existujících stop a začínala v čase 00:00:00:00.
+      </p>
+
+<br>
+
+      <h3 id="prakt-">Příprava existujících klipů</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_8/prakt_mute.png" alt="Ztlumení vrstvy hudby">
+
+        <figcaption>
+          <div class="figure_title">Ztlumení vrstvy hudby</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Pokud byste se pokusili video nyní přehrát, hudba by přehlušila ostatní zvukové stopy.
+        Proto její vrstvu prozatím ztlumte pomocí tlačítka M (Mute Track), které se nachází v levé části Timeline panelu
+        na příslušné vrstvě s hudbou.
+      </p>
+
+      <p>
+        Pomocí záložky Window > Essential Sound otevřete panel Essential Sound.
+        Vyberte klip nádraží1.mov a v panelu Essential Sound se ujistěte, že má přiřazenou kategorii Dialogue. 
+        Pokud je klip přiřazen do jiné kategorie, stiskněte tlačítko Clear Audio Type a poté zvolte Dialogue.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_8/prakt_ess1.png" alt="Změna hlaitosti pomocí Loudness">
+
+        <figcaption>
+          <div class="figure_title">Změna hlaitosti pomocí Loudness</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        V této části je důležité, aby bylo slyšet hlas oznamující zpoždění vlaku. Sice to nepředává divákovi 
+        žádné důležité informace, ale pomáhá to navodit atmosféru nádraží. Všimněte si, že audio tohoto klipu
+        je poměrně potichu. Upravte proto jeho hlasitos pomocí Loudness funkce. 
+        Zapněte záložku Loudness pomocí přepínače a poté klikněte na tlačítko Auto-Match.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_8/prakt_ess2.png" alt="Doladění hlaitosti pomocí Essential Sound panelu">
+
+        <figcaption>
+          <div class="figure_title">Doladění hlaitosti pomocí Essential Sound panelu</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Audio stále není dostatečně hlasité, proto ve spodní části panelu Essential Sound pomocí posuvníku Volume
+        zvyšte hlasitost na hodnotu 3,0 dB. Tím se hlasitost klipu zvýší o tři decibely.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_8/prakt_timeline2.png" alt="Střih klipu s nádražím">
+
+        <figcaption>
+          <div class="figure_title">Střih klipu s nádražím</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Nyní už je hlas slyšet, ale klip začíná a končí uprostřed slova, použijte tedy Razor Tool a klip rozdělte.
+        První střih proveďte předtím, než hlas řekne 0 minu, druhý střih pak proveďte až hlas vysloví \n"se může změnit".
+        Krajní klipy odstraňte a vzniklé Ripples smažte buď použitím Ripple Delete, nebo pomocí funkce Close Gap.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_8/prakt_timeline3.png" alt="Použití Unlink na klipy s cestou vlakem">
+
+        <figcaption>
+          <div class="figure_title">Použití Unlink na klipy s cestou vlakem</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Klip s nádražím je připraven, nyní se přesuňte na zbylé dva klipy s cestou vlakem. Jelikož jejich neobsahuje 
+        žádné důležité prvky, může být odstraněno. Ve finále tak bude slyšet pouze hudba a případné zvukové efekty.
+        Pro odstranění musíte nejdříve stopy rozpojit pomocí funkce Unlink. Bez rozpojení by se odstranily 
+        i obrazové stopy. Po rozpojení je možné jednotlivé audio stopy cesty vlakem odstranit.
+      </p>
+
+<br>
+
+      <h3 id="prakt-hudba">Úprava hudby</h3>
+
+      <p>
+        Když už jsou klipy připravené, je možné začít pracovat s hudbou. Nejprve zrušte ztlumení vrstvy se skladbou, ať je znovu
+        slyšet. Pusťte si video a všimněte si, jak hudba tlumí výraznost hlasu z klipu s nádražím. Vyberte stopu hudby
+        a v panelu Essential Sound se ujistěte, že má kategorii Music, případně ji na Music Změňte.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_8/prakt_duck.png" alt="Nastavení Ducking pro hudbu">
+
+        <figcaption>
+          <div class="figure_title">Nastavení Ducking pro hudbu</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Zapněte záložku Ducking v Essential Sound panelu a v možnosti Duck against zvolte Dialogue. Tím určíte, že hudba se automaticky ztlumí,
+        pokud bude hrát klip s dialogem. Za pomoci slideru Duck Amount nastavte intenzitu zltumení na -12 dB.
+        Tím se hudba během dialogů bude tlumit o 12 decibelů. Po nastavní klikněte na Generate Keyframes,
+        čímž se v klipu s hudbou vytvoří klíčové snímky, které automaticky upraví hlasitost hudby pouze v potřebných místech.
+        Nyní by měla být hudba výrazně tišší, když hraje klip s nádražím, ale stále by měla být slyšet v pozadí.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_8/prakt_keyframes.png" alt="Klíčové snímky pro hlasitost hudby">
+
+        <figcaption>
+          <div class="figure_title">Klíčové snímky pro hlasitost hudby</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Všimněte si, že na stopě s hudbou se vytvořily malé tečky. Ty znázorňují pozice klíčových snímků hlasitosti.
+        V případě potřeby je možné je manuálně upravit tažením na časové ose, nebo v panelu Effect Controls.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_8/prakt_konec.png" alt="Ukončení stopy s hudbou">
+
+        <figcaption>
+          <div class="figure_title">Ukončení stopy s hudbou</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Použijte Razor Tool a klip s hudbou zkraťte tak, aby končil ve stejném momentě jako klip cesta_vlakem2.mov.
+      </p>
+
+      <p>
+        Nyní jste do svého projektu přidali základní hudební podkres ac upravili jste zbylé klipy a hlasitost hudby tak,
+        aby se navzájem doplňovaly.
+      </p>
+
 
 
 
@@ -1936,6 +2229,11 @@ window.LESSONS = [
 
     `,
     quizKey: "zvuk",
-    sources: []
+    sources: [
+      {
+        text: "Hudba použitá v ukázkovém projektu: Pixabay. Autor: The_Mountain. Skladba: Digital - Digital Music",
+        url: "https://pixabay.com/music/corporate-digital-digital-music-492802/"
+      }
+    ]
   },
 ];

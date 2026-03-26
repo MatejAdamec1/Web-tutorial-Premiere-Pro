@@ -846,7 +846,8 @@ window.LESSONS = [
       </p>
 
       <p>
-        Stáhněte si materiály z tohoto odkazu: XYXY
+        Stáhněte si materiály z tohoto odkazu: <a href="https://drive.google.com/uc?export=download&id=1690JdHvlCNsZieIM0j8p7AT_Fy0nP5Ff" 
+        download>Odkaz na materiály</a>
       </p>
 
       <figure class="doc_figure doc_figure--large">
@@ -1121,6 +1122,76 @@ window.LESSONS = [
       </p>
 
 <br>
+
+    <h2 id="vrstvy">Vrstvy</h2>
+
+    <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_7/vrstvy1.png" alt="Vrstvy">
+
+        <figcaption>
+          <div class="figure_title">Vrstvy</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Časová osa je v Premiere Pro vertikálně dělena do jednotlivých vrstev. Ty jsou dále děleny do dvo kategorií, a to video vrstvy
+        a aduio vrstvy. Video vrstvy jsou určeny pro obrazová data, zatímco audio vrstvy pro data zvuková. 
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_7/vrstvy2.png" alt="Překrývání vrstev">
+
+        <figcaption>
+          <div class="figure_title">Překrývání vrstev</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Do video vrstev je možné vkládat klipy s obrazovými daty, grafiku nebo třeba titulky. Obrazové vrstvy si můžete představit,
+        jako průhledné tabule položené nad sebou. Na tyto tabule lze umístit různé prvky. Objekty na vyšších vrstvách zakrývají 
+        ty na nižších vrstvách. Tato vlastnost je užitečná například při práci s malými obrázky, které při umístění na vyšší vrstvu
+        nezakryjí celý obsah na nižších vrstvách, například logo v rohu.
+      </p>
+
+      <p>
+        Neprůhlednost obrazové vrsty je udávána v procentech, přičemž 0% znamená plnou průhlednost a 100% znamená neprůhlednost.
+        Tuto vlastnost lze, pro jednotlivé klipy, nastavit v panelu Effect Controls pod záložkou Opacity. 
+        Alternativně lze chytit čáru v horní části klipu na časové ose a posouváním nahoru a dolů měnit tak 
+        neprůhlednost klipu.
+      </p>
+
+      <p>
+        Audio vrsty nedisponují vlastností překrývání. Při přidání dvou audio stop se jednoduše přehrají najednou.
+        U audio stop na těchto vrstvách lze také sledovat náhled amplitudy zvuku, který zobrazuje intenzitu zvuku v daném úseku. 
+        Tento náhled je užitečný pro rychlou orientaci v tom, kde se nachází tiché a hlasité části zvukové stopy.
+      </p>
+
+      <p>
+        Hlasitost jednotlivých audiostop lze měnit v panelu Effect Controls v záložce Volume. 
+        Je také možné použít čáru v horní části klipu na časové ose, podobně jako u video stop.
+      </p>
+
+      <p>
+        Pokud má naimportovaný materiál více stop, například jednu pro video a dvě pro audio, při vložení na časovou osu
+        se jednotlivé stopy vloží do odpovídajících vrstev.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_7/unlink.png" alt="Unlink možnost">
+
+        <figcaption>
+          <div class="figure_title">Unlink možnost</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Materiál s více stopami je má vzájemně spojené. To znamená, že při posunutí jedné stopy se posunou i ostatní.
+        Při provedení střihu nad takovým materiálem se přestřihnou všechny jeho stopy. Toto chování se dá změnit v kontextovém menu,
+        které se zobrazí po kliknutí pravým tlačítkem myši na klip na časové ose. Možnost Unlink stopy oddělí, pak je s nimi
+        možné pracovat samostatně. Při označení rozpojených vrstev se v kontextovém menu zobrazí možnost Link, což spojení obnoví.
+      </p>
+
+<br>
 <hr>
 <br>
 
@@ -1182,7 +1253,7 @@ window.LESSONS = [
 
       <p>
         Timeline panel vám po vytvoření otevře novou sekvenci. Všimněte si, že sekvence obsahuje několik vrstev, konkrétně dvě
-        pro video a dvě pro audio. Počet vrstev je možné později podle potřeby změnit.
+        pro video a dvě pro audio. Počet vrstev je možné později změnit podle potřeby.
       </p>
 
 <br>
@@ -1366,7 +1437,7 @@ window.LESSONS = [
       </figure>
 
       <p>
-        Další možností, jak vložit klip do sekvence, je s využitím Source panelu. Dvojklikem na klip v Projcet panelu se 
+        Další možností, jak vložit klip do sekvence, je s využitím Source panelu. Dvojklikem na klip v Project panelu se 
         otevře Source panel. Zde můžete klip přehrát, podobně jako v Program monitoru, navíc je zde možnost nastavit tzv. In a Out
         points, tedy vstupní a výstupní body. In point označuje začátek části klipu, Out point pak konec. Nastavením těchto bodů
         lze oříznout klip ještě před vložením do sekvence.
@@ -1469,64 +1540,6 @@ window.LESSONS = [
         mezera za posunutým klipem. Existuje proto způsob, jak tuto mezeru osdtranit bez toho, aby se vytvořila další.
         Stačí na ni kliknout pravým tlačítkem myši a zvolit možnost Ripple Delete. Tím se mezera odstraní a všechny následující 
         klipy se posunou.
-      </p>
-
-<br>
-
-    <h2 id="vrstvy">Vrstvy</h2>
-
-    <figure class="doc_figure doc_figure--large">
-        <img src="img/kapitola_7/vrstvy1.png" alt="Vrstvy">
-
-        <figcaption>
-          <div class="figure_title">Vrstvy</div>
-        </figcaption>
-      </figure>
-
-      <p>
-        Časová osa je v Premiere Pro vertikálně dělena do jednotlivých vrstev. Ty jsou dále děleny do dvo kategorií, a to video vrstvy
-        a aduio vrstvy. Video vrstvy jsou určeny pro obrazová data, zatímco audio vrstvy pro data zvuková. 
-      </p>
-
-      <figure class="doc_figure doc_figure--large">
-        <img src="img/kapitola_7/vrstvy2.png" alt="Překrývání vrstev">
-
-        <figcaption>
-          <div class="figure_title">Překrývání vrstev</div>
-        </figcaption>
-      </figure>
-
-      <p>
-        Do video vrstev je možné vkládat klipy s obrazovými daty, grafiku nebo třeba titulky. Obrazové vrstvy si můžete představit,
-        jako průhledné tabule položené nad sebou. Na tyto tabule lze umístit různé prvky. Objekty na vyšších vrstvách zakrývají 
-        ty na nižších vrstvách. Tato vlastnost je užitečná například při práci s malými obrázky, které při umístění na vyšší vrstvu
-        nezakryjí celý obsah na nižších vrstvách, například logo v rohu.
-      </p>
-
-      <p>
-        Audio vrsty nedisponují vlastností překrývání. Při přidání dvou audio stop se jednoduše přehrají najednou.
-        U audio stop na těchto vrstvách lze také sledovat náhled amplitudy zvuku, který zobrazuje intenzitu zvuku v daném úseku. 
-        Tento náhled je užitečný pro rychlou orientaci v tom, kde se nachází tiché a hlasité části zvukové stopy.
-      </p>
-
-      <p>
-        Pokud má naimportovaný materiál více stop, například jednu pro video a dvě pro audio, při vložení na časovou osu
-        se jednotlivé stopy vloží do odpovídajících vrstev.
-      </p>
-
-      <figure class="doc_figure doc_figure--large">
-        <img src="img/kapitola_7/unlink.png" alt="Unlink možnost">
-
-        <figcaption>
-          <div class="figure_title">Unlink možnost</div>
-        </figcaption>
-      </figure>
-
-      <p>
-        Materiál s více stopami je má vzájemně spojené. To znamená, že při posunutí jedné stopy se posunou i ostatní.
-        Při provedení střihu nad takovým materiálem se přestřihnou všechny jeho stopy. Toto chování se dá změnit v kontextovém menu,
-        které se zobrazí po kliknutí pravým tlačítkem myši na klip na časové ose. Možnost Unlink stopy oddělí, pak je s nimi
-        možné pracovat samostatně. Při označení rozpojených vrstev se v kontextovém menu zobrazí možnost Link, což spojení obnoví.
       </p>
 
 <br>
@@ -1718,7 +1731,209 @@ window.LESSONS = [
     title: "Základy práce se zvukem",
     subtitle: "Seznámení se základy práce se zvukem",
     html: `
-      <h2 id=
+      <h2 id="zvuk-uvod">Zvuk v Premiere Pro</h2>
+      <p>
+        Zvuk je nedílnou součástí každého videa a výrazně ovlivňuje jeho celkové vnímání. I technicky kvalitní obraz může 
+        působit neprofesionálně, pokud je doprovázen nekvalitním nebo špatně upraveným zvukem. Při práci v Adobe Premiere Pro 
+        je proto důležité věnovat zvuku stejnou pozornost jako obrazu. Zatímco střih videa je často vizuálně zřejmý, 
+        chyby ve zvuku mohou být pro diváka méně nápadné, ale o to více rušivé.
+      </p>
+
+      <p>
+        Premiere Pro rozděluje zvukové stopy do čtyř kategorií podle obsahu: Dialog (Dialogue), Hudba (Music), 
+        Zvukový efekt (SFX) a Zvuky prostředí (Ambience). Na základě této klasifikace pak nabízí různé možnosti pro úpravu
+        a zpracování dané stopy. Například pro dialogy jsou k dispozici nástroje pro odstranění šumu, nebo pro hudbu 
+        lze využít funkci Auto Ducking, která ji automaticky ztlumí pokud například detekuje, že v sekvenci hraje Dialog stopa.
+      </p>
+
+      <h3 id="mono-stereo">Mono vs. Stereo</h3>
+      <p>
+        Zvuk může být zaznamenán jako mono nebo stereo. Mono (monofonní zvuk) obsahuje 
+        pouze jeden zvukový kanál, to znamená, že zvuk vychází stejně z obou reproduktorů. 
+        Tento typ se často používá například u mluveného slova, kde není důležitá prostorovost. 
+        Naproti tomu stereo (stereofonní zvuk) pracuje se dvěma kanály (levým a pravým)
+        což umožňuje vytvářet prostorový dojem a lépe rozlišit směr, odkud zvuk přichází. 
+        Stereo je proto běžné zejména u hudby nebo scén, kde je důležitá atmosféra a prostor.
+      </p>
+
+      <p>
+        Program umožňuje převádět audio stopy mezi mono a stereo. Toto nastavení lze nalézt při pravém kliknutí myši na
+        daný materiál v Project panelu a zvolením možnosti Modify -> Audio Channels. 
+      </p>
+
+      <p>
+        Při převodu z mono na stereo se vytvoří dva identické kanály, při převodu ze stereo na mono se kanály sloučí do jednoho. 
+      </p>
+
+<br>
+
+      <h2 id="panel-essential-sound">Panel Essential Sound</h2>
+
+      <p>
+        Většina nástrojů pro úpravy zvuku se nachází v panelu Essential Sound. Na základě typu označené audiostopy
+        se v tomto panelu zobrazí různá nastavení, která odpovídají běžným potřebám pro úpravu daného typu audia.
+      </p>
+
+      <p>
+        Program se pokusí automaticky detekovat, do jaké kategorie daná stopa patří. Panel Essential Sound však umožňuje tuto
+        klasifikaci změnit, například pokud byl typ špatně detekován. Pro každý typ je zde také možné vybírat z několika
+        přednastavených šablon, které příslušná nastavení upraví tak, aby odpovídala dané situaci. Například pro 
+        dialogy je, mimo jiné, k dispozici šablona Podcast Voice, která se pokusí upravit zvuk, tak aby vynikal hlas mluvčího.
+      </p>
+
+      <p>
+        Vespodu panelu se pak nachází možnosti pro celkové ztlumení stopy a pro úpravu hlasitosti klipu.
+      </p>
+
+<br>
+
+      <h3 id="ess-dialog">Základní nastavení pro Dialog</h3>
+
+      <p>
+        U zvukových stop představujících řeč je klíčové, aby byl hlas mluvčího dobře srozumitelný. 
+        Panel Essential Sound nabízí nástroj Enhance Speech, který pomocí umělé inteligence potlačuje 
+        okolní šum a zvýrazňuje hlas. Posuvníkem Mix Amount lze regulovat intenzitu tohoto efektu.
+      </p>
+
+      <p>
+        Důležité je také udržovat konzistentní úroveň hlasitosti, aby nevznikaly příliš hlasité nebo tiché části. 
+        K tomu slouží nástroj Auto-Match v záložce Loudness. Po jeho použití se hlasitost vybraných klipů automaticky 
+        upraví na podobnou úroveň.
+      </p>
+
+      <p>
+        Natočený materiál může často obsahovat nežádoucí zvuky, například šum nebo ozvěnu. 
+        Záložka Repair nabízí nástroje pro jejich potlačení, jako je redukce šumu (Reduce Noise) 
+        nebo omezení ozvěny (Reduce Reverb) a další.
+      </p>
+
+      <p>
+        Záložka Clarity slouží k detailnějším úpravám hlasu pomocí nástrojů, jako je Dynamics, EQ nebo Vocal Enhancer. 
+        Vocal Enhancer umožňuje zvýraznit buď vysoké nebo nízké tóny ve stopě. EQ upravuje frekvenční charakter zvuku, 
+        například zvýrazněním řeči nebo vytvoření efektu telefoního hovoru.
+      </p>
+
+      <p>
+        Záložka Creative obsahuje efekty pro stylizaci zvuku. Lze zde například přidat ozvěnu (Reverb), 
+        která vytváří dojem prostoru pro dramatické či atmosférické úpravy hlasu. 
+      </p>
+
+<br>
+
+      <h3 id="ess-music">Základní nastavení pro Hudbu</h3>
+
+      <p>
+        Hudba je klíčovým prvkem pro vytvoření atmosféry ve videu. Kromě správného výběru hudby je tedy také důležité
+        ji vhodně upravit.
+      </p>
+
+      <p>
+        Panel Essential Sound pro hudbu nabízí záložku Loudness, která funguje stejně jako u dialogů. Obsahuje však navíc
+        dvě další užitečné záložky.
+      </p>
+
+      <p>
+        První z nich se nazývá Duration a umožňuje stopu prodloužit. Hodí se například v případě, kdy hudba skončí dříve,
+        než klip, který má podkreslovat. Existují dvě metody prodloužení: Stretch a Remix. Strech prodlužuje stopu tím,
+        že zpomalí její přehrávání, tak aby naplnila požadovanou délku. Není tedy ideální, protože zpomalí celou stopu
+        a tím může změnit způsob, jakým hudba působí. Na druhou stranu, Remix prodlužuje délku stopy pomocí umělé inteligence,
+        která nejdříve hudbu analyzuje a nalezne míste, kde lze hudbu prodloužit. Následně přeorganizuje, či duplikuje
+        části stopy a tím ji prodlouží. Části, kde byla stopa upravena jsou v klipu na časové ose zovýrazněny vertikální vlnovkou.
+      </p>
+
+      <p>
+        Druhou záložkou pro tuto kategorii je Ducking. Tato funkce automaticky ztlumí hudbu, pokud detekuje, 
+        že v sekvenci hraje audio stopa označená Dialog, či jako jiná zvolená kategorie. Tím se zajistí, že 
+        hudba nebude rušit srozumitelnost dialogů, nebo důležitých momentů ve videu.
+      </p>
+
+<br>
+
+      <h3 id="ess-sfx">Základní nastavení pro Zvukové efekty (SFX)</h3>
+
+      <p>
+        Zvukové efekty slouží k doplnění vizuálního děje a zvýraznění konkrétních akcí ve videu. 
+        Obvykle se jedná o krátké zvuky, které by měly být dostatečně výrazné, ale neměly by rušit ostatní složky zvuku.
+        Jako zvukový efekt lze označit například \"cinknutí\" při zobrazení textu.
+      </p>
+
+      <p>
+        Pro tento typ audia je v panelu Essential Sound jen jedna nová záložka, a tou je Pan. Zde je možné nastavit,
+        z jaké strany bude zvuk přicházet. Pomocí posuvníku se nastaví pozice zdroje zvuku, hodnota 0 znamená prostředek,
+        -100 levý kaná a 100 pravý kanál. Je však možné nastavit hodnotu Pan na libovolné číslo v tomto rozsahu.
+        Alternativně lze tuto vlastnost nastavit také v panelu Effect Controls, pod záložkou Audio > Panner > Balance.
+      </p>
+
+      <h3 id="ess-ambience">Základní nastavení pro Atmosférické zvuky</h3>
+
+      <p>
+        Atmosférické zvuky, označované jako Ambience, dokáží diváka vtáhnout do příběhu.
+        Jedná se například o zvuky prostředí, jako je vítr, ruch města nebo šum přírody.
+        Tyto zvuky by měly být spíše v pozadí a neměly by odvádět pozornost od hlavního děje. 
+      </p>
+
+      <p>
+        Kromě záložek Loudness, Creative a Ducking je zde nová záložka Stereo Width. Tato funkce slouží k rozšíření 
+        nebo zúžení prostorového vnímání daného zvuku, aby lépe zapadl do scény.
+      </p>
+
+<br>
+
+      <h2 id="jine-zpusoby">Jiné způsoby úpravy zvuku</h2>
+
+      <p>
+        Mimo nástroje v Essential Sound panelu, lze se zvukem pracovat i jinými způsoby. Vlastnosti jako celková hlasitost, 
+        hlasitost jednotlivých kanálů (pravý a levý) nebo Pan (poměr mezi těmito kanály) se dají manuálně nastavit
+        v Effect Controls panelu.
+      </p>
+
+      <p>
+        V panelu Effects existuje také složka Audio Effects, která obsahuje různé efekty, jenž je možné na audiostopy aplikovat.
+      </p>
+
+      <p>
+        Na časové ose se pro střih zvuku používají stejné nástroje jako pro střih obrazu. Tedy nástroje představené v minulé kapitole.
+      </p>
+
+<br>
+
+      <h2 id="dobra-praxe">Dobrá praxe při práci se zvukem</h2>
+
+      <p>
+        Zvuk hraje ve videu zásadní roli a jeho správné použití může výrazně ovlivnit celkový dojem i atmosféru výsledného díla. 
+        Volba hudby, práce s hlasem i použití zvukových efektů by proto měla vždy vycházet z cíle videa a jeho hlavního sdělení.
+      </p>
+
+      <p>
+        Při úpravě zvuku je důležité si uvědomit, co je v daném momentu nejdůležitější. 
+        U rozhovorů nebo jiných situací, kde je klíčové mluvené slovo, musí být řeč vždy dobře srozumitelná 
+        a ostatní zvukové složky ji nesmí přehlušovat. Naopak u vizuálně zaměřených nebo tzv. cinematických videí může 
+        hrát hlavní roli hudba, která by měla odpovídat tempu a náladě obrazu.
+      </p>
+
+      <p>
+        Zvukové efekty by měly být používány citlivě a účelně. Jejich úkolem není rušit, ale doplňovat obraz, zvýrazňovat děj 
+        nebo podpořit emoci. Stejně důležité je udržovat vyváženost mezi jednotlivými zvukovými stopami, aby například
+        hudba nebyla nepřiměřeně hlasitá ve srovnání s dialogem nebo efekty.
+      </p>
+
+      <p>
+        Při práci se zvukem je vhodné se vyvarovat náhlým začátkům a koncům zvukových klipů, které mohou působit rušivě. 
+        Místo toho se používají plynulé přechody, například pomocí postupného zesilování a zeslabování (fade in a fade out), 
+        které lze vytvořit pomocí tzv. keyframes v Effect Controls panelu, či použitím a nastavením efektu z panelu Effects
+        a složky Audio Transitions > Crossfade. (Více o efektech v další kapitole)
+      </p>
+
+      <p>
+        Pro lepší přehlednost je také vhodné organizovat zvuk do více vrstev podle jejich typu, například oddělit dialog, hudbu 
+        a zvukové efekty. Premiere Pro navíc umožňuje jednotlivé vrstvy dočasně izolovat pomocí funkce Solo nebo naopak ztlumit 
+        pomocí Mute, což usnadňuje práci při úpravách.
+      </p>
+
+
+
+
+
     `,
     quizKey: "zvuk",
     sources: []

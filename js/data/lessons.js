@@ -62,6 +62,11 @@ window.LESSONS = [
       </p>
 
       <p>
+        <i>Praktické části nenásledují popsaný doporučený pracovní postup z kapitoly "Postprodukční workflow",
+        ale jsou zaměřené na konkrétní témata probraná v aktuální kapitole.</i>
+      </p>
+
+      <p>
         Na konci kapitol se nachází kvíz, který vám pomůže zkontrolovat, zda jste pochopili probírané téma.
         Počet pokusů je neomezený a při špatné odpovědi se vám ukáže správně řešení.
       </p>
@@ -1389,7 +1394,7 @@ window.LESSONS = [
       </figure>
 
       <p>
-        V Project panelu se vám vytvoří nová sekvence, pro udržení organiza ji přetáhněte do binu sekvence.
+        V Project panelu se vám vytvoří nová sekvence, pro udržení organizace ji přetáhněte do binu sekvence.
       </p>
 
       <figure class="doc_figure doc_figure--large">
@@ -1710,15 +1715,21 @@ window.LESSONS = [
     </p>
 
     <figure class="doc_figure doc_figure--large">
-        <img src="img/kapitola_7/prakt_final.png" alt="Finální stav časové osy">
+        <img src="img/kapitola_7/prakt_final.png" alt="Stav časové osy po odstranění mezer">
 
         <figcaption>
-            <div class="figure_title">Finální stav časové osy</div>
+            <div class="figure_title">Stav časové osy po odstranění mezer</div>
         </figcaption>
       </figure>
 
     <p>
       Po odstranění mezer by měla vaše časová osa vypadat podobně, jako na obrázku výše.
+    </p>
+
+    <p>
+      Vyzkoušejte si libovolným způsobem vložit na časovou osu i zbylé klipy: cesta_vlakem3.mov, nádraží2.mov .
+      Vložte je za klip cesta_vlakem2.mov . Tyto klipy sestříhejte tak, aby cesta_vlakem3.mov trvala přibližně 8 vteřin a nádraží2.mov 
+      připbližně 10 vteřin. Po vložení a sestříhání klipů odstraňtě Ripples.
     </p>
      `,
     quizKey: "strih",
@@ -1743,7 +1754,7 @@ window.LESSONS = [
         <img src="img/kapitola_8/zvuk_kategorie.png" alt="Ukázka kategorizace zvukových stop">
 
         <figcaption>
-          <div class="figure_title">Ukázka kategorizace zvukových stop</div>se pokusí automaticky
+          <div class="figure_title">Ukázka kategorizace zvukových stop</div>
         </figcaption>
       </figure>
 
@@ -1979,7 +1990,7 @@ window.LESSONS = [
 
       <h2 id="jine-zpusoby">Jiné způsoby úpravy zvuku</h2>
 
-      <figure class="doc_figure doc_figure--medium">
+      <figure class="doc_figure doc_figure--large">
         <img src="img/kapitola_8/zvuk_eff_controls.png" alt="Možnosti úpravy zvuku v panelu Effect Controls">
 
         <figcaption>
@@ -2152,15 +2163,15 @@ window.LESSONS = [
       </p>
 
       <figure class="doc_figure doc_figure--large">
-        <img src="img/kapitola_8/prakt_timeline3.png" alt="Použití Unlink na klipy s cestou vlakem">
+        <img src="img/kapitola_8/prakt_timeline3.png" alt="Použití Unlink na zbylé klipy">
 
         <figcaption>
-          <div class="figure_title">Použití Unlink na klipy s cestou vlakem</div>
+          <div class="figure_title">Použití Unlink na zbylé klipy</div>
         </figcaption>
       </figure>
 
       <p>
-        Klip s nádražím je připraven, nyní se přesuňte na zbylé dva klipy s cestou vlakem. Jelikož jejich neobsahuje 
+        Klip s nádražím je připraven, nyní se přesuňte na zbylé klipy. Jelikož jejich audio neobsahuje 
         žádné důležité prvky, může být odstraněno. Ve finále tak bude slyšet pouze hudba a případné zvukové efekty.
         Pro odstranění musíte nejdříve stopy rozpojit pomocí funkce Unlink. Bez rozpojení by se odstranily 
         i obrazové stopy. Po rozpojení je možné jednotlivé audio stopy cesty vlakem odstranit.
@@ -2214,19 +2225,13 @@ window.LESSONS = [
       </figure>
 
       <p>
-        Použijte Razor Tool a klip s hudbou zkraťte tak, aby končil ve stejném momentě jako klip cesta_vlakem2.mov.
+        Použijte Razor Tool a klip s hudbou zkraťte tak, aby končil ve stejném momentě jako klip nádraží2.mov.
       </p>
 
       <p>
-        Nyní jste do svého projektu přidali základní hudební podkres ac upravili jste zbylé klipy a hlasitost hudby tak,
+        Nyní jste do svého projektu přidali základní hudební podkres a upravili jste zbylé klipy a hlasitost hudby tak,
         aby se navzájem doplňovaly.
       </p>
-
-
-
-
-
-
     `,
     quizKey: "zvuk",
     sources: [
@@ -2235,5 +2240,648 @@ window.LESSONS = [
         url: "https://pixabay.com/music/corporate-digital-digital-music-492802/"
       }
     ]
+  },
+
+    {
+    id: "efekty",
+    menu: "Efekty",
+    title: "Základy efektů",
+    subtitle: "Přiblížení používání efektů a Effect Controls panelu",
+    html: `
+      <h2 id="efekty-uvod">Efekty v Premiere Pro</h2>
+      <p>
+        Efekty slouží k úpravě vzhledu nebo chování obrazu a zvuku. 
+        Pomocí nich je možné například měnit velikost a polohu klipu, upravovat barvy, 
+        rozmazávat obraz, měnit průhlednost, deformovat záběr, přidávat stylizační prvky 
+        nebo vytvářet různé přechody mezi záběry. Nejde tedy jen o vizuálně výrazné změny, 
+        ale i o běžné a velmi praktické úpravy, které se při střihu používají téměř neustále.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/povinne_efekty1.png" alt="Ukázka povinných efektů pro obrazové a zvukové klipy">
+
+        <figcaption>
+          <div class="figure_title">Ukázka povinných efektů pro obrazové a zvukové klipy</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Každý klip disponuje základnímy efekty, které jsou odvozeny od typu daného klipu.
+        Obrazové klipy mají například povinné efekty Motion a Opacity, zatímco zvukové klipy jsou vybaveny efekty Volume a Panner.
+        Pomocí těchto efektů lze upravovat základní vlastnosti daných klipů, jako je přiblížení či oříznutí obrazu, nebo
+        hlasitost zvuku.
+      </p>
+
+      <p>
+        Při práci s efekty je důležité myslet na to, že jejich úkolem není pouze „udělat video zajímavější“. 
+        Efekty by měly mít vždy nějaký účel. Mohou pomoci diváka navést, zvýraznit důležitý detail, 
+        podpořit atmosféru nebo zpřehlednit přechod mezi dvěma záběry. Příliš velké množství efektů 
+        nebo jejich nevhodné použití však může působit rušivě a odvádět pozornost od samotného obsahu videa.
+      </p>
+
+<br>
+
+      <h2 id="effects-panel">Effects panel</h2>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/effects_panel1.png" alt="Effects panel">
+
+        <figcaption>
+          <div class="figure_title">Effects panel</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Hlavním místem pro vyhledávání efektů je panel Effects. Zde jsou efekty 
+        uspořádány do kategorií, takže je možné se v nich orientovat buď ručně, nebo pomocí vyhledávacího pole. 
+        Uživatel zde najde jak obrazové efekty, tak i zvukové efekty. 
+        Panel tedy slouží především jako knihovna nástrojů, které lze následně aplikovat na klipy v sekvenci.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/effects_panel2.png" alt="Ukázka aplikování efektu">
+
+        <figcaption>
+          <div class="figure_title">Ukázka aplikování efektu</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Na klip je možné efekt aplikovat jednoduchým přetažením z panelu Effects. 
+        Samotné detailní nastavení efektu se však neprovádí přímo zde, ale v panelu Effect Controls. 
+        Effects panel je tedy vhodné chápat hlavně jako místo, kde efekt najdete a použijete.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/effects_panel3.png" alt="Přechody v Effects panelu">
+
+        <figcaption>
+          <div class="figure_title">Přechody v Effects panelu</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Kromě samotných efektů lze v panelu Effects nalézt také přechody a presety. 
+        Předvolby, označované jako presets, vypadají v panelu jako klasické efekty, ale představují již připravená nastavení efektů, 
+        která je možné rychle použít bez nutnosti všechno nastavovat ručně od začátku. 
+        To je užitečné zejména v situacích, kdy se stejný typ úpravy opakuje na více klipech.
+      </p>
+
+<br>
+
+      <h2 id="effect-controls">Effect Controls</h2>
+
+      <p>
+        Po aplikaci efektu se jeho nastavení zobrazí v panelu Effect Controls. Tento panel zobrazuje 
+        všechny efekty, které jsou přiřazeny k aktuálně vybranému klipu. Pokud tedy na časové ose označíte 
+        jiný klip, obsah panelu se změní. Není však možné upravovat efekty pro více klipů najednou, pokud máte vybraných několik klipů,
+        obsah panelu bude prázdný.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/eff_cont_panel1.png" alt="Nastavení přidaného efektu (Directional Blur) v panelu Effect Controls">
+
+        <figcaption>
+          <div class="figure_title">Nastavení přidaného efektu (Directional Blur) v panelu Effect Controls</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        V panelu Effect Controls se nacházejí jak pevně přítomné vlastnosti klipu, tak i efekty, které byly 
+        přidány ručně. U každé položky je možné měnit konkrétní hodnoty, nejčastěji číselně zadat hodnotu parametru, 
+        vypnout/zapnout dané nastavení, či animovat vlastnost v čase. 
+      </p>
+
+      <p>
+        Je zde možné efekty nejen nastavovat, ale také je resetovat, kopírovat jejich nastavení nebo postupně měnit 
+        jejich hodnoty v průběhu času. Právě zde se pracuje i s klíčovými snímky (keyframes), které tvoří základ animace.
+        <i>O těchto snímcích pojednává kapitola 10.</i>
+      </p>
+
+<br>
+
+      <h2 id="motion">Motion a Opacity</h2>
+      <p>
+        Motion je jedna ze základních vlastností každého video klipu. Není potřeba ji na klip nijak zvlášť přidávat, 
+        protože je přítomná automaticky. Slouží k základní transformaci obrazu v rámci výsledného snímku, 
+        tedy k tomu, jak bude klip v záběru umístěn a jak bude vypadat.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/motion.png" alt="Motion efekt">
+
+        <figcaption>
+          <div class="figure_title">Motion efekt</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Mezi nejdůležitější parametry Motion patří Position, Scale, Rotation a Anchor Point. 
+        Position určuje polohu klipu v obraze. Scale mění jeho velikost, tedy přiblížení nebo oddálení. 
+        Rotation slouží k natočení klipu. Anchor Point představuje bod, kolem kterého se některé transformace, 
+        zejména otáčení a škálování, provádějí.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/opacity.png" alt="Opacity efekt">
+
+        <figcaption>
+          <div class="figure_title">Opacity efekt</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Opacity je další ze základních vlastností video klipů. Slouží k nastavení neprůhlednosti klipu, tedy k tomu, jak moc bude 
+        klip viditelný. Při hodnotě 100 % je video plně viditelné, hodnota 0% znamená kompletní průhlednost.
+      </p>
+
+<br>
+      <h2 id="audio">Volume a Panner</h2> 
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/audio1.png" alt="Volume a Panner efekty">
+
+        <figcaption>
+          <div class="figure_title">Volume a Panner efekty</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Stejně jako video klipy, i zvukové klipy mají svá základní nastavení, která se nachází v záložce Audio. 
+        Zde jsou povinné efekty, jako například Volume (hlasitost) a Panner 
+        (poměr mezi levým a pravým kanálem). Pomocí těchto parametrů lze upravit celkovou hlasitost zvuku, jeho prostorové 
+        umístění nebo například kompletně ztlumit zvuk pomocí Mute nastavení.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/audio2.png" alt="Channel Volume efekt">
+
+        <figcaption>
+          <div class="figure_title">Channel Volume efekt</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Pokud je audiostopa typu Stereo, zobrazí se i třetí effekt, Channel Volume. Ten umožňuje upravit hlasitost 
+        jednotlivých kanálů (levý a pravý) zvlášť, což je užitečné pro vytvoření prostorového zvuku.
+      </p>
+
+  <br>
+
+      <h2 id="prechody">Přechody</h2>
+      <p>
+        Přechod je speciální typ efektu, který se používá mezi dvěma klipy, případně na začátku nebo konci klipu. 
+        Jeho úkolem je vizuálně nebo zvukově propojit dvě objekty. Pokud mezi klipy není použit žádný přechod, 
+        dochází k obyčejnému střihu, tedy okamžitému přepnutí z jednoho do druhého.
+      </p>
+
+      <p>
+        Premiere Pro nabízí přechody jak pro video, tak pro audio. V případě obrazu ovlivňují změnu mezi dvěma záběry, 
+        u zvuku pak pomáhají odstranit nepříjemné skoky mezi dvěma stopami.
+        Mezi nejčastější přechody patří například prolnutí (Fade), tedy postupné plynulé nahrazení jednoho obrazu druhým.
+        Ačkoliv je tento přechod jeden z nejpoužívanějších, neexistuje v panelu Effects jako samostatný efekt,
+        ale je třeba ho vytvořit práve pomocí keyframes u vlastnosti Opacity.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/prechody1.png" alt="Crossfade kategorie v panelu Effects">
+
+        <figcaption>
+          <div class="figure_title">Crossfade kategorie v panelu Effects</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Pro audioklipy existuje obdobný typ přechodu,
+        který se nazývá Crossfade a vytváří plynulou změnu hlasitosti mezi dvěma zvukovými stopami. Crossfade naopak od obrazového
+        Fade existuje jako efekt v panelu Effects, konkrétně ve své vlastní kategorii.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/prechody2.png" alt="Ukázka aplikování přechodů">
+
+        <figcaption>
+          <div class="figure_title">Ukázka aplikování přechodů</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Přechody se stejně jako běžné efekty vybírají v panelu Effects. Následně se přetáhnou na střih mezi dvěma klipy 
+        nebo na začátek či konec klipu. Po aplikaci je možné jejich délku a přesné umístění upravit přímo na časové ose 
+        nebo v panelu Effect Controls. Délka přechodu výrazně ovlivňuje jeho výsledné působení. Krátký přechod bývá nenápadný, 
+        delší přechod je naopak výraznější a více na sebe upozorňuje.
+      </p>
+
+<br>
+
+      <h2 id="prakticka-efekty">Praktická část</h2>
+      <p>
+        V této části si vyzkoušíte aplikovat přechody mezi klipy, práci s panelem Effect Controls a seznámíte se s nastavením 
+        základních parametrů efektu Motion.
+      </p>
+
+      <h3 id="prakt-prechody">Přechody mezi klipy</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/prakt_prechody1.png" alt="Video Transitions kategorie v panelu Effects">
+
+        <figcaption>
+          <div class="figure_title">Video Transitions kategorie v panelu Effects</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Otevřete si projekt Cesta vlakem. V panelu Effects najděte kategorii Video Transitions. Zde se nachází různé kategorie
+        přechodů pro video stopy.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/prakt_prechody2.png" alt="Aplikování přechodu Wipe > Stretch Wipe">
+
+        <figcaption>
+          <div class="figure_title">Aplikování přechodu Wipe > Stretch Wipe</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Vyberte například přechod Wipe > Stretch Wipe a přetáhněte ho na první střih, tedy mezi klipy nádraží1.mov a cesta_vlakem1.mov .
+        Přechod se zobrazí jako malý obdélník, který se nachází na střihu mezi těmito dvěma klipy. 
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/prakt_prechody3.png" alt="Set Transition Duration pro úpravu délky přechodu">
+
+        <figcaption>
+          <div class="figure_title">Set Transition Duration pro úpravu délky přechodu</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Přehrajte si část sekvence, kde se tento přechod nachází a všimněte si, jak se klipy navzájem proínají.
+        Pokud vám nevyhovuje délka přechodu, můžete ji upravit pravým kliknutím myši na přechod a zvolením možnosti Set Transition 
+        Duration, nebo jednoduše tažením za okraj přechodu přímo na časové ose.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/prakt_prechody4.png" alt="Možnost Clear pro odstranění přechodu">
+
+        <figcaption>
+          <div class="figure_title">Možnost Clear pro odstranění přechodu</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Přechod můžete odstranit pomocí pravého kliknutí a zvolením možnosti Clear.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/prakt_prechody5.png" alt="Přechody na zbylích střizích">
+
+        <figcaption>
+          <div class="figure_title">Přechody na zbylích střizích</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Projděte si další kategorie přechodů a aplikujte je na další střihy mezi ostatní klipy. 
+        <i>Na obrázku byly pro jednotlivé střihy zvoleny tyto přechody (chronologicky): Wipe > Stretch Wipe, 
+        Dissolve > Blur Dissolve, Dissolve > Film Dissolve, Wipe > Stretch Wipe.</i>
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/prakt_prechody6.png" alt="Constant Gain aplikovaný na konec klipu s hudbou">
+
+        <figcaption>
+          <div class="figure_title">Constant Gain aplikovaný na konec klipu s hudbou</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Přechody existuují i pro zvukové stopy a nachází se v panelu Effects pod kategorií Audio Transitions > Crossfade.
+        Zde jsou tři varianty přechodu pro zvuk: Constant Power, Constant Gain a Exponential Fade. Všechny tyto přechody vytváří 
+        plynulou změnu hlasitosti mezi dvěma zvukovými klipy či mezi klipem a tichou částí. Liší se křivkou, podle které
+        se hlasitost mění. Pro konec hudby v projektu zvolte například přechod Constant Gain a přetáhněte ho na konec klipu s hudbou. 
+        Tím se vytvoří plynulý fade out, tedy postupné zeslabení hudby až do ticha.
+      </p>
+
+<br>
+
+      <h3 id="prakt-efekty">Ukázka úprav pomocí Motion</h3>
+
+      <p>
+        Následující část se zaměřuje na základní parametry efektu Motion. Tyto parametry patří mezi nejpoužívanější 
+        nástroje při práci s videem a objevují se i u řady dalších efektů. Je proto důležité porozumět tomu, jak fungují. 
+        Nejde jen o jednorázový postup, ale o principy, které budete využívat opakovaně při práci na vlastních projektech. 
+        Doporučuje se proto jednotlivé parametry vyzkoušet a osahat, abyste porozuměli tomu, jak dokáží klip měnit.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/prakt_motion1.png" alt="Motion a Opacity pro klip s nádražím">
+
+        <figcaption>
+          <div class="figure_title">Motion a Opacity pro klip s nádražím</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Na časové ose zvolte například klip nádraží2.mov a otevřete panel Effect Controls.
+        Všimněte si, že tento klip má již přiřazené základní efekty Motion a Opacity. Vyzkoušejte si různé úpravy pomocí
+        nastavení v efektu Motion.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/prakt_motion2.png" alt="Parametr Scale">
+
+        <figcaption>
+          <div class="figure_title">Parametr Scale</div>
+        </figcaption>
+      </figure>
+
+      <p> 
+        Nastavení Scale mění přiblížení klipu, základní hodnota je 100, při zvýšení hodnoty se klip přiblíží a při snížení se oddálí.
+        Zkuste klip s nádražím přiblížit na hodnotu 160, čímž se vytvoří efekt zoomu. Hodnotu lze upravovat buď kliknutím na 
+        modré číslo a napsáním nové hodnoty, nebo podržením na hodnotě a tažením. 
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/prakt_motion3.png" alt="Vypnutí Uniform Scale">
+
+        <figcaption>
+          <div class="figure_title">Vypnutí Uniform Scale</div>
+        </figcaption>
+      </figure>
+      
+      <p>
+        Všimněte si, že se klipu zvětšuje 
+        rovnoměrně šířka i výška. Toto chování lze vypnout odškrtnutím políčka Uniform Scale, přičemž se vám nastavení Scale 
+        změní na Scale Height (velikost výšky) a Scale Width (velikost šířky). Pomocí těchto polí pak můžete dimenze klipu 
+        zvětšovat/zmenšovat libovolně. To ale může vést k deformaci obrazu, proto je důležité s tímto nastavením pracovat opatrně. 
+        Pokud nepotřebujete opravit dimenze či záměrně klip deformovat, je lepší ponechat nastavení Uniform Scale zapnuté. 
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/prakt_motion4.png" alt="Uniform a Anchor Point">
+
+        <figcaption>
+          <div class="figure_title">Uniform a Anchor Point</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Se Scale se často upravuje i nastavení Position a Anchor Point. Tato dvě nastavení mohou na první
+        pohled působit podobně, ale jejich účel je odlišný. Position určuje, kde se klip nachází ve výsledném obrazu,
+        tedy zda je více vlevo, vpravo, nahoře nebo dole. Anchor Point naopak představuje vnitřní kotevní bod klipu,
+        kolem kterého se provádí škálování a otáčení. Ve výchozím stavu se tento bod nachází přibližně uprostřed klipu.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/prakt_motion5.png" alt="Ukázka nastavení parametru Position">
+
+        <figcaption>
+          <div class="figure_title">Ukázka nastavení parametru Position</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Position se nastavuje pomocí dvou hodnot. První hodnota určuje vodorovnou polohu, druhá svislou.
+        Pokud tedy změníte Position, neposouváte „obsah uvnitř klipu“, ale celý klip v rámci výsledného snímku.
+        To se hodí například tehdy, když chcete po přiblížení pomocí Scale upravit výřez tak, aby v obraze zůstal
+        důležitý objekt, například budova nádraží nebo postava.
+      </p>
+
+      <p>
+        Anchor Point funguje jinak. Neurčuje, kam je klip umístěn ve výsledném obrazu, ale určuje bod, od kterého
+        se počítá transformace klipu. Pokud tedy změníte Scale nebo Rotation, Premiere Pro provádí tuto změnu právě
+        vzhledem ke kotevnímu bodu. Když je Anchor Point uprostřed klipu, klip se zvětšuje nebo otáčí kolem středu.
+        Pokud byste Anchor Point přesunuli například více doleva, klip by se při zvětšování nebo otáčení choval tak,
+        jako by byl „uchycený“ právě v tomto novém bodě.
+      </p>
+
+      <p>
+        V praxi tedy obvykle platí, že pokud chcete pouze posunout výřez, upravíte Position. Pokud ale chcete změnit,
+        kolem jakého místa se má klip zvětšovat nebo otáčet, upravíte Anchor Point. Pro běžný jednoduchý zoom většinou
+        stačí pracovat jen se Scale a případně s Position. Anchor Point se častěji využívá u složitějších animací
+        nebo ve chvíli, kdy potřebujete, aby se klip nepřibližoval od středu, ale od jiného místa.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/prakt_motion6.png" alt="Parametr Rotation">
+
+        <figcaption>
+          <div class="figure_title">Parametr Rotation</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Dalším nastavením v efektu Motion je Rotation, které slouží k natočení klipu. Základní hodnota je 0°, při zvýšení hodnoty se 
+        klip otáčí ve směru hodinových ručiček, při snížení se otáčí proti směru hodinových ručiček. Stejně jako u Scale, i zde se 
+        změna projeví vzhledem k Anchor Pointu.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/prakt_motion7.png" alt="Reset tlačítko pro parametry">
+
+        <figcaption>
+          <div class="figure_title">Reset tlačítko pro parametry</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Vyzkoušejte si různé kombinace těchto nastavení a sledujte, jak se klip chová. Zkuste například přiblížit klip pomocí 
+        Scale a poté upravit Position tak, aby v záběru zůstal důležitý objekt. Následně změňte Anchor Point a pozorujte, jak se 
+        klip zvětšuje nebo otáčí kolem nového bodu.
+        V případě potřeby můžete libovolné nastavení v rámci efektů resetovat pomocí tlačítka Reset Parameter, které vrátí
+        danou vlastnost do výchozího stavu.
+      </p>
+
+<br>
+      <h3 id="prakt-zoom">Přiblížení klipu</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/prakt_priblizeni.png" alt="Přiblížení klipu nádraží2.mov pomocí Scale">
+
+        <figcaption>
+          <div class="figure_title">Přiblížení klipu nádraží2.mov pomocí Scale</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Poté, co jste si vyzkoušeli nastavení parametrů v efektu Motion, je čas je využít pro úpravu klipu s nádražím.
+        Resetujte všechny parametry efektu Motion a přibližte ho pomocí Scale na hodnotu 120.
+        Ze záběru tak zmizí část prázdného nádraží a kus zábradlí, které předtím mohly odvádět pozornost od vlaků.
+      </p>
+
+<br>
+      <h3 id="prakt-obrazek">Úprava loga s vlakem</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/prakt_logo1.png" alt="Přetažení loga na časovou osu">
+
+        <figcaption>
+          <div class="figure_title">Přetažení loga na časovou osu</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Na časovou osu přetáhněte z binu Obrázky klip logo_bílá.png a umístěte ho nad klip nádraří1.mov . 
+        Obrázek má bílou barvu, a oproti barevnému pozadí tolik nevyniká.
+      </p>
+      
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/prakt_logo2.png" alt="Vyhledání efektu Drop Shadow v panelu Effects">
+
+        <figcaption>
+          <div class="figure_title">Vyhledání efektu Drop Shadow v panelu Effects</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        V panelu Effects pomocí vyhledávacího pole vyhledejte efekt Drop Shadow. Alternativně ho najdete v kategorii
+        Video Effects > Perspective. Tento efekt přeáhněte na klip s logem.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/prakt_logo3.png" alt="Natsavení Drop Shadow v panelu Effect Controls">
+
+        <figcaption>
+          <div class="figure_title">Nastavení Drop Shadow v panelu Effect Controls</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        V panelu Effect Controls se vám, pro klip logo_bílá.png, zobrazí nastavení tohoto efektu. Drop Shadow slouží k vytvoření
+        stínu za objektem.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/prakt_logo4.png" alt="Úprava parametrů Drop Shadow">
+
+        <figcaption>
+          <div class="figure_title">Úprava parametrů Drop Shadow</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Upravte parametr Drop Shadow > Opacity na hodnotu 100%. Dále oddalte stín od objektu
+        za pomoci parametru Drop Shadow > Distance, použijte hodnotu 25.
+        Vytvoříte tak černý obrysový stín na jedné straně, který pomůže, aby logo více vyniklo a nebylo ztracené na pozadí.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/prakt_logo5.png" alt="Úprava parametrů Motion efektu">
+
+        <figcaption>
+          <div class="figure_title">Úprava parametrů Motion efektu</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Logo nyní vypadá lépe, ale zakrývá velkou část obrazu. Pomocí parametru Motion > Scale zmenšete logo na hodnotu 75 a přesuňte
+        ho například do levého dolního rohu obrazu. Přesun realizujte použitím parametru Motion > Position.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_9/prakt_logo6.png" alt="Výsledná podoba loga po úpravách">
+
+        <figcaption>
+          <div class="figure_title">Výsledná podoba loga po úpravách</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Logo by pak ve výsledku mělo vypadat, jako na obrázku výše.
+      </p>
+    `,
+    quizKey: "efekty",
+    sources: []
+  },
+
+      {
+    id: "animace",
+    menu: "Animace a Keyframes",
+    title: "Animace a Keyframes",
+    subtitle: "Rozpohybování statických efektů skrze animace",
+    html: `
+      <h2 id="keyframes">Klíčové snímky (Keyframes)</h2>
+      <p>
+        Klíčové snímky, anglicky keyframes, slouží k animaci vlastností v čase. 
+        Princip je poměrně jednoduchý: uživatel zvolí, jakou hodnotu má mít určitá vlastnost v jednom okamžiku 
+        a jakou v jiném. Premiere Pro potom dopočítá průběh změny mezi těmito body. 
+        Díky tomu lze vytvořit pohyb, postupné zesílení či zeslabení efektu, postupnou změnu velikosti a mnoho dalších 
+        typů animací.
+      </p>
+
+      <p>
+        Typickou animací je pro příklad přiblížení záběru za účelem zvětšit důležitou oblast. Ačkoliv je možné původní klip
+        roztřihnout a část, která se soustedí na určitou oblast záběru přiblížit staticky, přístup s animací působí
+        více profesionálně a pomáhá udržet pozornost diváka. 
+      </p>
+
+      <p>
+        Pro příklad lze uvést tvorbu videonávodu, který se zabývá vysvětlováním funkcí určitého softwaru. Při popisu 
+        specifických oken, či tlačítek by bylo vhodné změnit kompozici tak, aby byl probíraný objekt dobře vidět.
+        Situace, kdy se mluvčí přesouvá z popisu jiné části rozhraní se pomocí animace změní, ze segmentovaného popisu se střihy,
+        na plynulý výklad, který se kompozičně přizpůsobuje dle potřeby.
+      </p>
+
+      <p>
+        Za další situaci, kdy je výhodné použít keyframes, lze považovat například práci s hlasitostí hudby.
+        Pouhé ustřižení hudební stopy a náhlé zvýšení hlasitosti by mohlo působit rušivě a pokud by byl rozdíl mezi hlasitostmi
+        velký, mohlo by to diváka i vylekat. Postupné navyšování hlasitosti, rozložené do několika vteřin, na druhou stranu 
+        zní přirozeněji a dosáhne stejného zamýšleného výsledku.
+      </p>
+
+<br>
+
+      <h2 id="effect-con-pole">Animační oblast v Effect Controls</h2>
+      <p>
+        Na pravé straně panelu Effect Controls se nachází řádkovaná oblast pro animace. Zde je možné
+        vizuálně vidět pozice jednotlivých klíčových snímků. Každý řádek odpovídá jednomu parametru.
+      </p>
+
+      <p>
+        Tato oblast představuje lokální časovou osu pro vybraný klip, její měřítko je možné upravit pomocí
+        scrollbaru na spodu této oblasti. Chycením za okraj a zmenšením bude osa detailnější, roztažením se měřítko
+        zmenšuje. Zobrazuje se zde i přehrávací hlava, jejíž pozice odpovídá pozici přehrávací hlavy na časové ose.
+        To znamená, že pokud přehrávací hlava protíná právě vybraný klip, bude zde vidět v místě protnutí. Pokud je na Timeline
+        panelu přehrávací hlava mimo klip, nebude v této oblasti vidět.
+      </p>
+
+      <p>
+        V horní části oblasti je plocha, která po kliknutí přesune přehrávací hlavu na pozici kliknutí. Pohyb přehrávací hlavy tedy 
+        lze ovládat i zde, avšak jak už bylo řečeno, v této oblasti je limitován pouze na vybraný klip.
+      </p>
+
+<br>
+    
+      <h2 id="tvorba-animace">Tvorba animace</h2>
+      <p>
+        Klíčové snímky lze nastavovat pro většinu parametrů všech efektů, výjimkou jsou například parametry
+        se zaškrtávácím polem. Tvorba probíhá v panelu Effect Controls, kde se po kliknutí na ikonu hodin (tlačítko
+        Toggle animation) v levé části panelu. Pro daný parametr se pak zapnou klíčové snímky a v bodě, kde se nachází 
+        přehrávácí hlava se vytvoří první keyframe.
+      </p>
+
+      <p>
+        Na pravé straně pole daného parametru se také objeví tři tlačítka: Go to Previous Keyframe, Add/Remove Keyframe,
+        Go to Next Keyframe. Pomocí těchto tlačítek je možné se posouvat vždy na předchozí/následující klíčový snímek.
+        Tlačítko Add/Remove Keyframe slouží pro tvorbu a smazání klíčového snímku. Odstranění se provede pokud se v momentě jeho
+        stisknutí přehrávací hlava nachází na pozici již existujícího keyframe. Pokud se přehrávací hlava nepřekrývá s 
+        pozicí žádného keyframe, tak tlačítko vytvoří nový. Alternativně je možné klíčový snímek vytvořit pouze upravením hodnoty
+        parametru, který má zapnuté Toggle animation, v místě, kde se žádný keyframe zatím nenachází.
+      </p>
+
+      <p>
+        Animaci program vytvoří automaticky po přidání alespoň dvou klíčových snímků pro určitý parametr s různýmy hodnotami.
+        Vypočítá se rozdíl mezi hodnotami, který se od prvního klíčového snímku, postupně vyrovnává. Trvání animace
+        lze upravit posouváním klíčových snímků od sebe (zpomalení), nebo k sobě (zrychlení).
+      </p>
+
+      <p>
+        Všechny keyframes, pro daný parametr, je možné smazat vypnutím možnosti Toggle animation.
+      </p>
+    `,
+    quizKey: "animace",
+    sources: []
   },
 ];

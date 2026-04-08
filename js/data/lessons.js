@@ -3159,6 +3159,21 @@ window.LESSONS = [
       Pokud by měl každý záběr jiný barevný nádech, mohly by přechody mezi nimi působit rušivě a nejednotně.
     </p>
 
+    <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_11/matrix.png" alt="Ukázka změny barev ve filmu Matrix">
+
+        <figcaption>
+          <div class="figure_title">Ukázka změny barev ve filmu Matrix</div>
+          <div class="figure_source">
+            Zdroj:
+            <a href="https://tvtropes.org/pmwiki/pmwiki.php/Main/ColorWash"
+              >
+              TV Tropes
+            </a>
+          </div>
+        </figcaption>
+      </figure>
+
     <p>
       Barevné úpravy ale neslouží jen k opravám. Mohou být také kreativním nástrojem, kterým se záměrně vytváří
       určitý styl nebo atmosféra. Teplejší odstíny často působí příjemněji a útulněji, chladnější naopak mohou
@@ -3170,11 +3185,27 @@ window.LESSONS = [
 
       <h2 id="lumetri-color">Lumetri Color</h2>
 
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_11/lumetri1.png" alt="Panel Lumetri Color">
+
+        <figcaption>
+          <div class="figure_title">Panel Lumetri Color</div>
+        </figcaption>
+      </figure>
+
       <p>
         Hlavním nástrojem pro práci s barvami v Adobe Premiere Pro je panel Lumetri Color. Ten sdružuje většinu důležitých
         nástrojů pro základní barevnou korekci i pokročilejší úpravy. Místo používání více oddělených efektů tak lze většinu
         běžné práce provádět na jednom místě.
       </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_11/lumetri2.png" alt="Záložka Basic Correction v panelu Lumetri Color">
+
+        <figcaption>
+          <div class="figure_title">Záložka Basic Correction v panelu Lumetri Color</div>
+        </figcaption>
+      </figure>
 
       <p>
         Panel Lumetri Color je rozdělen do několika záložek. Každá z nich se zaměřuje na jiný typ úprav. Pro začátečníka je
@@ -3183,11 +3214,27 @@ window.LESSONS = [
         kontrastu, stínů a další.
       </p>
 
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_11/lumetri3.png" alt="Záložka Creative v panelu Lumetri Color">
+
+        <figcaption>
+          <div class="figure_title">Záložka Creative v panelu Lumetri Color</div>
+        </figcaption>
+      </figure>
+
       <p>
         Záložka Creative slouží spíše k dodání určitého stylu nebo nálady. Uživatel zde může použít přednastavené vzhledy obrazu 
         a jednoduše tak změnit celkové barevné působení záběru. Hodí se tedy hlavně tehdy, když už je obraz základně opravený a 
         chcete mu dodat zajímavější vzhled.
       </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_11/lumetri4.png" alt="Záložka Curves v panelu Lumetri Color">
+
+        <figcaption>
+          <div class="figure_title">Záložka Curves v panelu Lumetri Color</div>
+        </figcaption>
+      </figure>
 
       <p>
         Sekce Curves umožňuje přesnější práci s barvami a jasem. Oproti základním posuvníkům dává větší kontrolu nad tím, 
@@ -3206,17 +3253,42 @@ window.LESSONS = [
 <br>
 
       <h2 id="zakladni-korekce">Základní korekce</h2>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_11/korekce1.png" alt="Příklad záběru před a po základní korekci">
+
+        <figcaption>
+          <div class="figure_title">Příklad záběru před a po základní korekci</div>
+        </figcaption>
+      </figure>
+
       <p>
         Základní korekce je první krok, od kterého se obvykle práce s barvou odvíjí. Jejím cílem není vytvořit výraznou stylizaci,
         ale dostat obraz do vyváženého a použitelnějšího stavu. Jinými slovy jde o technickou úpravu záběru tak, aby nepůsobil
         příliš tmavě, přesvětleně nebo barevně posunutě.
       </p>
 
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_11/korekce2.png" alt="Nastavení teploty barev">
+
+        <figcaption>
+          <div class="figure_title">Nastavení teploty barev</div>
+        </figcaption>
+      </figure>
+
       <p>
-        Jednou z nejdůležitějších částí je vyvážení bílé. To určuje, zda obraz nepůsobí příliš studeně do modra nebo naopak příliš
+        Jednou z nejdůležitějších částí je vyvážení teploty barev. To určuje, zda obraz nepůsobí příliš studeně do modra nebo naopak příliš
         teple do oranžova či žluta. Pokud je ve videu bílá plocha zabarvená, obvykle to znamená, že není vyvážení bílé nastaveno správně.
-        V takové situaci lze pomocí hodnot Temperature a Tint obraz barevně srovnat.
+        V takové situaci lze pomocí hodnot Temperature (Teplota) a Tint (Nádech) obraz barevně srovnat.
       </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_11/korekce3.png" alt="Základní nástroje pro práci se světlem">
+
+        <figcaption>
+          <div class="figure_title">Základní nástroje pro práci se světlem</div>
+        </figcaption>
+      </figure>
 
       <p>
         Další důležitou oblastí je práce se světlem. Pomocí hodnoty Exposure lze upravit celkový jas záběru, Contrast ovlivňuje rozdíl
@@ -3240,11 +3312,27 @@ window.LESSONS = [
 
     <h2 id="comparison-view">Comparison View</h2>
 
+    <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_11/comparison1.png" alt="Tlačítko pro zapnutí Comparison View v panelu Program Monitor">
+
+        <figcaption>
+          <div class="figure_title">Tlačítko pro zapnutí Comparison View v panelu Program Monitor</div>
+        </figcaption>
+      </figure>
+
     <p>
       Panel Program Monitor je možné přepnout do režimu Comparison View, tedy do zobrazení, ve kterém lze porovnávat dva obrazy 
       současně. Tento režim je užitečný hlavně při práci s barvami, protože umožňuje lépe vidět rozdíly mezi záběry a průběžně
       kontrolovat, zda na sebe barevně navazují. Comparison View lze zapnout přímo v Program Monitoru nebo také z panelu Lumetri Color.
     </p>
+
+    <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_11/comparison2.png" alt="Porovnání dvou klipů v Comparison View">
+
+        <figcaption>
+          <div class="figure_title">Porovnání dvou klipů v Comparison View</div>
+        </figcaption>
+      </figure>
 
     <p>
       Jedním z hlavních využití je porovnání dvou různých záběrů. Uživatel si může zvolit referenční záběr, jehož barevnost
@@ -3252,6 +3340,14 @@ window.LESSONS = [
       liší v jasu, kontrastu nebo barevném ladění. Právě na základě tohoto porovnání je možné následně použít nástroj Color Match,
       který se pokusí vzhled aktuálního záběru přiblížit referenci.
     </p>
+
+    <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_11/comparison3.png" alt="Porovnání jednoho klipu, před a po úpravě">
+
+        <figcaption>
+          <div class="figure_title">Porovnání jednoho klipu, před a po úpravě</div>
+        </figcaption>
+      </figure>
 
     <p>
       Comparison View ale neslouží jen k porovnání dvou různých klipů. Lze ho využít i pro srovnání jednoho záběru 
@@ -3270,14 +3366,39 @@ window.LESSONS = [
       <h2 id="auto-color-a-color-match">Auto Color a Color Match</h2>
 
       <h3 id="auto-color">Auto Color</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_11/autoColor1.png" alt="Ukázka změny po použití Auto Color">
+
+        <figcaption>
+          <div class="figure_title">Ukázka změny po použití Auto Color</div>
+          <div class="figure_source">
+            Zdroj:
+            <a href="https://helpx.adobe.com/premiere-pro/using/auto-color.html"
+              >
+              Adobe HelpX: Auto Color
+            </a>
+          </div>
+        </figcaption>
+      </figure>
+
       <p>
         Premiere Pro nabízí i nástroje, které dokáží část barevných úprav provést automaticky. Jedním z nich je funkce Auto Color.
         Ta, pomocí umělé inteligence Adobe Sensei, analyzuje vybraný klip a pokusí se provést základní korekci tak, 
-        aby obraz působil vyváženěji.
+        aby obraz působil vyváženěji. 
       </p>
 
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_11/autoColor2.png" alt="Tlačítko Auto v panelu Lumetri Color">
+
+        <figcaption>
+          <div class="figure_title">Tlačítko Auto v panelu Lumetri Color</div>
+        </figcaption>
+      </figure>
+
       <p>
-        Funkci lze nalézt v panelu Lumetri Color v sekci Basic Correction.
+        Funkci lze nalézt v panelu Lumetri Color v sekci Basic Correction. Nachází se zde také slider pro
+        nastavení intenzity, tedy do jaké míry se korekce projeví. Efekt lze vymazat tlačítkem Reset.
       </p>
 
       <p>
@@ -3288,10 +3409,27 @@ window.LESSONS = [
       </p>
 
       <h3 id="color-match">Color Match</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_11/colorMatch1.png" alt="Funkce Color Match">
+
+        <figcaption>
+          <div class="figure_title">Funkce Color Match</div>
+        </figcaption>
+      </figure>
+
       <p>
         Druhou užitečnou funkcí je Color Match, která slouží ke sladění barev mezi dvěma záběry. To je praktické například tehdy,
         když byly klipy natočeny v odlišných světelných podmínkách, ale ve výsledném videu mají působit jako součást jedné scény.
       </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_11/colorMatch2.png" alt="Funkce Color Match v panelu Lumetri Color">
+
+        <figcaption>
+          <div class="figure_title">Funkce Color Match v panelu Lumetri Color</div>
+        </figcaption>
+      </figure>
 
       <p>
         Funkce se nachází v panelu Lumetri Color v sekci Color Wheels & Match. Pro její použití je potřeba mít zapnutý Comparison View,
@@ -3331,6 +3469,181 @@ window.LESSONS = [
       <p>
         Zjednodušeně lze říci, že barevná korekce řeší, aby obraz vypadal správně, zatímco color grading řeší, aby obraz vypadal
         záměrně určitým způsobem. 
+      </p>
+
+<br>
+<hr>
+<br>
+
+      <h2 id="prakticka-barvy">Praktická část</h2>
+
+      <p>
+        V této části si vyzkoušíte základní úpravy barev a jejich korekci.
+      </p>
+
+      <h3 id="prakt-korekce">Základní korekce barev klipů</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_11/prakt1.png" alt="Otevření panelu Lumetri Color">
+
+        <figcaption>
+          <div class="figure_title">Otevření panelu Lumetri Color</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Otevřete si projekt Cesta vlakem. V horní nabídce zvolte Window > Lumetri Color, čímž zobrazíte panel Lumetri Color.
+        Poté vyberte klip nádraží1.mov a umístěte přehrávací hlavu nad tento klip v panelu Timeline.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_11/praktCorr1.png" alt="Přepnutí zobrazení do režimu Comparison View">
+
+        <figcaption>
+          <div class="figure_title">Přepnutí zobrazení do režimu Comparison View</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        V panelu Program Monitor přepněte zobrazení do režimu Comparison View. Tím se zobrazí vedle sebe náhledy dvou různých klipů.
+        Protože zatím není potřeba porovnávat dva odlišné záběry, stiskněte tlačítko Shot or Frame Comparison. Náhled se tím přepne
+        do režimu Before a After, tedy na záběr před a po úpravě.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_11/praktCorr2.png" alt="Basic Correction a funkce Auto Color v panelu Lumetri Color">
+
+        <figcaption>
+          <div class="figure_title">Basic Correction a funkce Auto Color v panelu Lumetri Color</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        V panelu Lumetri Color rozbalte sekci Basic Correction. Zde klikněte na tlačítko Auto, čímž se provede automatická
+        korekce barev klipu nádraží1.mov.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_11/praktCorr3.png" alt="Porovnání klipu před a po použití Auto Color">
+
+        <figcaption>
+          <div class="figure_title">Porovnání klipu před a po použití Auto Color</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Všimněte si, že se vzhled klipu změní a záběr působí vyváženěji. Některé parametry však stále mohou vyžadovat
+        ruční doladění.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_11/praktCorr4.png" alt="Ukázka nastavení posuvníků pro základní korekci klipu nádraží1.mov">
+
+        <figcaption>
+          <div class="figure_title">Ukázka nastavení posuvníků pro základní korekci klipu nádraží1.mov</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Upravte hodnoty posuvníků podle obrázku výše. Volitelně si je můžete nastavit také podle vlastního uvážení.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_11/praktCorr5.png" alt="Porovnání klipu nádraží1.mov před a po základní korekci">
+
+        <figcaption>
+          <div class="figure_title">Porovnání klipu nádraží1.mov před a po základní korekci</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Klip nádraží1.mov nyní působí čistěji a barvy jsou výraznější, než před úpravou.
+      </p>
+
+<br>
+
+      <h3 id="prakt-dalsi-klipy">Úprava dalších klipů</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_11/praktDalsiKlipy.png" alt="Ukázka úpravy klipu cesta_vlakem1.mov">
+
+        <figcaption>
+          <div class="figure_title">Ukázka úpravy klipu cesta_vlakem1.mov</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Nyní postupně upravte barvy i u klipů z vlaku. Použijte funkci Auto Color a případně ručně dolaďte nastavení tak,
+        aby obraz působil přirozeněji a barevně vyváženěji.
+      </p>
+
+<br>
+
+      <h3 id="prakt-color-match">Použití Color Match</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_11/praktMatch1.png" alt="Záložka Color Wheels & Match v panelu Lumetri Color">
+
+        <figcaption>
+          <div class="figure_title">Záložka Color Wheels & Match v panelu Lumetri Color</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Po úpravě klipů s cestou vyberte klip nádraží2.mov. V panelu Lumetri Color přepněte do záložky Color Wheels & Match.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_11/praktMatch2.png" alt="Přepnutí Comparison View do režimu pro dva klipy">
+
+        <figcaption>
+          <div class="figure_title">Přepnutí Comparison View do režimu pro dva klipy</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        V panelu Program Monitor přepněte pomocí tlačítka Shot or Frame Comparison náhled zpět tak, aby se opět zobrazovaly
+        dva různé klipy.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_11/praktMatch3.png" alt="Volba referenčního snímku pro funkci Color Match">
+
+        <figcaption>
+          <div class="figure_title">Volba referenčního snímku pro funkci Color Match</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Jako referenční klip zvolte nádraží1.mov. Výběr provedete tak, že v referenční části náhledu kliknete na časový kód
+        (Reference position) pod obrazem a potáhnete ho doleva ke klipu nádraží1.mov. Stejným způsobem pak vyberte 
+        konkrétní snímek, podle kterého chcete barvy přizpůsobit.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_11/praktMatch4.png" alt="Použití funkce Color Match">
+
+        <figcaption>
+          <div class="figure_title">Použití funkce Color Match</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        V panelu Lumetri Color klikněte na tlačítko Apply Match. Premiere Pro se pokusí upravit barvy klipu nádraží2.mov tak,
+        aby se co nejvíce podobaly referenčnímu klipu.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_11/praktMatch5.png" alt="Výsledné porovnání klipů s nádražími">
+
+        <figcaption>
+          <div class="figure_title">Výsledné porovnání klipů s nádražími</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Následně použijte funkci Auto Color a výsledek můžete případně ještě jemně doladit ruční úpravou jednotlivých 
+        parametrů. Oba klipy by tak měly působit barevně sjednoceněji.
       </p>
     `,
   quizKey: "barvy",

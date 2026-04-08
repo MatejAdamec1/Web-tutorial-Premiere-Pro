@@ -597,6 +597,59 @@ window.QUIZZES = {
         "Stiskem Delete"
       ],
       correctIndex: 1
+    },
+  ],
+
+  text_based_editing: [
+    {
+      question: "K čemu slouží funkce Text-Based Editing v Adobe Premiere Pro?",
+      answers: [
+        "K úpravě efektů podle textového popisu",
+        "Ke střihu videa pomocí textového přepisu",
+        "K automatickému exportu videa do více formátů",
+        "K vytváření grafických titulků bez zvuku"
+      ],
+      correctIndex: 1
+    },
+    {
+      question: "Kde lze dodatečně vytvořit transcript, pokud nevznikl už při importu?",
+      answers: [
+        "V panelu Text",
+        "V panelu Effects",
+        "V panelu Lumetri Color",
+        "V panelu Project"
+      ],
+      correctIndex: 0
+    },
+    {
+      question: "Co se stane při označení části textu v transcriptu sekvence?",
+      answers: [
+        "Vytvoří se automaticky titulky",
+        "Klip se ihned exportuje",
+        "Na časové ose se vytvoří In a Out body",
+        "Zvuková stopa se ztlumí"
+      ],
+      correctIndex: 2
+    },
+    {
+      question: "Jaký je hlavní rozdíl mezi transcriptem a titulky?",
+      answers: [
+        "Transcript je pro diváka, titulky jsou jen pracovní pomůcka editora",
+        "Transcript je pro editora, titulky pro diváka",
+        "Transcript obsahuje jen obraz, titulky jen zvuk",
+        "Mezi transcriptem a titulky není žádný rozdíl"
+      ],
+      correctIndex: 1
+    },
+    {
+      question: "Které z následujících tvrzení o Text-Based Editing je podle textu správné?",
+      answers: [
+        "Plně nahrazuje klasický střih na časové ose",
+        "Je vhodný hlavně pro videa bez mluveného slova",
+        "Funguje bez omezení a přepis je vždy zcela přesný",
+        "Může urychlit tvorbu hrubého střihu"
+      ],
+      correctIndex: 3
     }
-  ]
+  ],
 };

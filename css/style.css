@@ -55,6 +55,7 @@ html, body{
 
 body{
   overflow: hidden;
+  scrollbar-color: var(--muted) var(--bg-soft);
 }
 
 .layout{
@@ -189,7 +190,12 @@ h1{
 
 .content h2{
   margin-bottom: 0.625rem;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
+}
+
+.content h3{
+  margin-bottom: 0.625rem;
+  font-size: 1.1rem;
 }
 
 .content ul{

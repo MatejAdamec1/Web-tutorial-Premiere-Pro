@@ -1740,7 +1740,7 @@ window.LESSONS = [
     id: "zvuk",
     menu: "Práce se zvukem",
     title: "Základy práce se zvukem",
-    subtitle: "Seznámení se základy práce se zvukem",
+    subtitle: "Seznámení se základy práce se zvukem.",
     html: `
       <h2 id="zvuk-uvod">Zvuk v Premiere Pro</h2>
       <p>
@@ -2246,7 +2246,7 @@ window.LESSONS = [
     id: "efekty",
     menu: "Efekty",
     title: "Základy efektů",
-    subtitle: "Přiblížení používání efektů a Effect Controls panelu",
+    subtitle: "Přiblížení používání efektů a Effect Controls panelu.",
     html: `
       <h2 id="efekty-uvod">Efekty v Premiere Pro</h2>
       <p>
@@ -2796,11 +2796,11 @@ window.LESSONS = [
     sources: []
   },
 
-      {
+  {
     id: "animace",
     menu: "Animace a Keyframes",
     title: "Animace a Keyframes",
-    subtitle: "Rozpohybování statických efektů skrze animace",
+    subtitle: "Rozpohybování statických efektů skrze animace.",
     html: `
       <h2 id="keyframes">Klíčové snímky (Keyframes)</h2>
       <p>
@@ -2834,10 +2834,27 @@ window.LESSONS = [
 <br>
 
       <h2 id="effect-con-pole">Animační oblast v Effect Controls</h2>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_10/anim_obl1.png" alt="Animační oblast v panelu Effect Controls">
+
+        <figcaption>
+          <div class="figure_title">Animační oblast v panelu Effect Controls</div>
+        </figcaption>
+      </figure>
+
       <p>
         Na pravé straně panelu Effect Controls se nachází řádkovaná oblast pro animace. Zde je možné
         vizuálně vidět pozice jednotlivých klíčových snímků. Každý řádek odpovídá jednomu parametru.
       </p>
+      
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_10/anim_obl2.png" alt="Přehrávací hlava a měřítko animační oblasti">
+
+        <figcaption>
+          <div class="figure_title">Přehrávací hlava a měřítko animační oblasti</div>
+        </figcaption>
+      </figure>
 
       <p>
         Tato oblast představuje lokální časovou osu pro vybraný klip, její měřítko je možné upravit pomocí
@@ -2847,29 +2864,63 @@ window.LESSONS = [
         panelu přehrávací hlava mimo klip, nebude v této oblasti vidět.
       </p>
 
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_10/anim_obl3.png" alt="Plocha pro posouvání přehrávací hlavy v animační oblasti">
+
+        <figcaption>
+          <div class="figure_title">Plocha pro posouvání přehrávací hlavy v animační oblasti</div>
+        </figcaption>
+      </figure>
+
       <p>
         V horní části oblasti je plocha, která po kliknutí přesune přehrávací hlavu na pozici kliknutí. Pohyb přehrávací hlavy tedy 
-        lze ovládat i zde, avšak jak už bylo řečeno, v této oblasti je limitován pouze na vybraný klip.
+        lze ovládat i zde, avšak jak už bylo řečeno, v této oblasti je limitován pouze na vybraný klip. Pohyb hlavy lze také 
+        realizovat po jednotlivých snímcích pomocí šipek na klávesnici, stejným způsobem jako na Timeline panelu.
       </p>
 
 <br>
     
       <h2 id="tvorba-animace">Tvorba animace</h2>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_10/tvorba_anim1.png" alt="Toggle animation pro zapnutí klíčových snímků">
+
+        <figcaption>
+          <div class="figure_title">Toggle animation pro zapnutí klíčových snímků</div>
+        </figcaption>
+      </figure>
+
       <p>
         Klíčové snímky lze nastavovat pro většinu parametrů všech efektů, výjimkou jsou například parametry
         se zaškrtávácím polem. Tvorba probíhá v panelu Effect Controls, kde se po kliknutí na ikonu hodin (tlačítko
-        Toggle animation) v levé části panelu. Pro daný parametr se pak zapnou klíčové snímky a v bodě, kde se nachází 
-        přehrávácí hlava se vytvoří první keyframe.
+        Toggle animation) v levé části panelu, pro daný parametr zapnou klíčové snímky. V bodě, kde se nachází 
+        přehrávácí hlava se pak vytvoří první keyframe.
       </p>
 
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_10/tvorba_anim2.png" alt="Tlačítka pro posouvání mezi a pro přidávání/odstraňování klíčových snímků">
+
+        <figcaption>
+          <div class="figure_title">Tlačítka pro posouvání mezi a pro přidávání/odstraňování klíčových snímků</div>
+        </figcaption>
+      </figure>
+
       <p>
-        Na pravé straně pole daného parametru se také objeví tři tlačítka: Go to Previous Keyframe, Add/Remove Keyframe,
+        Na pravé straně pole daného parametru se, po Toggle animation, objeví tři tlačítka: Go to Previous Keyframe, Add/Remove Keyframe,
         Go to Next Keyframe. Pomocí těchto tlačítek je možné se posouvat vždy na předchozí/následující klíčový snímek.
         Tlačítko Add/Remove Keyframe slouží pro tvorbu a smazání klíčového snímku. Odstranění se provede pokud se v momentě jeho
         stisknutí přehrávací hlava nachází na pozici již existujícího keyframe. Pokud se přehrávací hlava nepřekrývá s 
         pozicí žádného keyframe, tak tlačítko vytvoří nový. Alternativně je možné klíčový snímek vytvořit pouze upravením hodnoty
         parametru, který má zapnuté Toggle animation, v místě, kde se žádný keyframe zatím nenachází.
       </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_10/tvorba_anim3.png" alt="Délka animace mezi klíčovými snímky">
+
+        <figcaption>
+          <div class="figure_title">Délka animace mezi klíčovými snímky</div>
+        </figcaption>
+      </figure>
 
       <p>
         Animaci program vytvoří automaticky po přidání alespoň dvou klíčových snímků pro určitý parametr s různýmy hodnotami.
@@ -2878,10 +2929,536 @@ window.LESSONS = [
       </p>
 
       <p>
-        Všechny keyframes, pro daný parametr, je možné smazat vypnutím možnosti Toggle animation.
+        <i>Všechny keyframes, pro daný parametr, je možné smazat vypnutím možnosti Toggle animation.</i>
       </p>
+
+<br>
+<hr>
+<br>
+
+      <h2 id="prakticka-animace">Praktická část</h2>
+      <p>
+        V této části si vyzkoušíte vytvořit jednoduchou animaci pro logo vlaku.
+      </p>
+
+      <h3 id="prakt-priprava">Příprava</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_10/prakt_priprava1.png" alt="Vložení vnořené sekvence s logem na časovou osu">
+
+        <figcaption>
+          <div class="figure_title">Vložení vnořené sekvence s logem na časovou osu</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Otevřete si projekt cesta vlakem. V Project Panelu otevřete bin Sekvence a přetáhněte sekvenci Logo animace
+        na časovou osu nad klip nádraží2.mov . Vnořenou sekvenci Logo animace jste si připravili v kapitole "Sekvence a časová osa".
+        Pomocí Unlink odstraňte zvukovu stopu této vnořené sekvence.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_10/prakt_priprava2.png" alt="Zkrácení klipů uvnitř sekvence Logo animace">
+
+        <figcaption>
+          <div class="figure_title">Zkrácení klipů uvnitř sekvence Logo animace</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Dvojtým kliknutím vnořenou sekvenci otevřete a zobrazí se vám dva obrázky s logem. Zkraťte jednotlivě oba klipy
+        přibližně na 1,5 vteřiny a odstraňte případné ripples.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_10/prakt_priprava3.png" alt="Odstranění prázdné části vzniklé zkrácením klipů">
+
+        <figcaption>
+          <div class="figure_title">Odstranění prázdné části vzniklé zkrácením klipů</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Nyní se přepněte zpět do hlavní sekvence. I když jste ostřihnutím klipů uvnitř vnořené sekvence zkrátili její délku,
+        v hlavní sekvenci se stále zobrazuje v původním rozsahu. Část, kde uvnitř vnořené sekvence nic není, je zvýrazněna
+        diagonálnímy pruhy. Ostřihněte tuto oblast, tak aby zbytečně nezabírala místo.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_10/prakt_priprava4.png" alt="Zkopírování efektu Drop Shadow z klipu logo_bílá.png">
+
+        <figcaption>
+          <div class="figure_title">Zkopírování efektu Drop Shadow z klipu logo_bílá.png</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        V minulé kapitole jste klip logo_bílá.png upravili efektem Drop Shadow, aby nyní loga nepůsobila odlišně,
+        bylo by vhodné efekty sjednotit. Jednou možností, jak to udělat je zkopírovat klip s logem do vnořené sekvence,
+        alternativně můžete efekty zkopírovat napříč klipy. Označte klip logo_bílá.png v panelu Effect Controls 
+        klikněte pravým tlačítkem na název efektu Drop Shadow. V kontextovém menu zvolte Copy. 
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_10/prakt_priprava5.png" alt="Vložení zkopírovaného efektu do klipů uvnitř vnořené sekvence">
+
+        <figcaption>
+          <div class="figure_title">Vložení zkopírovaného efektu do klipů uvnitř vnořené sekvence</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Poté se přesuňte zpět do vnořené sekvence Logo animace. Zde označte klip logo_bílá.png a v panelu Effect Controls
+        klikněte pravým tlačítkem myši a zvolte možnost Paste. Tím se zkopíruje efekt Drop Shadow i s nastavenými parametry.
+        Efekt zkopírujte i do klipu logo_černá.png.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_10/prakt_priprava6.png" alt="Změna barvy stínu v efektu Drop Shadow">
+
+        <figcaption>
+          <div class="figure_title">Změna barvy stínu v efektu Drop Shadow</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Všechny klipy s logy mají teď stejně nastavený efekt Drop Shadow. Ale pod černým logem nevynikne černý obrysový stín,
+        proto v jeho efektu Drop Shadow upravte parametr Shadow Color na bílou barvu. To provedete kliknutím na obdélníček s barvou
+        a zvolením bílé barvy v okně Color Picker.
+      </p>
+
+<br>
+
+      <h3 id="prakt-animace2">Tvorba animace</h3>
+
+      <p>
+        Nyní se přepněte zpět do hlavní sekvence. Přehrajte si část s kde se nachází vnořená sekvence Logo animace.
+        Všimněte si, že máte v jednom klipu bílé logo, které se po 1,5 vteřině změní na černé. Zatím to bez animace působí jen jako
+        střih. Zvolte tedy klip s vnořenou sekvencí a otevřete panel Effect Controls.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_10/prakt_animace1.png" alt="Úprava parametrů Motion pro vnořenou sekvenci">
+
+        <figcaption>
+          <div class="figure_title">Úprava parametrů Motion pro vnořenou sekvenci</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Budete vytvářet animaci, která plynule zobrazí logo na obrazovce a při přeměně barvy se lehce nakloní.
+        Začněte tím, že přesunete logo na podobné místo, jako v minulé kapitole klip logo_bílá.png, tedy upravíte
+        parametr Motion > Position a Motion > Scale, nebo zkopírujete Motion efekt z klipu logo_bílá.png.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_10/prakt_animace2.png" alt="Toggle animation pro zapnutí klíčových snímků u parametru Position">
+
+        <figcaption>
+          <div class="figure_title">Toggle animation pro zapnutí klíčových snímků u parametru Position</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Pro vytvoření pohybu obrázku použijete parametr Motion > Position.
+        Posuňte přehrávací hlavu na začátek klipu a zapněte Toggle animation pro parametr Motion > Position.
+        Tím se vytvoří první keyframe pro animaci, který odpovídá aktuálnímu nastavení parametru.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_10/prakt_animace3.png" alt="Vytvoření druhého klíčového snímku">
+
+        <figcaption>
+          <div class="figure_title">Vytvoření druhého klíčového snímku</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Posuňte se o 10 snímků dopředu, nejlépe použitím šipek na klávesnici. Zde stisknutím tlačítka Add/Remove Keyframe
+        vytvořte druhý keyframe. Zatím se vám žádná animace nevytvoří, protože parametry mají v obou 
+        keyframe bodech stejnou hodnotu.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_10/prakt_animace4.png" alt="Úprava prvního keyframe pro vytvoření animace">
+
+        <figcaption>
+          <div class="figure_title">Úprava prvního keyframe pro vytvoření animace</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Tlačítkem Go to Previous Keyframe se vraťte na první klíčový snímek a změňte hodnotu Position tak,
+        aby se logo nacházelo těsně pod obrazem a nebylo vidět. Když si nyní klip přehrajete, uvidíte animaci loga,
+        které plynule vyjede do obrazu. <i>(V obrázku je použita svislá pozice 1367).</i>
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_10/prakt_animace5.png" alt="Vytvoření animace pro konec klipu">
+
+        <figcaption>
+          <div class="figure_title">Vytvoření animace pro konec klipu</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Zopakujte tento postup i na konci klipu, s tím rozdílem, že na prvním klíčovém snímku bude logo v obraze
+        a na druhém znovu zajede pod obraz. Tím vytvoříte animaci, kdy logo na začátku klipu vyjede do obrazu a na konci 
+        z něj sjede dolů.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_10/prakt_animace6.png" alt="Toggle animation pro zapnutí klíčových snímků u parametru Rotation">
+
+        <figcaption>
+          <div class="figure_title">Toggle animation pro zapnutí klíčových snímků u parametru Rotation</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Dále je potřeba vytvořit jednoduchou animaci rotace při změně barvy loga. Posuňte přehrávací hlavu na místo, kde
+        změna probíhá, tedy přibližně doprostřed klipu Logo animace. Zapněte Toggle animation pro parametr Motion > Rotation 
+        a nastavte jeho hodnotu na 9°.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_10/prakt_animace7.png" alt="Dokončení rotační animace">
+
+        <figcaption>
+          <div class="figure_title">Dokončení rotační animace</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Vytvořte pro tento parametr keyframe 3 snímky před a 3 snímky po této pozici. V těchto krajních keyframes nastavte hodnotu
+        Rotation na 0°, nebo stiskněte Resset tlačítko. Tím se vytvoří jednoduchá animace, kdy se logo při změně barvy lehce nakloní 
+        a poté se vrátí zpět.
+      </p>
+
     `,
     quizKey: "animace",
     sources: []
+  },
+
+  {
+  id: "barvy",
+  menu: "Úprava barev",
+  title: "Práce s barvami",
+  subtitle: "Seznámení se základy barevných úprav a panelem Lumetri Color.",
+  html: `
+    <h2 id="proc-upravovat-barvy">Proč se barvy upravují</h2>
+    <p>
+      Při práci s videem nestačí řešit pouze samotný střih. Důležitou roli hraje i to, jak obraz ve výsledku působí.
+      Natočený materiál se totiž může lišit od toho, jak vypadal ve skutečnosti při pořizování. Záběr může být
+      příliš tmavý, moc studený, nažloutlý nebo celkově nevýrazný. V takové situaci přichází na řadu práce s barvami.
+    </p>
+
+    <p>
+      Jedním z hlavních důvodů barevných úprav je oprava obrazu. Editor se snaží záběry upravit tak, aby působily
+      přirozeněji a technicky správněji. Zároveň je důležité udržovat konzistentní vzhled napříč celým videem.
+      Pokud by měl každý záběr jiný barevný nádech, mohly by přechody mezi nimi působit rušivě a nejednotně.
+    </p>
+
+    <p>
+      Barevné úpravy ale neslouží jen k opravám. Mohou být také kreativním nástrojem, kterým se záměrně vytváří
+      určitý styl nebo atmosféra. Teplejší odstíny často působí příjemněji a útulněji, chladnější naopak mohou
+      vyvolávat pocit odstupu nebo napětí. Díky tomu lze pomocí barev podpořit celkové vyznění videa a lépe
+      vést divákovu pozornost.
+    </p>
+
+<br>
+
+      <h2 id="lumetri-color">Lumetri Color</h2>
+
+      <p>
+        Hlavním nástrojem pro práci s barvami v Adobe Premiere Pro je panel Lumetri Color. Ten sdružuje většinu důležitých
+        nástrojů pro základní barevnou korekci i pokročilejší úpravy. Místo používání více oddělených efektů tak lze většinu
+        běžné práce provádět na jednom místě.
+      </p>
+
+      <p>
+        Panel Lumetri Color je rozdělen do několika záložek. Každá z nich se zaměřuje na jiný typ úprav. Pro začátečníka je
+        nejdůležitější především sekce Basic Correction, ve které lze nalézt všechny potebné nástroje pro základní korekci.
+        V sekci Color jsou slidery pro úpravu teploty a tytosti barev. V sekci Light jsou zase nástroje pro úpravu
+        kontrastu, stínů a další.
+      </p>
+
+      <p>
+        Záložka Creative slouží spíše k dodání určitého stylu nebo nálady. Uživatel zde může použít přednastavené vzhledy obrazu 
+        a jednoduše tak změnit celkové barevné působení záběru. Hodí se tedy hlavně tehdy, když už je obraz základně opravený a 
+        chcete mu dodat zajímavější vzhled.
+      </p>
+
+      <p>
+        Sekce Curves umožňuje přesnější práci s barvami a jasem. Oproti základním posuvníkům dává větší kontrolu nad tím, 
+        jak se mají upravit světlé, tmavé nebo konkrétně barevné části obrazu.
+      </p>
+
+      <p>
+        Zbývající sekce slouží k detailnějším a přesnějším úpravám obrazu. Color Wheels & Match umožňuje upravovat barvy zvlášť 
+        ve stínech, středních tónech a světlech a také sladit barevnost mezi dvěma záběry. HSL Secondary se používá tehdy, 
+        když je potřeba upravit jen určitou vybranou barvu v obrazu, aniž by se výrazně změnil zbytek záběru. 
+        Poslední sekcí je Vignette, která slouží k jemnému zesvětlení nebo ztmavení okrajů obrazu, čímž může pomoci zvýraznit 
+        střed záběru.
+      </p>
+
+
+<br>
+
+      <h2 id="zakladni-korekce">Základní korekce</h2>
+      <p>
+        Základní korekce je první krok, od kterého se obvykle práce s barvou odvíjí. Jejím cílem není vytvořit výraznou stylizaci,
+        ale dostat obraz do vyváženého a použitelnějšího stavu. Jinými slovy jde o technickou úpravu záběru tak, aby nepůsobil
+        příliš tmavě, přesvětleně nebo barevně posunutě.
+      </p>
+
+      <p>
+        Jednou z nejdůležitějších částí je vyvážení bílé. To určuje, zda obraz nepůsobí příliš studeně do modra nebo naopak příliš
+        teple do oranžova či žluta. Pokud je ve videu bílá plocha zabarvená, obvykle to znamená, že není vyvážení bílé nastaveno správně.
+        V takové situaci lze pomocí hodnot Temperature a Tint obraz barevně srovnat.
+      </p>
+
+      <p>
+        Další důležitou oblastí je práce se světlem. Pomocí hodnoty Exposure lze upravit celkový jas záběru, Contrast ovlivňuje rozdíl
+        mezi světlými a tmavými částmi obrazu. Parametry Highlights, Shadows, Whites a Blacks pak umožňují jemněji upravit jednotlivé
+        oblasti jasu. Díky tomu je možné například zesvětlit stíny bez výrazného ovlivnění zbytku obrazu, nebo naopak stáhnout
+        příliš silná světla.
+      </p>
+
+      <p>
+        Součástí základní korekce je i práce se saturací, tedy sytostí barev. Vyšší saturace udělá barvy výraznější, nižší naopak
+        tlumenější. Ani zde ale neplatí, že silnější úprava znamená lepší výsledek. Příliš saturovaný obraz může působit nepřirozeně
+        a rušivě, zvlášť pokud se jedná o běžné realistické video.
+      </p>
+
+      <p>
+        Při základní korekci je vhodné postupovat po menších krocích. Smyslem této fáze není obraz „přetvořit“, ale spíše opravit
+        jeho barevné nedostatky a připravit ho pro další práci.
+      </p>
+
+<br>
+
+    <h2 id="comparison-view">Comparison View</h2>
+
+    <p>
+      Panel Program Monitor je možné přepnout do režimu Comparison View, tedy do zobrazení, ve kterém lze porovnávat dva obrazy 
+      současně. Tento režim je užitečný hlavně při práci s barvami, protože umožňuje lépe vidět rozdíly mezi záběry a průběžně
+      kontrolovat, zda na sebe barevně navazují. Comparison View lze zapnout přímo v Program Monitoru nebo také z panelu Lumetri Color.
+    </p>
+
+    <p>
+      Jedním z hlavních využití je porovnání dvou různých záběrů. Uživatel si může zvolit referenční záběr, jehož barevnost
+      považuje za správnou, a vedle něj zobrazit aktuálně upravovaný klip. Díky tomu je snazší odhadnout, jak moc se záběry
+      liší v jasu, kontrastu nebo barevném ladění. Právě na základě tohoto porovnání je možné následně použít nástroj Color Match,
+      který se pokusí vzhled aktuálního záběru přiblížit referenci.
+    </p>
+
+    <p>
+      Comparison View ale neslouží jen k porovnání dvou různých klipů. Lze ho využít i pro srovnání jednoho záběru 
+      před a po provedených úpravách. To se hodí například tehdy, když chcete zkontrolovat, jak výrazně barevná korekce změnila 
+      původní obraz, nebo zda už úpravy nejsou příliš silné. 
+    </p>
+
+    <p>
+      Comparison View je tedy praktický pomocník pro vizuální kontrolu barevných úprav. Neprovádí sám o sobě žádnou korekci,
+      ale usnadňuje rozhodování při práci s barvami, protože dává editorovi možnost lépe porovnat původní a upravený stav
+      nebo sladit více záběrů mezi sebou.
+    </p>
+
+<br>
+
+      <h2 id="auto-color-a-color-match">Auto Color a Color Match</h2>
+
+      <h3 id="auto-color">Auto Color</h3>
+      <p>
+        Premiere Pro nabízí i nástroje, které dokáží část barevných úprav provést automaticky. Jedním z nich je funkce Auto Color.
+        Ta, pomocí umělé inteligence Adobe Sensei, analyzuje vybraný klip a pokusí se provést základní korekci tak, 
+        aby obraz působil vyváženěji.
+      </p>
+
+      <p>
+        Funkci lze nalézt v panelu Lumetri Color v sekci Basic Correction.
+      </p>
+
+      <p>
+        Auto Color může být užitečný hlavně jako rychlý výchozí bod. Pokud si nejste jistí, jak s barevnou korekcí začít,
+        může vám tento nástroj pomoci vytvořit první návrh úprav. Následně je možné jednotlivé hodnoty dále ručně doladit.
+        Není však vhodné automatickému výsledku vždy bez výhrad věřit. U některých záběrů může fungovat velmi dobře,
+        u jiných bude potřeba další zásah.
+      </p>
+
+      <h3 id="color-match">Color Match</h3>
+      <p>
+        Druhou užitečnou funkcí je Color Match, která slouží ke sladění barev mezi dvěma záběry. To je praktické například tehdy,
+        když byly klipy natočeny v odlišných světelných podmínkách, ale ve výsledném videu mají působit jako součást jedné scény.
+      </p>
+
+      <p>
+        Funkce se nachází v panelu Lumetri Color v sekci Color Wheels & Match. Pro její použití je potřeba mít zapnutý Comparison View,
+        který je možné zapnout také v této záložce.
+      </p>
+
+      <p>
+        Na časové ose lze pak zvolit referenční záběr, tedy ten, jehož vzhled chcete napodobit. Premiere Pro následně automaticky 
+        upraví barevné vlastnosti tak, aby si oba klipy byly podobnější. Ani zde však nejde o zázračné řešení pro každou situaci. 
+        Pokud jsou si záběry obsahem nebo světlem velmi vzdálené, bývá nutné výsledek ručně doladit.
+      </p>
+
+      <p>
+        Auto Color i Color Match tedy mohou výrazně urychlit práci, ale v praxi je vhodné je chápat spíše jako pomocné nástroje,
+        ne jako úplnou náhradu vlastního rozhodování.
+      </p>
+
+<br>
+
+      <h2 id="korekce-vs-color-grading">Základ barevné korekce vs. color grading</h2>
+      <p>
+        Při práci s barvou se často setkáte se dvěma pojmy, a to barevná korekce a color grading. Ačkoliv spolu úzce souvisí,
+        neznamenají totéž.
+      </p>
+
+      <p>
+        Barevná korekce je technická úprava obrazu. Jejím cílem je opravit problémy v záběru a sjednotit vzhled klipů tak,
+        aby působily přirozeně a konzistentně. Typicky sem patří úprava expozice, kontrastu, vyvážení bílé nebo základní sytosti barev.
+      </p>
+
+      <p>
+        Color grading je naopak kreativnější fáze. Přichází obvykle až poté, co je obraz technicky srovnaný. V této části se řeší,
+        jak má video působit po estetické stránce. Pomocí barev lze vytvořit určitou náladu, zdůraznit emoci nebo dodat videu
+        specifický styl.
+      </p>
+
+      <p>
+        Zjednodušeně lze říci, že barevná korekce řeší, aby obraz vypadal správně, zatímco color grading řeší, aby obraz vypadal
+        záměrně určitým způsobem. 
+      </p>
+    `,
+  quizKey: "barvy",
+  sources: []
+  },
+
+  {
+  id: "export",
+  menu: "Export",
+  title: "Export",
+  subtitle: "Vytvoření hotového videa z projektu, neboli Export.",
+  html: `
+    <h2 id="co-je-export">Co je export</h2> 
+
+    <p> 
+      Export je závěrečná fáze práce na videu, při které se hotová sekvence převede do výsledného souboru. 
+      Zatímco během střihu Premiere Pro ukládá především projektové informace a odkazy na původní materiály, při exportu vzniká 
+      nový soubor, který lze přehrát samostatně, nahrát na internet nebo předat dalším uživatelům. V Adobe Premiere Pro se lze 
+      do režimu exportu přepnout tlačítkem Export v levém horním rohu rozhraní nebo přes nabídku File > Export > Media. 
+    </p> 
+    
+    <p> 
+      Při exportu je potřeba rozhodnout, v jaké podobě má být video uloženo. To znamená zvolit vhodný formát, kvalitu 
+      a další nastavení tak, aby výsledný soubor odpovídal zamýšlenému použití. Jiné požadavky bude mít video určené pro sociální 
+      sítě, jiné video určené k archivaci a jiné například soubor, který má být dále zpracováván v dalším programu. 
+      Export tedy nepředstavuje jen pouhé „uložení videa“, ale důležitý krok, který ovlivňuje podobu finálního výstupu. 
+    </p> 
+
+<br>
+
+    <h2 id="rezim-export">Režim Export</h2>
+
+    <h3 id="nahled-a-shrnutí">Náhled a shrnutí</h3>
+
+    <p> 
+      Po přepnutí do režimu exportu se zobrazí rozhraní, kde lze nastavit všechny důležité parametry exportu. 
+      Na pravé straně se nachází náhled výsledného videa, připomínající panel Source Monitor.
+      Pod ním je zobrazena zmenšená časová osa pro pohyb ve videu. Parametr Range slouží pro nastavení rozsahu exportu,
+      tedy zda se má exportovat celá sekvence, nebo například jen oblast mezi In a Out body.
+    </p> 
+
+    <p>
+      Parametr Scaling umožňuje nastavit způsob, kterým se obraz přizpůsobí zvolenému rozlišení. 
+      Nabízené možnosti jsou Scale to fit (zvětšit/zmenšit obraz tak, aby se vešel), Scale to fill (zvětšit/zmenšit obraz tak, 
+      aby vyplnil požadovaný prostor) a Stretch to fill (roztáhnout obraz na celé rozlišení bez zachování poměru stran).
+    </p>
+    
+    <p> 
+      Pod oblastí s náhledem se nachází shrnutí základních informací o exportu. Zde lze porovnat vlastnosti původní sekvence (Source)
+      s nastavenými vlastnostmi exportovaného souboru (Output).
+    </p> 
+
+<br>
+
+    <h3 id="nastaveni-exportu">Nastavení exportu</h3>
+
+    <p>
+      V levé části exportního okna se nachází záložka Settings, která slouží k nastavení základních parametrů výstupu. 
+      Uživatel zde určuje název výsledného souboru, jeho umístění, formát exportu a preset, tedy přednastavenou kombinaci 
+      exportních voleb.
+    </p>
+
+    <p>
+      Pole File Name slouží k nastavení názvu exportovaného souboru. Pod ním se nachází položka Location, která určuje, 
+      do jaké složky bude výsledné video po dokončení exportu uloženo.
+    </p>
+
+    <p>
+      Součástí této části rozhraní jsou také volby Format a Preset. Zvolený formát určuje typ výsledného souboru 
+      a zároveň ovlivňuje, jaké další možnosti budou v exportním okně dostupné. Preset naopak představuje již připravené 
+      nastavení, které automaticky vyplní hodnoty v dalších sekcích exportu, například v záložkách Video nebo Audio.
+    </p>
+
+    <p>
+      Pod těmito základními položkami se nacházejí rozbalitelné sekce Video, Audio, Multiplexer, Captions, Effects, Metadata 
+      a General. Tyto části obsahují podrobnější volby exportu. Zatímco preset slouží jako rychlé výchozí nastavení, 
+      v jednotlivých sekcích je možné jeho hodnoty dále zkontrolovat a případně upravit podle konkrétních požadavků.
+    </p>
+
+<br>
+
+    <h3 id="format-a-preset">Formát a preset</h3>
+
+    <p>
+      Formát a preset patří mezi nejdůležitější volby v exportním okně, protože určují základní podobu výsledného souboru. 
+      Formát rozhoduje o tom, jaký typ souboru bude vytvořen a jaké parametry bude možné dále nastavovat. V praxi se často 
+      používá například formát H.264, který je vhodný pro běžný export videa i pro publikování na webu.
+    </p>
+
+    <p>
+      Na zvolený formát navazuje nabídka presetů. Adobe nabízí větší množství presetů určených pro různé účely, například 
+      pro běžná rozlišení videa nebo pro rychlé vytvoření výstupu bez nutnosti ručního nastavování všech hodnot. 
+      Kromě mnoho specifických presetů, upravených například přímo pro konkrétní sociální sítě, jsou k dispozici i presety Match Source.
+      Konkrétně Match Source - Adaptive High Bitrate, Match Source - Adaptive Medium Bitrate a Match Source - Adaptive Low Bitrate.
+    </p>
+
+    <p>
+      Presety typu Match Source vycházejí z vlastností sekvence nebo zdrojového klipu. Obvykle tak automaticky převezmou 
+      například rozlišení nebo snímkovou frekvenci a současně nastaví i další související parametry. Varianta Match Source - 
+      Adaptive High Bitrate představuje vhodnou volbu ve chvíli, kdy je potřeba rychle vytvořit kvalitní export bez detailního 
+      ručního nastavování.
+    </p>
+
+    <p>
+      Preset tedy nefunguje jen jako doporučení, ale jako praktické přednastavení hodnot, které se promítne do dalších částí 
+      exportního okna. Díky tomu je možné začít s již připravenou konfigurací a následně upravit pouze ty parametry, které je 
+      potřeba přizpůsobit konkrétnímu způsobu použití videa.
+    </p>
+    
+<br> 
+    
+    <h2 id="kontrola-pred-exportem">Kontrola před exportem</h2> 
+    
+    <p> 
+      Před spuštěním samotného exportování je vhodné provést krátkou kontrolu. Měli byste se ujistit, že exportujete správnou 
+      sekvenci, že je správně zvolen název a umístění výsledného souboru a že formát i preset odpovídají zamýšlenému použití videa. 
+      Stejně tak je dobré zkontrolovat, zda sedí základní video nastavení a zda export nevytvoří zbytečně velký nebo naopak 
+      příliš nekvalitní soubor. Je také dobré si zkontrolovat, že máte před exportem dostatek volného místa na disku. 
+    </p> 
+    
+    <p> 
+      Pokud jsou všechna nastavení v pořádku, můžete export spustit. To se dělá modrým tlačítkem Export
+      v pravém dolním rohu exportního rozhraní. Po jeho stisknutí se začne proces exportu, který může trvat od několika sekund 
+      až po několik hodin, v závislosti na délce videa, zvolených nastaveních a výkonu počítače. 
+      Po dokončení exportu bude výsledný soubor uložen na zvolené místo a bude připraven ke zhlédnutí.
+    </p>
+  `,
+  quizKey: "export",
+  sources: []
   },
 ];

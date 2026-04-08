@@ -3661,8 +3661,20 @@ window.LESSONS = [
     <p> 
       Export je závěrečná fáze práce na videu, při které se hotová sekvence převede do výsledného souboru. 
       Zatímco během střihu Premiere Pro ukládá především projektové informace a odkazy na původní materiály, při exportu vzniká 
-      nový soubor, který lze přehrát samostatně, nahrát na internet nebo předat dalším uživatelům. V Adobe Premiere Pro se lze 
-      do režimu exportu přepnout tlačítkem Export v levém horním rohu rozhraní nebo přes nabídku File > Export > Media. 
+      nový soubor, který lze přehrát samostatně, nahrát na internet nebo předat dalším uživatelům.
+    </p>
+
+    <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_12/prepnuti.png" alt="Tlačítko pro přepnutí do režimu Export">
+
+        <figcaption>
+          <div class="figure_title">Tlačítko pro přepnutí do režimu Export</div>
+        </figcaption>
+      </figure>
+    
+    <p>
+      V Adobe Premiere Pro se lze do režimu exportu přepnout tlačítkem Export v levém horním rohu rozhraní nebo 
+      přes nabídku File > Export > Media. 
     </p> 
     
     <p> 
@@ -3676,7 +3688,23 @@ window.LESSONS = [
 
     <h2 id="rezim-export">Režim Export</h2>
 
+    <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_12/rozhrani.png" alt="Rozhraní režimu export">
+
+        <figcaption>
+          <div class="figure_title">Rozhraní režimu export</div>
+        </figcaption>
+      </figure>
+
     <h3 id="nahled-a-shrnutí">Náhled a shrnutí</h3>
+
+    <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_12/prava1.png" alt="Náhled videa a parametr Range">
+
+        <figcaption>
+          <div class="figure_title">Náhled videa a parametr Range</div>
+        </figcaption>
+      </figure>
 
     <p> 
       Po přepnutí do režimu exportu se zobrazí rozhraní, kde lze nastavit všechny důležité parametry exportu. 
@@ -3685,11 +3713,27 @@ window.LESSONS = [
       tedy zda se má exportovat celá sekvence, nebo například jen oblast mezi In a Out body.
     </p> 
 
+    <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_12/prava2.png" alt="Parametr Scaling">
+
+        <figcaption>
+          <div class="figure_title">Parametr Scaling</div>
+        </figcaption>
+      </figure>
+
     <p>
       Parametr Scaling umožňuje nastavit způsob, kterým se obraz přizpůsobí zvolenému rozlišení. 
       Nabízené možnosti jsou Scale to fit (zvětšit/zmenšit obraz tak, aby se vešel), Scale to fill (zvětšit/zmenšit obraz tak, 
       aby vyplnil požadovaný prostor) a Stretch to fill (roztáhnout obraz na celé rozlišení bez zachování poměru stran).
     </p>
+
+    <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_12/prava3.png" alt="Oblast se shrnutím nastavení">
+
+        <figcaption>
+          <div class="figure_title">Oblast se shrnutím nastavení</div>
+        </figcaption>
+      </figure>
     
     <p> 
       Pod oblastí s náhledem se nachází shrnutí základních informací o exportu. Zde lze porovnat vlastnosti původní sekvence (Source)
@@ -3700,9 +3744,17 @@ window.LESSONS = [
 
     <h3 id="nastaveni-exportu">Nastavení exportu</h3>
 
+    <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_12/leva1.png" alt="Záložka Settings">
+
+        <figcaption>
+          <div class="figure_title">Záložka Settings</div>
+        </figcaption>
+      </figure>
+
     <p>
       V levé části exportního okna se nachází záložka Settings, která slouží k nastavení základních parametrů výstupu. 
-      Uživatel zde určuje název výsledného souboru, jeho umístění, formát exportu a preset, tedy přednastavenou kombinaci 
+      Uživatel zde určuje název výsledného souboru, jeho umístění, formát souboru a preset, tedy přednastavenou kombinaci 
       exportních voleb.
     </p>
 
@@ -3716,6 +3768,14 @@ window.LESSONS = [
       a zároveň ovlivňuje, jaké další možnosti budou v exportním okně dostupné. Preset naopak představuje již připravené 
       nastavení, které automaticky vyplní hodnoty v dalších sekcích exportu, například v záložkách Video nebo Audio.
     </p>
+
+    <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_12/leva2.png" alt="Záložky s podrobnějšími nastaveními exportu">
+
+        <figcaption>
+          <div class="figure_title">Záložky s podrobnějšími nastaveními exportu</div>
+        </figcaption>
+      </figure>
 
     <p>
       Pod těmito základními položkami se nacházejí rozbalitelné sekce Video, Audio, Multiplexer, Captions, Effects, Metadata 
@@ -3734,11 +3794,19 @@ window.LESSONS = [
     </p>
 
     <p>
-      Na zvolený formát navazuje nabídka presetů. Adobe nabízí větší množství presetů určených pro různé účely, například 
+      Adobe nabízí větší množství presetů určených pro různé účely, například 
       pro běžná rozlišení videa nebo pro rychlé vytvoření výstupu bez nutnosti ručního nastavování všech hodnot. 
       Kromě mnoho specifických presetů, upravených například přímo pro konkrétní sociální sítě, jsou k dispozici i presety Match Source.
       Konkrétně Match Source - Adaptive High Bitrate, Match Source - Adaptive Medium Bitrate a Match Source - Adaptive Low Bitrate.
     </p>
+
+    <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_12/presety1.png" alt="Presety Match Source v nabídce presetů">
+
+        <figcaption>
+          <div class="figure_title">Presety Match Source v nabídce presetů</div>
+        </figcaption>
+      </figure>
 
     <p>
       Presety typu Match Source vycházejí z vlastností sekvence nebo zdrojového klipu. Obvykle tak automaticky převezmou 
@@ -3756,13 +3824,46 @@ window.LESSONS = [
 <br> 
     
     <h2 id="kontrola-pred-exportem">Kontrola před exportem</h2> 
+
+    <p>
+      Ještě než se přepnete do exportního rozhraní, je vhodné provést kontrolu projektu a ujistit se, že je vše připraveno.
+      Dobré je projít sekvenci a zkontrolovat, zda jsou všechny klipy správně umístěné, zda jsou použité efekty a přechody 
+      v pořádku.
+    </p>
+
+    <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_12/kontrola1.png" alt="Název sekvence zvolené pro export">
+
+        <figcaption>
+          <div class="figure_title">Název sekvence zvolené pro export</div>
+        </figcaption>
+      </figure>
     
     <p> 
       Před spuštěním samotného exportování je vhodné provést krátkou kontrolu. Měli byste se ujistit, že exportujete správnou 
-      sekvenci, že je správně zvolen název a umístění výsledného souboru a že formát i preset odpovídají zamýšlenému použití videa. 
+      sekvenci, že je správně zvolen název a umístění výsledného souboru a že formát i preset odpovídají zamýšlenému použití videa.
+    </p>
+
+    <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_12/kontrola2.png" alt="Velikost výsledného souboru">
+
+        <figcaption>
+          <div class="figure_title">Velikost výsledného souboru</div>
+        </figcaption>
+      </figure>
+    
+    <p>
       Stejně tak je dobré zkontrolovat, zda sedí základní video nastavení a zda export nevytvoří zbytečně velký nebo naopak 
       příliš nekvalitní soubor. Je také dobré si zkontrolovat, že máte před exportem dostatek volného místa na disku. 
     </p> 
+
+    <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_12/kontrola3.png" alt="Tlačítko Export">
+
+        <figcaption>
+          <div class="figure_title">Tlačítko Export</div>
+        </figcaption>
+      </figure>
     
     <p> 
       Pokud jsou všechna nastavení v pořádku, můžete export spustit. To se dělá modrým tlačítkem Export
@@ -3770,6 +3871,211 @@ window.LESSONS = [
       až po několik hodin, v závislosti na délce videa, zvolených nastaveních a výkonu počítače. 
       Po dokončení exportu bude výsledný soubor uložen na zvolené místo a bude připraven ke zhlédnutí.
     </p>
+
+<br>
+<hr>
+<br>
+
+      <h2 id="prakticka">Praktická část</h2>
+
+      <p>
+        V této části si vyzkoušíte nastavení exportu a vytvoření výsledného souboru z projektu.
+      </p>
+
+      <h3 id="prakt-nastaveni">Kontrola a příprava na export</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_12/praktKontrola1.png" alt="Finální podoba hlavní sekvence">
+
+        <figcaption>
+          <div class="figure_title">Finální podoba hlavní sekvence</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Otevřete si projekt Cesta vlakem. Přehrajte si video a zkontrolujte hlavní sekvenci. Je důležité, aby všechny aplikované efekty,
+        přechody a jiné úpravy byly v pořádku.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_12/praktKontrola2.png" alt="Kontrola zapnutí vrstev">
+
+        <figcaption>
+          <div class="figure_title">Kontrola zapnutí vrstev</div>
+        </figcaption>
+      </figure>
+      
+      <p>
+        Také zkontrolujte, zda u žádné vrstvy není zvolena možnost Toggle Track Output 
+        (ikona oka u obrazových vrstev), nebo Mute (ikona M u zvukových vrstev). Tyto možnosti by totiž způsobily, že se by se daná vrstva
+        do výsledného exportu nezahrnula.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_12/praktKontrola3.png" alt="Přepnutí do exportního režimu">
+
+        <figcaption>
+          <div class="figure_title">Přepnutí do exportního režimu</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Pokud je vše v pořádku, přejděte v panelu Project do binu Sekvence a vyberte Hlavní sekvenci. Následně klikněte na tlačítko
+        Export v levém horním rohu rozhraní, čímž se přepnete do režimu exportu.
+      </p>
+
+      <h3 id="prakt-nastaveni">Nastavení exportu</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_12/praktNastaveni1.png" alt="Nastavení názvu a umístění výsledného souboru">
+
+        <figcaption>
+          <div class="figure_title">Nastavení názvu a umístění výsledného souboru</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Otevře se vám exportní rozhraní. V levé části v záložce Settings > File Name nastavte název výsledného souboru,
+        například Cesta_vlakem_export.mp4. V poli Location můžete po kliknutí na zobrazenou cestu zvolit složku,
+        kam bude výsledný soubor uložen. Výchozí umístení je ve složce se souborem projektu.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_12/praktNastaveni2.png" alt="Volba presetu pro export">
+
+        <figcaption>
+          <div class="figure_title">Volba presetu pro export</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Rozklikněte nabídku v poli Presets a zvolte Match Source - Medium Bitrate. Tím se vám automaticky nastaví další 
+        parametry exportu, které odpovídají vlastnostem vaší sekvence. 
+      </p>
+
+      <p>
+        Volitelně můžete použít jinou variantu Match Source, buď pro vyšší Bitrate, nebo pro nižší. Mějte ale na paměti, že
+        při vyšším Bitrate bude výsledný soubor větší, zatímco při nižším může být kvalita horší.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_12/praktNastaveni3.png" alt="Formát výsledného souboru">
+
+        <figcaption>
+          <div class="figure_title">Formát výsledného souboru</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Ujistěte se, že v poli Format máte zvolený H.264. Tento formát je vhodný pro běžný export videa a je 
+        kompatibilní s většinou přehrávačů i online platforem.
+      </p>
+
+      <h3 id="prakt-finalni-kontrola">Finální kontrola a export</h3>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_12/praktExportRange.png" alt="Kontrola parametru Range">
+
+        <figcaption>
+          <div class="figure_title">Kontrola parametru Range</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Jelikož budete exportovat celou sekvenci, zkontrolujte si prvně, že parametr Range je nastavený na možnost Entire Source.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_12/praktExportScaling.png" alt="Kontrola parametru Scaling">
+
+        <figcaption>
+          <div class="figure_title">Kontrola parametru Scaling</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Jelikož jste zvolili preset Match Source, výsledný soubor a sekvence tak mají stejné rozlišení. Pokud by ale exportovaný soubor
+        měl rozlišení nastavené jinak, než sekvence, bylo by potřeba zkontrolovat a nastavit parametr Scaling. Zde by se určilo, zda se
+        sekvence zvětší/roztáhne tak, aby vyplnila celé rozlišení.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_12/praktExport1.png" alt="Shrnutí nastavení exportu">
+
+        <figcaption>
+          <div class="figure_title">Shrnutí nastavení exportu</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Na pravé straně pod náhledem videa se nachází krátké shrnutí exportních nastavení.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_12/praktExport2.png" alt="Kontrola rozlišení a snímkové frekvence">
+
+        <figcaption>
+          <div class="figure_title">Kontrola rozlišení a snímkové frekvence</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Zkontrolujte si především, ať sedí rozlišení a snímková frekvence. Jelikož jste použili preset Match Source, tak by 
+        vše mělo odpovídat, ale vždy je dobré si nastavení ověřit.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_12/praktExport3.png" alt="Kontrola velikosti výsledného souboru">
+
+        <figcaption>
+          <div class="figure_title">Kontrola velikosti výsledného souboru</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Dále věnujte pozornost velikosti výsledného souboru a ujistěte se, že máte na svém počítači dostatek volného místa.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_12/praktExport4.png" alt="Spuštění exportu">
+
+        <figcaption>
+          <div class="figure_title">Spuštění exportu</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Pokud je vše v pořádku, klikněte na modré tlačítko Export v pravém dolním rohu.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_12/praktExport5.png" alt="Okno s průběhem exportu">
+
+        <figcaption>
+          <div class="figure_title">Okno s průběhem exportu</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Spustí se export a otevře se informační okno s průběhem procesu. Poté, co se exportování dokončí, bude výsledný soubor
+        uložený ve zvolené složce.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_12/praktExport6.png" alt="Okno s průběhem exportu">
+
+        <figcaption>
+          <div class="figure_title">Okno s průběhem exportu</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Otevřete si soubor v libovolném video přehrávači a ještě jednou zkontrolujte, zda je vše v pořádku.
+        Pokud ano, můžete se těšit z vašeho prvního hotového videa vytvořeného v Adobe Premiere Pro!
+      </p>
+
+
+
   `,
   quizKey: "export",
   sources: []

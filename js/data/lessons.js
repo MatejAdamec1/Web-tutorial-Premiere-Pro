@@ -54,7 +54,7 @@ window.LESSONS = [
       
       <p>
         Po kliknutí na název podkapitoly se můžete rychle přesunout na vybranou část textu. Přepínač mezi světlým
-        a tmavým motivem je na větších zařízeních umístěn ve spodní části levého panelu. Na menších
+        a tmavým motivem je na větších zařízeních umístěn ve spodní části pravého panelu. Na menších
         obrazovkách se kvůli přehlednosti obsah pravého panelu nezobrazuje a přepínač motivu je přesunut
         do horní části rozhraní.
       </p>

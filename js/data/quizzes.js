@@ -652,4 +652,47 @@ window.QUIZZES = {
       correctIndex: 3
     }
   ],
+
+  generative_extend:[
+    {
+      question: "K čemu slouží funkce Generative Extend v Adobe Premiere Pro?",
+      answers: [
+        "K automatickému vytváření celého videa z textového zadání",
+        "K prodloužení začátku/konce klipu pomocí AI",
+        "K převodu videa do jiného formátu při exportu",
+        "K automatickému barevnému sladění dvou klipů"
+      ],
+      correctIndex: 1
+    },
+    {
+      question: "Na jaké technologii je funkce Generative Extend založena?",
+      answers: [
+        "Adobe Audition Engine",
+        "Adobe Sensei Captions",
+        "Adobe Firefly",
+        "Adobe Media Encoder"
+      ],
+      correctIndex: 2
+    },
+    {
+      question: "Jaké je hlavní využití funkce Generative Extend?",
+      answers: [
+        "Tvorba dlouhých scén od začátku bez natočeného materiálu",
+        "Nahrazení celého procesu střihu",
+        "Řešení drobných chybějících částí záběru/zvuku",
+        "Automatické vytváření titulků ve všech jazycích"
+      ],
+      correctIndex: 2
+    },
+    {
+      question: "Které z následujících tvrzení o omezeních Generative Extend je správné?",
+      answers: [
+        "Funkce je vhodná pro prodlužování hudby i mluveného dialogu",
+        "Video lze prodloužit o libovolný počet sekund",
+        "Funkce nevyžaduje internetové připojení",
+        "Funkce není vhodná pro prodlužování hudby a mluveného dialogu"
+      ],
+      correctIndex: 3
+    }
+  ]
 };

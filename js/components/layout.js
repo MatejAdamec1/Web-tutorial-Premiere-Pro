@@ -7,6 +7,9 @@ window.Layout = {
         m(".sidebar_header", [
           m(".sidebar_toptext", "Tutoriál"),
           m(".sidebar_title", "Adobe Premiere Pro"),
+          m("button.theme_btn theme_btn_mobile", {
+            onclick: window.toggleTheme
+          }, window.themeLabel())
         ]),
         m("nav.sidebar_nav",
           window.LESSONS.map(lesson =>
@@ -14,7 +17,10 @@ window.Layout = {
               href: `#!/` + lesson.id,
               oncreate: m.route.link,
               class: lesson.id === currentLessonId ? "active" : ""
-            }, lesson.menu)
+            }, [
+              m("span", lesson.menu),
+              lesson.hasAI ? m("span.badge-ai", "AI") : null
+            ])
           )
         ),
       ]),
@@ -22,7 +28,7 @@ window.Layout = {
       m("main.main", { id: "main" }, [
         m("header.topbar", [
           m("h1", vnode.attrs.title),
-          m("p.subtitle", vnode.attrs.subtitle),
+          m("p.subtitle", vnode.attrs.subtitle)
         ]),
         vnode.children
       ]),
@@ -38,7 +44,10 @@ window.Layout = {
                 const el = document.getElementById(item.id);
                 if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
               },
-              class: item.level === "H3" ? "toc_title-h3" : "toc_title-h2"
+              class: [
+                item.level === "H3" ? "toc_title-h3" : "toc_title-h2",
+                vnode.attrs.activeTocId === item.id ? "active" : ""
+              ].join(" ")
             }, item.text)
           )
         ),

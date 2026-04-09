@@ -1,6 +1,65 @@
 window.LessonView = {
   tocItems: [],
   lastLessonId: null,
+  activeTocId: null,
+  scrollHandler: null,
+
+  updateActiveHeading() {
+    const main = document.getElementById("main");
+    const article = document.querySelector("article.content");
+    if (!main || !article) return;
+
+    const headings = Array.from(
+      article.querySelectorAll("h2[id], h3[id], div.quiz_title[id]")
+    );
+
+    if (!headings.length) return;
+
+    const mainRect = main.getBoundingClientRect();
+    const offset = 120;
+
+    let current = headings[0];
+
+    for (const heading of headings) {
+      const rect = heading.getBoundingClientRect();
+      if (rect.top - mainRect.top <= offset) {
+        current = heading;
+      } else {
+        break;
+      }
+    }
+
+    if (this.activeTocId !== current.id) {
+      this.activeTocId = current.id;
+      m.redraw();
+    }
+  },
+
+  bindScrollTracking() {
+    const main = document.getElementById("main");
+    if (!main) return;
+
+    if (this.scrollHandler) {
+      main.removeEventListener("scroll", this.scrollHandler);
+    }
+
+    this.scrollHandler = () => this.updateActiveHeading();
+    main.addEventListener("scroll", this.scrollHandler, { passive: true });
+
+    this.updateActiveHeading();
+  },
+
+  unbindScrollTracking() {
+    const main = document.getElementById("main");
+    if (main && this.scrollHandler) {
+      main.removeEventListener("scroll", this.scrollHandler);
+    }
+    this.scrollHandler = null;
+  },
+
+  onremove() {
+    this.unbindScrollTracking();
+  },
 
   view(vnode) {
     const lesson = vnode.attrs.lesson;
@@ -16,12 +75,16 @@ window.LessonView = {
 
       if (!same) {
         this.tocItems = newToc;
-        m.redraw();
       }
+
+      this.bindScrollTracking();
+      this.updateActiveHeading();
     };
 
     if (this.lastLessonId !== lesson.id) {
       this.lastLessonId = lesson.id;
+      this.activeTocId = null;
+
       const main = document.getElementById("main");
       if (main) main.scrollTop = 0;
     }
@@ -30,7 +93,9 @@ window.LessonView = {
       lessonId: lesson.id,
       title: lesson.title,
       subtitle: lesson.subtitle,
-      tocItems: this.tocItems
+      tocItems: this.tocItems,
+      activeTocId: this.activeTocId,
+      hasAI: lesson.hasAI
     }, [
       m("article.content", {
         oncreate: (v) => updateToc(v.dom),
@@ -53,7 +118,7 @@ window.LessonView = {
 
         lesson.sources && lesson.sources.length
           ? m(".lesson_sources", [
-              m("h3", {id: "zdroje"}, "Zdroje"),
+              m("h3", { id: "zdroje" }, "Zdroje"),
               m("ul",
                 lesson.sources.map((source) =>
                   m("li",

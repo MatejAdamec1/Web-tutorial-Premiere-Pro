@@ -3,8 +3,8 @@ window.LESSONS = [
     id: "uvod",
     menu: "Úvod",
     title: "Úvod",
-    subtitle:
-      "Pár informací na začátek.",
+    subtitle: "Pár informací na začátek.",
+    hasAI: false,
     html: `
       <h2 id="pro-koho">Pro koho je tutoriál</h2>
       <p>
@@ -48,10 +48,15 @@ window.LESSONS = [
       </p>
 
       <p>
-        Pro přepínání mezi kapitolami můžete použít levý panel nebo tlačítka vespodu stránky.
-        V pravém panelu jsou vypsané jednotlivé podkapitoly aktuálního tématu. Po kliknutí na 
-        podtéma se posunete přímo k dané části textu. Dole na tomto panelu si také můžete přepnout 
-        mezi světlým a tmavým motivem.
+        Pro přepínání mezi kapitolami můžete použít levý panel nebo tlačítka v dolní části stránky.
+        Na širších obrazovkách se v pravém panelu zobrazují jednotlivé podkapitoly aktuálního tématu.
+      </p>
+      
+      <p>
+        Po kliknutí na název podkapitoly se můžete rychle přesunout na vybranou část textu. Přepínač mezi světlým
+        a tmavým motivem je na větších zařízeních umístěn ve spodní části levého panelu. Na menších
+        obrazovkách se kvůli přehlednosti obsah pravého panelu nezobrazuje a přepínač motivu je přesunut
+        do horní části rozhraní.
       </p>
 
       <p>
@@ -71,11 +76,16 @@ window.LESSONS = [
         Počet pokusů je neomezený a při špatné odpovědi se vám ukáže správné řešení.
       </p>
 
+      <p>
+        V tutoriálu jsou rozebrány i funkce využívající umělou inteligenci. Text a kapitoly, které o daných funkcích pojednávají,
+        jsou označeny speciálním <ai-term>štítkem</ai-term>.
+      </p>
+
 <br>
 
       <h2 id="poznamka">Finální poznámka</h2>
       <p>
-        Tutoriál je psaný na verzi Adobe Premiere Pro 26.0.1, která je v době psaní aktuální. 
+        Tutoriál je vytvořen na verzi Adobe Premiere Pro 26.0.1, která je v době psaní aktuální. 
         Vzhledem k tomu, že se jedná o software, který je pravidelně aktualizován, může se stát, že některé funkce nebo rozhraní
         se v budoucnu změní. 
       </p>
@@ -88,6 +98,7 @@ window.LESSONS = [
     menu: "Parametry videa",
     title: "Technické parametry videa",
     subtitle: "Základní parametry videa a jejich význam.",
+    hasAI: false,
     html: `
       <h2 id="proc-je-potreba-tyto-vlastnosti">Proč je potřeba znát tyto vlastnosti</h2>
       <p>
@@ -285,6 +296,7 @@ window.LESSONS = [
     menu: "Postprodukční workflow",
     title: "Jak funguje postprodukční workflow",
     subtitle: "Seznámení s obvyklým pracovním postupem při úpravě videa.",
+    hasAI: false,
     html: `
       <h2 id="co-workflow">Co je to workflow?</h2>
       <p>
@@ -412,6 +424,7 @@ window.LESSONS = [
     menu: "Rozhraní a panely",
     title: "Rozhraní a panely",
     subtitle: "Seznámení s panely a workspaces.",
+    hasAI: false,
     html: `
       <h2 id="rezim-edit-panely">Režim Edit a panelové prostředí</h2>
 
@@ -619,6 +632,7 @@ window.LESSONS = [
     menu: "Projekt",
     title: "Projekt v Premiere Pro",
     subtitle: "Vytvoření a nastavení projektu.",
+    hasAI: true,
     html: `
       <h2 id="co-je-projekt">Co je to projekt?</h2>
       <p>
@@ -745,7 +759,7 @@ window.LESSONS = [
       </figure>
 
       <p>
-        V případě, že budete pro váš projekt potřebovat vytvořit titulky, můžete zaškrtnout možnost Automatic transcription. Program
+        V případě, že budete pro váš projekt potřebovat vytvořit titulky, můžete zaškrtnout možnost <ai-term>Automatic transcription</ai-term>. Program
         pak automaticky přepíše mluvenou řeč importovaných souborů do transkriptu. Lze zde nastavit jazyk, ve kterém se bude přepis
         provádět, avšak v době psaní tohoto textu není zatím podporována čeština. Premiere Pro dokáže rozlišovat mezi různými
         mluvčími, to lze zapnout v poli Speaker Labeling.
@@ -760,7 +774,7 @@ window.LESSONS = [
       </figure>
 
       <p>
-        Poslední záložkou v sekci Import Settings je Media analysis. Pokud tuto možnost zvolíte, program provede analýzu
+        Poslední záložkou v sekci Import Settings je <ai-term>Media analysis</ai-term>. Pokud tuto možnost zvolíte, program provede analýzu
         naimportovaných souborů. Díky tomu je pak možné vyhledávat mezi materiály podle obrazových či audio vlastností.
       </p>
 
@@ -1035,6 +1049,7 @@ window.LESSONS = [
     menu: "Sekvence a časová osa",
     title: "Sekvence a časová osa",
     subtitle: "Seznámení se sekvencemi a prací na časové ose.",
+    hasAI: false,
     html: `
       <h2 id="co-je-sekvence">Co je to sekvence?</h2>
       <p>
@@ -1426,6 +1441,7 @@ window.LESSONS = [
     menu: "Základy střihu",
     title: "Základy střihu",
     subtitle: "Seznámení se základními nástroji pro střih a úpravu klipů na časové ose.",
+    hasAI: false,
     html: `
       <h2 id="prace-v-source-panelu">Práce v Source panelu</h2>
       <p>
@@ -1741,6 +1757,7 @@ window.LESSONS = [
     menu: "Práce se zvukem",
     title: "Základy práce se zvukem",
     subtitle: "Seznámení se základy práce se zvukem.",
+    hasAI: true,
     html: `
       <h2 id="zvuk-uvod">Zvuk v Premiere Pro</h2>
       <p>
@@ -1762,7 +1779,7 @@ window.LESSONS = [
         Premiere Pro rozděluje zvukové stopy do čtyř kategorií podle obsahu: Dialog (Dialogue), Hudba (Music), 
         Zvukový efekt (SFX) a Zvuky prostředí (Ambience). Na základě této klasifikace pak nabízí různé možnosti pro úpravu
         a zpracování dané stopy. Například pro dialogy jsou k dispozici nástroje pro odstranění šumu, nebo pro hudbu 
-        lze využít funkci Auto Ducking, která ji automaticky ztlumí, pokud například detekuje, že v sekvenci hraje Dialog stopa.
+        lze využít funkci <ai-term>Auto Ducking</ai-term>, která ji automaticky ztlumí, pokud například detekuje, že v sekvenci hraje Dialog stopa.
       </p>
 
 <br>
@@ -1836,7 +1853,7 @@ window.LESSONS = [
 
       <p>
         U zvukových stop představujících řeč je klíčové, aby byl hlas mluvčího dobře srozumitelný. 
-        Panel Essential Sound nabízí nástroj Enhance Speech, který pomocí umělé inteligence potlačuje 
+        Panel Essential Sound nabízí nástroj <ai-term>Enhance Speech</ai-term>, který pomocí umělé inteligence potlačuje 
         okolní šum a zvýrazňuje hlas. Posuvníkem Mix Amount lze regulovat intenzitu tohoto efektu.
       </p>
 
@@ -1850,7 +1867,7 @@ window.LESSONS = [
 
       <p>
         Důležité je také udržovat konzistentní úroveň hlasitosti, aby nevznikaly příliš hlasité nebo tiché části. 
-        K tomu slouží nástroj Auto-Match v záložce Loudness. Po jeho použití se hlasitost vybraných klipů automaticky 
+        K tomu slouží nástroj <ai-term>Auto-Match</ai-term> v záložce Loudness. Po jeho použití se hlasitost vybraných klipů automaticky 
         upraví na podobnou úroveň.
       </p>
 
@@ -1919,9 +1936,9 @@ window.LESSONS = [
 
       <p>
         První z nich se nazývá Duration a umožňuje stopu prodloužit. Hodí se například v případě, kdy hudba skončí dříve,
-        než klip, který má podkreslovat. Existují dvě metody prodloužení: Stretch a Remix. Stretch prodlužuje stopu tím,
+        než klip, který má podkreslovat. Existují dvě metody prodloužení: Stretch a <ai-term>Remix</ai-term>. Stretch prodlužuje stopu tím,
         že zpomalí její přehrávání tak, aby naplnila požadovanou délku. Není tedy ideální, protože zpomalí celou stopu
-        a tím může změnit způsob, jakým hudba působí. Na druhou stranu, Remix prodlužuje délku stopy pomocí umělé inteligence,
+        a tím může změnit způsob, jakým hudba působí. Na druhou stranu, <ai-term>Remix</ai-term> prodlužuje délku stopy pomocí umělé inteligence,
         která nejdříve hudbu analyzuje a nalezne místa, kde lze hudbu prodloužit. Následně přeorganizuje, či duplikuje
         části stopy a tím ji prodlouží. Části, kde byla stopa upravena jsou v klipu na časové ose zvýrazněny vertikální vlnovkou.
       </p>
@@ -1935,7 +1952,7 @@ window.LESSONS = [
       </figure>
 
       <p>
-        Druhou záložkou pro tuto kategorii je Ducking. Tato funkce je založená na umělé inteligenci, která automaticky 
+        Druhou záložkou pro tuto kategorii je <ai-term>Ducking</ai-term>. Tato funkce je založená na umělé inteligenci, která automaticky 
         ztlumí hudbu, pokud detekuje, že v sekvenci hraje audio stopa označená Dialog, či jako jiná zvolená kategorie. 
         Tím se zajistí, že hudba nebude rušit srozumitelnost dialogů, nebo důležitých momentů ve videu.
       </p>
@@ -1982,7 +1999,7 @@ window.LESSONS = [
       </figure>
 
       <p>
-        Kromě záložek Loudness, Creative a Ducking je zde nová záložka Stereo Width. Tato funkce slouží k rozšíření 
+        Kromě záložek Loudness, Creative a <ai-term>Ducking</ai-term> je zde nová záložka Stereo Width. Tato funkce slouží k rozšíření 
         nebo zúžení prostorového vnímání daného zvuku, aby lépe zapadl do scény.
       </p>
 
@@ -2247,6 +2264,7 @@ window.LESSONS = [
     menu: "Efekty",
     title: "Základy efektů",
     subtitle: "Přiblížení používání efektů a Effect Controls panelu.",
+    hasAI: false,
     html: `
       <h2 id="efekty-uvod">Efekty v Premiere Pro</h2>
       <p>
@@ -2801,6 +2819,7 @@ window.LESSONS = [
     menu: "Animace a Keyframes",
     title: "Animace a Keyframes",
     subtitle: "Rozpohybování statických efektů skrze animace.",
+    hasAI: false,
     html: `
       <h2 id="keyframes">Klíčové snímky (Keyframes)</h2>
       <p>
@@ -3145,6 +3164,7 @@ window.LESSONS = [
     menu: "Úprava barev",
     title: "Práce s barvami",
     subtitle: "Seznámení se základy barevných úprav a panelem Lumetri Color.",
+    hasAI: true,
     html: `
       <h2 id="proc-upravovat-barvy">Proč se barvy upravují</h2>
       <p>
@@ -3365,7 +3385,7 @@ window.LESSONS = [
 
         <h2 id="auto-color-a-color-match">Auto Color a Color Match</h2>
 
-        <h3 id="auto-color">Auto Color</h3>
+        <h3 id="auto-color"><ai-term>Auto Color</ai-term></h3>
 
         <figure class="doc_figure doc_figure--large">
           <img src="img/kapitola_11/autoColor1.png" alt="Ukázka změny po použití Auto Color">
@@ -3408,7 +3428,7 @@ window.LESSONS = [
           u jiných bude potřeba další zásah.
         </p>
 
-        <h3 id="color-match">Color Match</h3>
+        <h3 id="color-match"><ai-term>Color Match</ai-term></h3>
 
         <figure class="doc_figure doc_figure--large">
           <img src="img/kapitola_11/colorMatch1.png" alt="Funkce Color Match">
@@ -3655,6 +3675,7 @@ window.LESSONS = [
     menu: "Export",
     title: "Export",
     subtitle: "Vytvoření hotového videa z projektu, neboli Export.",
+    hasAI: false,
     html: `
       <h2 id="co-je-export">Co je export</h2> 
 
@@ -4086,8 +4107,9 @@ window.LESSONS = [
     menu: "Text-Based Editing",
     title: "Text-Based Editing",
     subtitle: "Střih videa pomocí přepisu mluveného slova.",
+    hasAI: true,
     html: `
-      <h2 id="co-je-text-based-editing">Co je Text-Based Editing</h2>
+      <h2 id="co-je-text-based-editing">Co je <ai-term>Text-Based Editing</ai-term></h2>
 
       <p>
         Text-Based Editing je funkce v Adobe Premiere Pro, která umožňuje pracovat se střihem videa pomocí textového přepisu
@@ -4096,7 +4118,7 @@ window.LESSONS = [
       </p>
 
       <p>
-        Tato funkce využívá technologii automatického přepisu řeči založenou na umělé inteligenci. Díky tomu dokáže Premiere Pro
+        Tato funkce využívá technologii <ai-term>automatického přepisu</ai-term> řeči založenou na umělé inteligenci. Díky tomu dokáže Premiere Pro
         rozpoznat mluvený obsah v klipu, převést jej do textové podoby a propojit jednotlivé části přepisu s konkrétními místy
         na časové ose. Uživatel tak nemusí hledat požadovanou pasáž pouze poslechem nebo ručním projížděním záběrů, ale může ji
         vyhledat i podle textu.
@@ -4285,7 +4307,107 @@ window.LESSONS = [
         ale nejlepší výsledky přináší ve spojení s běžnou editací na časové ose.
       </p>
     `,
-  quizKey: "text_based_editing",
-  sources: []
-},
+    quizKey: "text_based_editing",
+    sources: []
+  },
+
+  {
+    id: "generative_extend",
+    menu: "Generativní funkce",
+    title: "Generativní funkce",
+    subtitle: "Seznámení s funkcemi využívajícími generativní umělou inteligenci.",
+    hasAI: true,
+    html: `
+      <h2 id="generative-extend"><ai-term>Generative Extend</ai-term></h2>
+
+      <p>
+        V novějších verzích Adobe Premiere Pro se objevují i funkce založené na generativní umělé inteligenci.
+        Narozdíl od technologie Adobe Sensei jsou tyto nástroje zaměřeny na vytváření nového obsahu.
+        Jejich cílem není nahradit běžný střih, ale pomoci editorovi v situacích, kdy chybí krátký kus záběru,
+        nebo je potřeba krátce prodloužit zvuk.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_14/genExt.png" alt="Nástroj Generative Extend v panelu nástrojů">
+
+        <figcaption>
+          <div class="figure_title">Nástroj Generative Extend v panelu nástrojů</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Generative Extend je funkce, která umožňuje prodloužit začátek nebo konec klipu za hranici původně natočeného materiálu.
+        Program se přitom nepokouší pouze natáhnout existující obraz nebo zvuk, ale pomocí generativní umělé inteligence
+        vytvoří novou část, která navazuje na původní obsah.
+      </p>
+
+<br>
+
+      <h2 id="jak-funguje">Jak funci použít</h2>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_14/pouziti1.png" alt="Protažení klipu pomocí Generative Extend">
+
+        <figcaption>
+          <div class="figure_title">Protažení klipu pomocí Generative Extend</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Generative Extend je založen na technologii Adobe Firefly. Editor vybere klip na časové ose, zvolí nástroj Generative Extend
+        a přetažením okraje klipu určí, o kolik chce klip prodloužit.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_14/pouziti2.png" alt="Program generuje novou část klipu pomocí AI">
+
+        <figcaption>
+          <div class="figure_title">Program generuje novou část klipu pomocí AI</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Premiere Pro následně odešle požadavek ke zpracování
+        a vygeneruje novou část obrazu nebo zvuku, která se pokusí co nejplynuleji navázat na původní materiál.
+      </p>
+
+      <figure class="doc_figure doc_figure--large">
+        <img src="img/kapitola_14/ukazkaVidea.gif" alt="Ukázka protažení videa pomocí Generative Extend">
+
+        <figcaption>
+          <div class="figure_title">Ukázka protažení videa pomocí Generative Extend</div>
+        </figcaption>
+      </figure>
+
+      <p>
+        Vygenerovaná část se po dokončení označí přímo na časové ose, takže je možné snadno rozlišit, která část klipu
+        vznikla pomocí AI.
+      </p>
+
+<br>
+
+      <h2 id="omezeni">Omezení</h2>
+
+      <p>
+        Pro použití funkce je potřeba internetové připojení,
+        protože generování probíhá s využitím cloudového modelu Adobe Firefly. Funkce je také vedena jako prémiová
+        a podle typu účtu může spotřebovávat generativní kredity.
+      </p>
+
+      <p>
+        Praktickým omezením je i samotný rozsah prodloužení. Video lze prodloužit maximálně o dvě sekundy a zvuk maximálně
+        o deset sekund. Funkce navíc není vhodná pro všechny typy materiálů. Nepodporuje například prodlužování hudby,
+        negeneruje pokračování mluveného dialogu. Oba tyto typy zvukového obsahu jsou pro generetivní model zatím 
+        příliš složité, protože vyžadují pochopení rytmu, melodie nebo významu slov.
+      </p>
+
+      <p>
+        Generative Extend je tedy vhodné chápat jako praktický doplněk pro jemné dolaďování střihu.
+        Dokáže pomoci v situacích, kdy chybí jen krátký úsek obrazu nebo zvuku, ale stále je potřeba výsledek
+        pečlivě zkontrolovat a posoudit, zda působí přirozeně a odpovídá zamýšlenému použití.
+      </p>
+    `,
+    quizKey: "generative_extend",
+    sources: []
+  },
 ];

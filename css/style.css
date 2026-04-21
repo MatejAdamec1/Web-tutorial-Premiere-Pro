@@ -191,6 +191,27 @@ h1{
   line-height: 1.65;
 }
 
+.content--enter{
+  animation: lessonFade 220ms ease;
+}
+
+@keyframes lessonFade{
+  from{
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .content--enter{
+    animation: none;
+  }
+}
+
 .content h2{
   margin-bottom: 0.625rem;
   font-size: 1.4rem;
@@ -345,6 +366,17 @@ ai-term::after{
   border: 1px solid var(--accent-border);
 }
 
+.m-link{
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.m-link:hover,
+.m-link:focus {
+  color: var(--accent);
+}
+
 .doc_figure{
   max-width: fit-content;
   margin: 2.5rem auto;
@@ -464,9 +496,6 @@ ai-term::after{
 .quiz_feedback {
   margin-top: 0.8rem;
   font-weight: 600;
-}
-
-.quiz_feedback {
   color: var(--text);
 }
 

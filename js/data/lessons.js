@@ -865,7 +865,7 @@ window.LESSONS = [
       </p>
 
       <p>
-        Stáhněte si materiály z tohoto odkazu: <a href="https://drive.google.com/uc?export=download&id=1690JdHvlCNsZieIM0j8p7AT_Fy0nP5Ff" 
+        Stáhněte si materiály z tohoto odkazu: <a class="m-link" href="https://drive.google.com/uc?export=download&id=1690JdHvlCNsZieIM0j8p7AT_Fy0nP5Ff" 
         target="_blank">Odkaz na materiály</a>
       </p>
 
@@ -2093,7 +2093,7 @@ window.LESSONS = [
       
       <p>
         Do projektové složky vytvořte novou složku s názvem Hudba a do ní stáhněte skladbu z tohoto odkazu: 
-        <a target="_blank" href="https://pixabay.com/music/corporate-digital-digital-music-492802/">
+        <a class="m-link" href="https://pixabay.com/music/corporate-digital-digital-music-492802/" target="_blank">
         Odkaz na Pixabay</a>. Pixabay je webová platforma poskytující volně dostupné materiály, včetně hudby, 
         které lze zdarma používat a upravovat jako součást vlastních projektů.
       </p>

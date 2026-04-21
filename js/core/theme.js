@@ -1,8 +1,16 @@
 (function initTheme() {
   const saved = localStorage.getItem("theme");
+
+  let theme;
   if (saved === "dark" || saved === "light") {
-    document.documentElement.setAttribute("data-theme", saved);
+    theme = saved;
+  } else {
+    theme = window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
   }
+
+  document.documentElement.setAttribute("data-theme", theme);
 })();
 
 window.themeLabel = function () {

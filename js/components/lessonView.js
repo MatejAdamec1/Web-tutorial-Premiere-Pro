@@ -3,6 +3,18 @@ window.LessonView = {
   lastLessonId: null,
   activeTocId: null,
   scrollHandler: null,
+  isEntering: false,
+  enterTimer: null,
+
+  startEnterAnimation() {
+    clearTimeout(this.enterTimer);
+    this.isEntering = true;
+
+    this.enterTimer = setTimeout(() => {
+      this.isEntering = false;
+      m.redraw();
+    }, 220);
+  },
 
   updateActiveHeading() {
     const main = document.getElementById("main");
@@ -59,6 +71,7 @@ window.LessonView = {
 
   onremove() {
     this.unbindScrollTracking();
+    clearTimeout(this.enterTimer);
   },
 
   view(vnode) {
@@ -82,11 +95,17 @@ window.LessonView = {
     };
 
     if (this.lastLessonId !== lesson.id) {
+      const hadPreviousLesson = this.lastLessonId !== null;
+
       this.lastLessonId = lesson.id;
       this.activeTocId = null;
 
       const main = document.getElementById("main");
       if (main) main.scrollTop = 0;
+
+      if (hadPreviousLesson) {
+        this.startEnterAnimation();
+      }
     }
 
     return m(window.Layout, {
@@ -97,7 +116,7 @@ window.LessonView = {
       activeTocId: this.activeTocId,
       hasAI: lesson.hasAI
     }, [
-      m("article.content", {
+      m("article.content"+ (this.isEntering ? ".content--enter" : ""), {
         oncreate: (v) => updateToc(v.dom),
         onupdate: (v) => updateToc(v.dom)
       }, [

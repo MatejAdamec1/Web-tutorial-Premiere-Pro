@@ -1,0 +1,14 @@
+Copyright (c) 2026 Matěj Adamec
+
+The following files and directories are excluded from the Apache License 2.0:
+
+- js/data/lessons.js
+- js/data/quizzes.js
+- img/
+
+Unless explicitly stated otherwise, these materials are provided as
+“All rights reserved.”
+
+No permission is granted to copy, modify, redistribute, publish, sublicense,
+or use these materials beyond what is permitted by applicable copyright law
+without prior written permission from the author.

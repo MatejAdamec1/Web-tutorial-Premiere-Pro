@@ -1,3 +1,12 @@
+/*
+Copyright (c) 2026 Matěj Adamec
+
+This file is not licensed under the Apache License 2.0.
+All rights reserved.
+
+See the LICENSE-CONTENT file for details.
+*/
+
 window.LESSONS = [
   {
     id: "uvod",

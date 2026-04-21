@@ -88,4 +88,10 @@ Matěj Adamec
 
 ### Licence
 
-Tento projekt je vytvořen pro studijní účely.
+Zdrojový kód tohoto projektu je licencován pod licencí Apache License 2.0.
+
+Výukový obsah, zejména soubory `js/data/lessons.js`, `js/data/quizzes.js` a adresář `img/`,
+není součástí této open-source licence. Pokud není výslovně uvedeno jinak, tento obsah je
+poskytován s vyhrazenými právy.
+
+Podrobnosti jsou uvedeny v souborech `LICENSE` a `LICENSE-CONTENT`.
